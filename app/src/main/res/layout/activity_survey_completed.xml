@@ -7,30 +7,28 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
 
-    android:paddingTop="@dimen/activity_vertical_margin" android:orientation="vertical"
-     >
+    android:paddingTop="@dimen/activity_vertical_margin" android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
+
         <ImageView
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:src="@drawable/pdra"
-            />
+            android:src="@drawable/uncolor"/>
+
         <TextView
             style="@style/TextView"
             android:text="Please Make sure Internet for Uploading"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="7dp"
             android:textColor="#008E45"
-            android:textSize="16sp"
-
-
-            />
+            android:textSize="16sp"/>
 
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -55,6 +53,6 @@
         android:text="These completed surveys will be soon uploaded to server"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView5" />
+        android:id="@+id/textView5"/>
 
 </LinearLayout>

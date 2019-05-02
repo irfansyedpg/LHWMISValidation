@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" android:orientation="vertical"
-    tools:context="com.irfansyed.umeedenau.umeedenauMonitring.LoginActivity"
+    tools:context="com.irfansyed.umeedenau.validation.LoginActivity"
     android:weightSum="5"
     android:background="@color/U_main"
 
@@ -20,7 +20,7 @@
                    <ImageView
                        android:layout_width="165dp"
                        android:layout_height="140dp"
-                       android:src="@drawable/pdra"
+                       android:src="@drawable/unwhite"
                        android:layout_centerHorizontal="true"
                        android:layout_alignParentBottom="true"
                        android:layout_marginBottom="0dp"
@@ -101,7 +101,7 @@
 <TextView
   style="@style/TextView"
 
-  android:text="forgotten password? contact main office"
+  android:text="APP | 11.30"
   android:layout_width="wrap_content"
 
   android:textColor="@color/hitnscolor"

@@ -1,0 +1,262 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LHWDashbord">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="com.irfansyed.umeedenau.validation.Form1SectionH" />
+    </data>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="50dip">
+        <!-- Parent layout starts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F1F1"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/uncolor"
+                    />
+                <TextView
+                    style="@style/TextView"
+                    android:text="@string/lhwf1header_h"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#008E45"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/hitnscolor" />
+
+
+
+
+            <!-- lhwf1h1 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1h1"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1h1"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_number"
+                        android:id="@+id/lhwf1h1"
+                        android:maxLength="2"
+                        android:hint="@string/lhwf1h1"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1h1 ends-->
+
+
+            <!-- lhwf1h2 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1h2"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1h2"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_number"
+                        android:id="@+id/lhwf1h2"
+                        android:maxLength="1"
+                        android:hint="@string/lhwf1h2"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1h2 ends-->
+
+            <!-- lhwf1h3 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1h3"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1h3"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_varchar"
+                        android:id="@+id/lhwf1h3"
+                        android:maxLength="20"
+                        android:hint="@string/lhwf1h3"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1h3 ends-->
+
+            <!-- lhwf1h4 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1h4"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1h4"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_varchar"
+                        android:id="@+id/lhwf1h4"
+                        android:maxLength="20"
+                        android:hint="@string/lhwf1h4"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1h4 ends-->
+
+
+
+            <!-- lhwf1h5 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1h5"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1h5"
+
+                        />
+
+
+                    <EditText
+                        style="@style/EditText_number"
+                        android:id="@+id/lhwf1h5"
+                        android:maxLength="2"
+                        android:hint="@string/lhwf1h5"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1h5 ends-->
+
+
+
+
+            <!-- Button -->
+            <android.support.v7.widget.CardView
+                style="@style/Q_CardView"
+
+                >
+
+
+
+
+                <Button
+                    android:id="@+id/btn_lhw_office"
+                    style="@style/Button_Next"
+                    android:layout_margin="10dp"
+                    android:layout_weight="50"
+                    android:text="LHW Office " />
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Button Next Ends-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>

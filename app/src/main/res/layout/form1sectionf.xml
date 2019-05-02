@@ -1,0 +1,492 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LHWDashbord">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="com.irfansyed.umeedenau.validation.Form1SectionF" />
+    </data>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="50dip">
+        <!-- Parent layout starts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F1F1"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/uncolor"
+                    />
+                <TextView
+                    style="@style/TextView"
+                    android:text="@string/lhwf1header_f"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#008E45"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/hitnscolor" />
+
+            <!-- lhwf1f1 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f1"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f1"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_number"
+                        android:id="@+id/lhwf1f1"
+                        android:maxLength="2"
+                        android:hint="@string/lhwf1f1"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f1 ends-->
+
+
+            <!-- lhwf1f2 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f2"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f2"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_number"
+                        android:id="@+id/lhwf1f2"
+                        android:maxLength="1"
+                        android:hint="@string/lhwf1f2"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f2 ends-->
+
+
+
+
+            <!-- lhwf1f3 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f3"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f3"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_number"
+                        android:id="@+id/lhwf1f3"
+                        android:maxLength="2"
+                        android:hint="@string/lhwf1f3"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f3 ends-->
+
+
+            <!-- lhwf1f4 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f4"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f4"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_varchar"
+                        android:id="@+id/lhwf1f4"
+                        android:maxLength="15"
+                        android:hint="@string/lhwf1f4"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f4 ends-->
+
+            <!-- lhwf1f5 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f5"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f5"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_number"
+                        android:id="@+id/lhwf1f5"
+                        android:maxLength="2"
+                        android:hint="@string/lhwf1f5"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f5 ends-->
+
+            <!-- lhwf1f6 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f6"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f6"
+
+                        />
+
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f6_yes"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f6_no"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+                        <RadioButton
+                            android:id="@+id/lhwf1f6_3"
+                            style="@style/RadioButton"
+                            android:text="@string/lhw_stockout"/>
+
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f6 ends-->
+
+
+
+            <!-- lhwf1f7 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f7"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f7"
+
+                        />
+
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f7_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f7_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+                        <RadioButton
+                            android:id="@+id/lhwf1f7_3"
+                            style="@style/RadioButton"
+                            android:text="@string/lhw_stockout"/>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f7 ends-->
+
+
+            <!-- lhwf1f8 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f8"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f8"
+
+                        />
+
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f8_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f8_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f8_3"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_na"/>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f8 ends-->
+
+            <!-- lhwf1f9 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f9"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f9"
+
+                        />
+
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f9_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f9_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f9 ends-->
+
+            <!-- lhwf1f10 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf1f10"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf1f10"
+
+                        />
+
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f10_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf1f10_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+                        <RadioButton
+                            android:id="@+id/lhwf1f10_3"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_na"/>
+
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf1f8 ends-->
+
+
+
+
+
+
+            <!-- Button -->
+            <android.support.v7.widget.CardView
+                style="@style/Q_CardView"
+
+                >
+
+
+
+
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/Button_Next"
+                    android:layout_margin="10dp"
+                    android:layout_weight="50"
+                    android:text="Next " />
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Button Next Ends-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>

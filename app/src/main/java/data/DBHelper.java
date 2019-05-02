@@ -12,7 +12,7 @@ import android.util.Log;
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String DB_NAME = "tran_DB.db";
+    private static final String DB_NAME = "valdatn_DB.db";
     private static final int VERSION = 1;
 
     Context mContext;
@@ -27,7 +27,12 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.beginTransaction();
 
+        //db.execSQL(activity1.getCreateQuery());
         db.execSQL(oTable.getCreateQuery());
+        db.execSQL(validationactivity2.getCreateQuery());
+        db.execSQL(activity3.getCreateQuery());
+
+
 
         db.setTransactionSuccessful();
         db.endTransaction();
@@ -38,7 +43,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         String query;
         db.beginTransaction();
-        query = "DROP TABLE IF EXISTS " + oTable.TABLE_NAME;
+        query = "DROP TABLE IF EXISTS " + validationactivity2.TABLE_NAME;
         db.execSQL(query);
 
         db.setTransactionSuccessful();

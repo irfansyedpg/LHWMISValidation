@@ -1,5 +1,5 @@
 ﻿<resources>
-    <string name="app_name">Applic </string>
+    <string name="app_name">Validation </string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -10,9 +10,9 @@
     <string name="title_new_survey">New Survey</string>
     <string name="title_home">Home</string>
 
-    <string name="rb_yes">Yes</string>
-    <string name="rb_No">No</string>
-    <string name="rb_dnt">Donnot Know</string>
+
+    <string name="rb_dk">Donot Know</string>
+    <string name="rb_ra">Rafused to answer</string>
 
 
     <!--NEW FROM IRFAN-->
@@ -29,82 +29,141 @@
     <string name="default_guest_name">Name</string>
 
 
-    <!-- Welcom section Starts -->
-    <string name="txt_welecom">
-         Assalam o Alaikum\n
-        My name is %%Name\n and I am working with Centre of Excellence in Women and Child Health, Aga Khan University Karachi with the collaboration of National Ministry of Health Services, Regulation and Coordination Government of Pakistan and Provincial Health Departments of Balochistan, Punjab and Sindh. I believe the data collector has asked you
-        a number of questions regarding maternal and child health. I would like to confirm a few questions for monitoring purposes.
-
-</string>
-    <!-- A section Ends -->
-
-
-    <string name="txt_A1">Cluster number </string>
-
-    <string name="txt_A2">Khandan/House Number</string>
-    <string name="txt_B1">Latitude</string>
-    <string name="txt_B2">Longitude</string>
-    <string name="txt_C1">Did the data collector visit your house?</string>
-    <string name="txt_C2">Did the data collector greet you when she came?</string>
-    <string name="txt_C3">Did the data collector introduce herself?</string>
-    <string name="txt_C4">Did the data collector take informed consent?</string>
-    <string name="txt_D1">Name of Head of the household</string>
-    <string name="txt_D2">Total number of members in the household</string>
-
-
-    <string name="txt_D3">Total number of eligible women in the household </string>
-    <string name="txt_D4">Number of children less than 5 yrs in the HH</string>
-    <string name="txt_D5">Name of respondent</string>
-
-
-    <string name="txt_E1">Total number of pregnancies among the WRAs in the HH</string>
-    <string name="txt_E2">Number of children born live in the HH who are still alive</string>
-    <string name="txt_E3">God Forbid (Khuda Na Khuwasta), did any woman in your household die in the past five years due to complications related to pregnancy, delivery and 42 days after delivery</string>
-    <string name="txt_E4">How many women have died</string>
-
-    <string name="txt_I1">Has any child less than 5 years of age in the household had diarrhea in the last 2 weeks in your household</string>
-    <string name="txt_I2">Has any child had an illness with cough that he/she breathes faster than usual with short, rapid breaths or has difficulty breathing in the past two weeks</string>
-    <string name="txt_I3">Did any child have do chest x-ray</string>
-
-    <string name="txt_L1">Do you have a separate room which is used as a kitchen</string>
-    <string name="txt_L2">How many rooms in this HH are used for sleeping</string>
-    <string name="txt_L3">What language do you usually speak in your household</string>
-
-    <string name="rb_L3_1">Urdu </string>
-    <string name="rb_L3_2">Punjabi </string>
-    <string name="rb_L3_3">Sindhi </string>
-    <string name="rb_L3_4">Balochi </string>
-    <string name="rb_L3_5">Siraiki </string>
-    <string name="rb_L3_6">Barauhi </string>
-    <string name="rb_L3_7">Brushaski </string>
-    <string name="rb_L3_8">Pashto </string>
-
-
-    <string name="txt_M1">What is the main source of drinking water for members of your household </string>
-
-    <string name="rb_M1_1">Piped into dwelling </string>
-    <string name="rb_M1_2">Piped into compound, yard or plot  </string>
-    <string name="rb_M1_3">Piped to neighbor </string>
-    <string name="rb_M1_4">Public tap / standpipe  </string>
-    <string name="rb_M1_5">Filtration Plant/unit </string>
-    <string name="rb_M1_6">Tube Well, Borehole </string>
-    <string name="rb_M1_7">Hand Pump </string>
-    <string name="rb_M1_8">Protected well </string>
-    <string name="rb_M1_9">Unprotected well </string>
-    <string name="rb_M1_10">Rainwater collection </string>
-    <string name="rb_M1_11">Tanker-truck </string>
-    <string name="rb_M1_12">Cart with small tank / drum </string>
-    <string name="rb_M1_13">Surface water (river, stream, dam, lake, pond, canal, irrigation channel) </string>
-    <string name="rb_M1_14">Bottled water </string>
-
-
-    <string name="txt_N1">Do you have any soap or detergent or ash/mud/sand in your house for washing hands</string>
-
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_main2">Main2Activity</string>
 
 
-    <!-- E Ends -->
+
+
+
+    <!-- Genral Info File starts  -->
+
+
+    <!-- Genral Info File Ends   -->
+
+
+    <!-- Validation Tool LHW & HH Text Starts   -->
+
+
+
+
+
+
+    <!--  LHW New Form1 -->
+
+
+
+    <string name="rb_yes"> Yes </string>
+    <string name="rb_no"> No </string>
+    <string name="rb_na"> NA </string>
+
+    <string name="lhw_stockout"> Stock Out </string>
+
+
+    <string name="lhwf1header_a"> Section A: LHW Information </string>
+    <string name="lhwf1a1"> Name of Taluka/Tehsil </string>
+    <string name="lhwf1a2"> Name of reporting health facility </string>
+    <string name="lhwf1a3"> Code of LHW </string>
+    <string name="lhwf1a4"> Name of LHW </string>
+    <string name="lhwf1header_b"> Section B: House Hold Information </string>
+    <string name="lhwf1b1"> Khandan # of selected HH </string>
+    <string name="lhwf1b2"> Residential address (village name, mohalla name) </string>
+    <string name="lhwf1b3"> Contact # (optional) </string>
+    <string name="lhwf1header_c"> Section C: Maternal care during pregnancy </string>
+    <string name="lhwf1c1"> # of registered PW in last three months </string>
+    <string name="lhwf1c2"> # of PW in HH registered in last three months </string>
+    <string name="lhwf1c3"> Name of registered PW (any one) </string>
+    <string name="lhwf1c4"> Husband’s name </string>
+    <string name="lhwf1c5"> # of ANC visit(s) of PW </string>
+    <string name="lhwf1c6"> LHW vaccinated PW for TT vaccine </string>
+    <string name="lhwf1c7"> LHW referred for TT vaccine </string>
+    <string name="lhwf1c8"> LHW provided Iron folic acid to PW </string>
+    <string name="lhwf1header_d"> Section D: Maternal care after delivery </string>
+    <string name="lhwf1d1"> # of deliveries registered in last three months </string>
+    <string name="lhwf1d2"> # of delivered women in HH registered in last three months </string>
+    <string name="lhwf1d3"> Name of mother delivered in last three months (any one) </string>
+    <string name="lhwf1d4"> Husband’s name </string>
+    <string name="lhwf1d5"> Where was delivery conducted? </string>
+    <string name="lhwf1d5_1"> Public HF </string>
+    <string name="lhwf1d5_2"> Private HF </string>
+    <string name="lhwf1d5_3"> CMW </string>
+    <string name="lhwf1d5_4"> Home </string>
+    <string name="lhwf1d6"> Outcome of delivery </string>
+    <string name="lhwf1d6_1"> Still birth </string>
+    <string name="lhwf1d6_2"> Live birth </string>
+    <string name="lhwf1header_e"> section E: New born care </string>
+    <string name="lhwf1e1"> Total # of registered newborns </string>
+    <string name="lhwf1e2"> # of newborn registered in HH </string>
+    <string name="lhwf1e3"> Name of newborn (any one) </string>
+    <string name="lhwf1e4"> Name of mother </string>
+    <string name="lhwf1e5"> Birth weight recorded </string>
+    <string name="lhwf1e6"> Early initiation of breastfeeding recorded (within 24 hours) </string>
+    <string name="lhwf1e7"> Record keeping for polio and BCG after birth </string>
+    <string name="lhwf1e8"> God Forbid, any neonatal death occurred in HH in last three months? </string>
+    <string name="lhwf1header_f"> Section F: Diarrhea Section </string>
+    <string name="lhwf1f1"> # of children less than three years of age registered in last 3 months? </string>
+    <string name="lhwf1f2"> # of children less than five years of age registered in last 3 months? </string>
+    <string name="lhwf1f3"> # of children in HH less than five years of age </string>
+    <string name="lhwf1f4"> Name of child in HH who had diarrhea in last three months </string>
+    <string name="lhwf1f5"> Age of child (in months) in HH who had diarrhea in last three months </string>
+    <string name="lhwf1f6"> LHW provided ORS/LoORS for diarrhea </string>
+    <string name="lhwf1f7"> LHW provided Zinc DT/syrup for diarrhea </string>
+    <string name="lhwf1f8"> LHW referred child to the HF </string>
+    <string name="lhwf1f9"> Maintained immunization record for child (in HH) under five years of age </string>
+    <string name="lhwf1f10"> God forbid, any child mortality due to diarrhea in last three months </string>
+    <string name="lhwf1header_g"> Section G: Cough or Difficult breathing </string>
+    <string name="lhwf1g1"> # of children less than three years of age registered in last 3 months. </string>
+    <string name="lhwf1g2"> # of children less than five years of age registered in last 3 months. </string>
+    <string name="lhwf1g3"> # of children in HH less than five years of age </string>
+    <string name="lhwf1g4"> Name of child in HH who had cough or difficult breathing in last three months </string>
+    <string name="lhwf1g5"> Age of child (in months) in HH who had cough or difficult breathing in last three months </string>
+    <string name="lhwf1g6"> LHW provided Amoxicillin DT/syrup </string>
+    <string name="lhwf1g7"> LHW referred child to the HF </string>
+    <string name="lhwf1g8"> Maintained immunization record for child under five years of age </string>
+    <string name="lhwf1g9"> God forbid, any child mortality in HH due to pneumonia in last three months </string>
+    <string name="lhwf1header_h"> Section H: Married Women of Reproductive Age </string>
+    <string name="lhwf1h1"> # registered MWRA </string>
+    <string name="lhwf1h2"> # of MWRA in HH </string>
+    <string name="lhwf1h3"> Name of MWRA in HH </string>
+    <string name="lhwf1h4"> Husband’s name </string>
+    <string name="lhwf1h5"> Age (in years) of MWRA </string>
+
+
+<!-- Form 3-->
+
+    <string name="lhwf3header_b"> Section B: Village Health Committee (VHC) </string>
+    <string name="lhwf3b1"> Did LHW form VHC? </string>
+    <string name="lhwf3b2"> Availability of VHC meeting recording form? </string>
+    <string name="lhwf3b3"> Total # of members mentioned in meeting recording form </string>
+    <string name="lhwf3b4"> Members name </string>
+    <string name="lhwf3b5"> Meeting conducted last month? </string>
+    <string name="lhwf3b6"> Record kept for last meeting in recording form? </string>
+
+
+    <!-- Form 5 -->
+
+    <string name="lhwf5header_b"> Section B: Women Support Group(WSG) </string>
+    <string name="lhwf5b1"> Did LHW form WSG? </string>
+    <string name="lhwf5b2"> Total # of WSG formed by LHW </string>
+    <string name="lhwf5b3"> # of meetings held in previous month mentioned in meeting report/form </string>
+
+    <string name="lhwf5b4"> # of members mentioned in WSG meeting report/form </string>
+    <string name="lhwf5b5"> Members name </string>
+    <string name="lhwf5b6"> # of participants attended the session mentioned in meeting report/form </string>
+    <string name="lhwf5b7"> Topics covered in session </string>
+    <string name="lhwf5b7_1"> Maternal care during pregnancy </string>
+    <string name="lhwf5b7_2"> Maternal care after delivery </string>
+    <string name="lhwf5b7_3"> Newborn care </string>
+    <string name="lhwf5b7_4"> Diarrhea </string>
+    <string name="lhwf5b7_5"> Pneumonia </string>
+    <string name="lhwf5b7_6"> WASH </string>
+    <string name="lhwf5b7_7"> Family Planning </string>
+    <string name="lhwf5b7_8"> Immunization </string>
+
+
+
 </resources>
+
+
