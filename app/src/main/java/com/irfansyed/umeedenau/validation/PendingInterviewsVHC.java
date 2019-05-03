@@ -32,6 +32,7 @@ public class PendingInterviewsVHC extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pendinginterviewsvhc);
 
+        /*
           List<String> list = new LocalDataManager(this).getLogList("0");
 
 
@@ -47,6 +48,11 @@ public class PendingInterviewsVHC extends AppCompatActivity {
 
         mAdapter = new PendingInterviewsVHCCustomAdapter(this, list);
         mRecyclerView.setAdapter(mAdapter);
+
+
+   */
+
+
     }
 
 

@@ -32,6 +32,7 @@ public class PendingInterviewsWSG extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pendinginterviewswsg);
 
+        /*
           List<String> list = new LocalDataManager(this).getLogList("0");
 
 
@@ -47,6 +48,8 @@ public class PendingInterviewsWSG extends AppCompatActivity {
 
         mAdapter = new PendingInterviewsWSGCustomAdapter(this, list);
         mRecyclerView.setAdapter(mAdapter);
+
+    */
     }
 
 

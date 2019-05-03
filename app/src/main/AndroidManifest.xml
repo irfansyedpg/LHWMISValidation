@@ -69,6 +69,36 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
+            android:name=".Form4SectionB"
+            android:label="@string/title_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Form6SectionB"
+            android:label="@string/title_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".PendingInterviewsHH"
+            android:label="@string/title_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PendingInterviewsWSG"
+            android:label="@string/title_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PendingInterviewsVHC"
+            android:label="@string/title_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity
             android:name=".Form1SectionH"
             android:label="@string/title_home"
             android:screenOrientation="portrait"
@@ -88,10 +118,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <activity
-            android:name=".pendinginterviews_mr"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".pendinginterviews"
             android:screenOrientation="portrait"

@@ -31,7 +31,7 @@ public class PendingInterviewsHH extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pendinginterviewshh);
-
+/*
           List<String> list = new LocalDataManager(this).getLogList("0");
 
 
@@ -47,6 +47,8 @@ public class PendingInterviewsHH extends AppCompatActivity {
 
         mAdapter = new PendingInterviewsHHCustomAdapter(this, list);
         mRecyclerView.setAdapter(mAdapter);
+
+    */
     }
 
 

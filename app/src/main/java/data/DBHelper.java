@@ -12,7 +12,7 @@ import android.util.Log;
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String DB_NAME = "valdatn_DB.db";
+    private static final String DB_NAME = "LHWMIS.db";
     private static final int VERSION = 1;
 
     Context mContext;
@@ -28,9 +28,30 @@ public class DBHelper extends SQLiteOpenHelper {
         db.beginTransaction();
 
         //db.execSQL(activity1.getCreateQuery());
-        db.execSQL(oTable.getCreateQuery());
-        db.execSQL(validationactivity2.getCreateQuery());
-        db.execSQL(activity3.getCreateQuery());
+        db.execSQL(TableF1SectionC.getCreateQuery());
+        db.execSQL(TableF1SectionD.getCreateQuery());
+        db.execSQL(TableF1SectionE.getCreateQuery());
+        db.execSQL(TableF1SectionF.getCreateQuery());
+        db.execSQL(TableF1SectionG.getCreateQuery());
+        db.execSQL(TableF1SectionH.getCreateQuery());
+
+
+        db.execSQL(TableF2SectionC.getCreateQuery());
+        db.execSQL(TableF2SectionD.getCreateQuery());
+        db.execSQL(TableF2SectionE.getCreateQuery());
+        db.execSQL(TableF2SectionF.getCreateQuery());
+        db.execSQL(TableF2SectionG.getCreateQuery());
+        db.execSQL(TableF2SectionH.getCreateQuery());
+
+        db.execSQL(TableF3SectionB.getCreateQuery());
+        db.execSQL(TableF4SectionB.getCreateQuery());
+
+        db.execSQL(TableF5SectionB.getCreateQuery());
+        db.execSQL(TableF6SectionB.getCreateQuery());
+
+
+
+
 
 
 
@@ -41,9 +62,9 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
-        String query;
+        String query="";
         db.beginTransaction();
-        query = "DROP TABLE IF EXISTS " + validationactivity2.TABLE_NAME;
+       // query = "DROP TABLE IF EXISTS " + validationactivity2.TABLE_NAME;
         db.execSQL(query);
 
         db.setTransactionSuccessful();
