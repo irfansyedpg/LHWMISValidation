@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +20,7 @@ import java.util.List;
 import data.LocalDataManager;
 
 
-public class pendinginterviews_mr extends AppCompatActivity {
+public class PendingInterviewsWSG extends AppCompatActivity {
 
     RecyclerView mRecyclerView;
     RecyclerView.Adapter mAdapter;
@@ -31,9 +30,9 @@ public class pendinginterviews_mr extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pendinginterviews);
+        setContentView(R.layout.pendinginterviewswsg);
 
-          List<String> list = new LocalDataManager(this).getLogList_mr("p");
+          List<String> list = new LocalDataManager(this).getLogList("0");
 
 
         if(list == null)
@@ -46,18 +45,19 @@ public class pendinginterviews_mr extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
 
-        mAdapter = new pendinginterviews_mrCustomAdapter(this, list);
+        mAdapter = new PendingInterviewsWSGCustomAdapter(this, list);
         mRecyclerView.setAdapter(mAdapter);
     }
+
 
 }
 
 
-class  pendinginterviews_mrCustomAdapter extends RecyclerView.Adapter{
+class  PendingInterviewsWSGCustomAdapter extends RecyclerView.Adapter{
 
     Context mContext;
     List<String> mList;
-    public pendinginterviews_mrCustomAdapter(Context context, List<String> list){
+    public PendingInterviewsWSGCustomAdapter(Context context, List<String> list){
         mContext = context;
         mList = list;
     }
@@ -101,11 +101,11 @@ class  pendinginterviews_mrCustomAdapter extends RecyclerView.Adapter{
                        // col_A.data_upload_id=arrr[0];
                         // =arrr[0];
 
-                      //  Intent intent = new Intent(mContext, activity3.class);
-                      //  intent.putExtra("id",arrr[0]);
+                      //  Intent intent = new Intent(mContext, activity2.class);
+                       // intent.putExtra("id",arrr[0]);
 
                         Global.global_id=arrr[3];
-                      //  mContext.startActivity(intent);
+                     //   mContext.startActivity(intent);
 
                         ((Activity)mContext).finish();
 
@@ -121,7 +121,7 @@ class  pendinginterviews_mrCustomAdapter extends RecyclerView.Adapter{
 
                        // Intent intent = null;
 
-                     //   intent = new Intent(this, pendinginterviews_mr.class);
+                     //   intent = new Intent(this, PendingInterviewsWSG.class);
                     }
                 }).show();
             }

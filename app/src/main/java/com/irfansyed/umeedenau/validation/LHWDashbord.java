@@ -93,6 +93,12 @@ public  class LHWDashbord extends AppCompatActivity implements View.OnClickListe
                     startActivity(intt);
 
                 }
+                else
+                {
+                    Intent intt=new Intent(getBaseContext(),PendingInterviewsHH.class);
+                    startActivity(intt);
+
+                }
 
             }
         });
@@ -111,6 +117,11 @@ public  class LHWDashbord extends AppCompatActivity implements View.OnClickListe
                     startActivity(intt);
 
                 }
+                else
+                {
+                    Intent intt=new Intent(getBaseContext(),PendingInterviewsVHC.class);
+                    startActivity(intt);
+                }
             }
         });
 
@@ -126,6 +137,11 @@ public  class LHWDashbord extends AppCompatActivity implements View.OnClickListe
                     Intent intt=new Intent(getBaseContext(),Form5SectionB.class);
                     startActivity(intt);
 
+                }
+                else
+                {
+                    Intent intt=new Intent(getBaseContext(),PendingInterviewsWSG.class);
+                    startActivity(intt);
                 }
             }
         });

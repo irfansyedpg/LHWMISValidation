@@ -415,6 +415,211 @@ public class Global {
     public static String V_R_F9 = "V_R_F9";
 
 
+
+
+    // New variable
+
+
+
+    public static String projectname="projectname";
+    public static String id="id";
+    public static String uid="uid";
+    public static String uuid ="uuid ";
+    public static String user="user";
+    public static String deviceid="deviceid";
+    public static String devicetagid="devicetagid";
+    public static String appversion="appversion";
+    public static String formdate="formdate";
+    public static String gpslat="gpslat";
+    public static String gpslng="gpslng";
+    public static String gpsacc="gpsacc";
+    public static String gpsdate="gpsdate";
+    public static String gpsaltitude="gpsaltitude";
+    public static String endtime="endtime";
+    public static String istatus="istatus";
+    public static String istatus88x="istatus88x";
+    public static String synced="synced";
+    public static String synceddate="synceddate";
+
+
+    public static String lhwf1a1="lhwf1a1";
+    public static String lhwf1a2="lhwf1a2";
+    public static String lhwf1a3="lhwf1a3";
+    public static String lhwf1a4="lhwf1a4";
+
+    public static String lhwf1b1="lhwf1b1";
+    public static String lhwf1b2="lhwf1b2";
+    public static String lhwf1b3="lhwf1b3";
+
+    public static String lhwf1c1="lhwf1c1";
+    public static String lhwf1c2="lhwf1c2";
+    public static String lhwf1c3="lhwf1c3";
+    public static String lhwf1c4="lhwf1c4";
+    public static String lhwf1c5="lhwf1c5";
+    public static String lhwf1c6="lhwf1c6";
+    public static String lhwf1c7="lhwf1c7";
+    public static String lhwf1c8="lhwf1c8";
+
+    public static String lhwf1d1="lhwf1d1";
+    public static String lhwf1d2="lhwf1d2";
+    public static String lhwf1d3="lhwf1d3";
+    public static String lhwf1d4="lhwf1d4";
+    public static String lhwf1d5="lhwf1d5";
+    public static String lhwf1d6="lhwf1d6";
+
+    public static String lhwf1e1="lhwf1e1";
+    public static String lhwf1e2="lhwf1e2";
+    public static String lhwf1e3="lhwf1e3";
+    public static String lhwf1e4="lhwf1e4";
+    public static String lhwf1e5="lhwf1e5";
+    public static String lhwf1e6="lhwf1e6";
+    public static String lhwf1e7="lhwf1e7";
+    public static String lhwf1e8="lhwf1e8";
+
+    public static String lhwf1f1="lhwf1f1";
+    public static String lhwf1f2="lhwf1f2";
+    public static String lhwf1f3="lhwf1f3";
+    public static String lhwf1f4="lhwf1f4";
+    public static String lhwf1f5="lhwf1f5";
+    public static String lhwf1f6 ="lhwf1f6 ";
+    public static String lhwf1f7="lhwf1f7";
+    public static String lhwf1f8="lhwf1f8";
+    public static String lhwf1f9="lhwf1f9";
+    public static String lhwf1f10="lhwf1f10";
+
+    public static String lhwf1g1="lhwf1g1";
+    public static String lhwf1g2="lhwf1g2";
+    public static String lhwf1g3="lhwf1g3";
+    public static String lhwf1g4="lhwf1g4";
+    public static String lhwf1g5="lhwf1g5";
+    public static String lhwf1g6="lhwf1g6";
+    public static String lhwf1g7="lhwf1g7";
+    public static String lhwf1g8="lhwf1g8";
+    public static String lhwf1g9="lhwf1g9";
+
+    public static String lhwf1h1="lhwf1h1";
+    public static String lhwf1h2="lhwf1h2";
+    public static String lhwf1h3="lhwf1h3";
+    public static String lhwf1h4="lhwf1h4";
+    public static String lhwf1h5="lhwf1h5";
+
+    public static String lhwf2c2="lhwf2c2";
+    public static String lhwf2c3="lhwf2c3";
+    public static String lhwf2c4="lhwf2c4";
+    public static String lhwf2c5="lhwf2c5";
+    public static String lhwf2c6="lhwf2c6";
+    public static String lhwf2c7="lhwf2c7";
+    public static String lhwf2c8="lhwf2c8";
+    public static String lhwf2c9="lhwf2c9";
+    public static String lhwf2c10="lhwf2c10";
+    public static String lhwf2c11="lhwf2c11";
+
+    public static String lhwf2d2="lhwf2d2";
+    public static String lhwf2d3="lhwf2d3";
+    public static String lhwf2d4="lhwf2d4";
+    public static String lhwf2d5="lhwf2d5";
+    public static String lhwf2d6="lhwf2d6";
+    public static String lhwf2d7="lhwf2d7";
+    public static String lhwf2d8="lhwf2d8";
+    public static String lhwf2d9="lhwf2d9";
+    public static String lhwf2d10="lhwf2d10";
+    public static String lhwf2d11="lhwf2d11";
+    public static String lhwf2d12="lhwf2d12";
+
+    public static String lhwf2e2="lhwf2e2";
+    public static String lhwf2e3="lhwf2e3";
+    public static String lhwf2e4="lhwf2e4";
+    public static String lhwf2e5="lhwf2e5";
+    public static String lhwf2e5a="lhwf2e5a";
+    public static String lhwf2e6="lhwf2e6";
+    public static String lhwf2e7="lhwf2e7";
+    public static String lhwf2e8="lhwf2e8";
+    public static String lhwf2e9="lhwf2e9";
+    public static String lhwf2e10="lhwf2e10";
+    public static String lhwf2e11="lhwf2e11";
+    public static String lhwf2e12="lhwf2e12";
+    public static String lhwf2e13="lhwf2e13";
+
+    public static String lhwf2f3="lhwf2f3";
+    public static String lhwf2f4="lhwf2f4";
+    public static String lhwf2f5="lhwf2f5";
+    public static String lhwf2f6 ="lhwf2f6 ";
+    public static String lhwf2f7="lhwf2f7";
+    public static String lhwf2f8="lhwf2f8";
+    public static String lhwf2f9="lhwf2f9";
+    public static String lhwf2f10="lhwf2f10";
+    public static String lhwf2f11="lhwf2f11";
+    public static String lhwf2f12="lhwf2f12";
+    public static String lhwf2f13="lhwf2f13";
+
+    public static String lhwf2g3="lhwf2g3";
+    public static String lhwf2g4="lhwf2g4";
+    public static String lhwf2g5="lhwf2g5";
+    public static String lhwf2g6="lhwf2g6";
+    public static String lhwf2g7="lhwf2g7";
+    public static String lhwf2g8="lhwf2g8";
+    public static String lhwf2g9="lhwf2g9";
+    public static String lhwf2g10="lhwf2g10";
+
+    public static String lhwf2h2="lhwf2h2";
+    public static String lhwf2h3="lhwf2h3";
+    public static String lhwf2h4="lhwf2h4";
+    public static String lhwf2h5="lhwf2h5";
+    public static String lhwf2h6="lhwf2h6";
+    public static String lhwf2h7="lhwf2h7";
+    public static String lhwf2h8="lhwf2h8";
+    public static String lhwf2h9="lhwf2h9";
+    public static String lhwf2h10="lhwf2h10";
+    public static String lhwf2h11="lhwf2h11";
+
+    public static String lhwf3b1="lhwf3b1";
+    public static String lhwf3b2="lhwf3b2";
+    public static String lhwf3b3="lhwf3b3";
+    public static String lhwf3b4="lhwf3b4";
+    public static String lhwf3b5="lhwf3b5";
+    public static String lhwf3b6="lhwf3b6";
+
+    public static String lhwf4b0="lhwf4b0";
+    public static String lhwf4b1="lhwf4b1";
+    public static String lhwf4b2="lhwf4b2";
+    public static String lhwf4b3="lhwf4b3";
+    public static String lhwf4b4="lhwf4b4";
+    public static String lhwf4b5="lhwf4b5";
+    public static String lhwf4b6="lhwf4b6";
+
+    public static String lhwf5b1="lhwf5b1";
+    public static String lhwf5b2="lhwf5b2";
+    public static String lhwf5b3="lhwf5b3";
+    public static String lhwf5b4="lhwf5b4";
+    public static String lhwf5b5="lhwf5b5";
+    public static String lhwf5b6="lhwf5b6";
+    public static String lhwf5b7_1="lhwf5b7_1";
+    public static String lhwf5b7_2="lhwf5b7_2";
+    public static String lhwf5b7_3="lhwf5b7_3";
+    public static String lhwf5b7_4="lhwf5b7_4";
+    public static String lhwf5b7_5="lhwf5b7_5";
+    public static String lhwf5b7_6="lhwf5b7_6";
+    public static String lhwf5b7_7="lhwf5b7_7";
+    public static String lhwf5b7_8="lhwf5b7_8";
+
+    public static String lhwf6b0="lhwf6b0";
+    public static String lhwf6b1="lhwf6b1";
+    public static String lhwf6b2="lhwf6b2";
+    public static String lhwf6b3="lhwf6b3";
+    public static String lhwf6b4="lhwf6b4";
+    public static String lhwf6b5="lhwf6b5";
+    public static String lhwf6b6_1="lhwf6b6_1";
+    public static String lhwf6b6_2="lhwf6b6_2";
+    public static String lhwf6b6_3="lhwf6b6_3";
+    public static String lhwf6b6_4="lhwf6b6_4";
+    public static String lhwf6b6_5="lhwf6b6_5";
+    public static String lhwf6b6_6="lhwf6b6_6";
+    public static String lhwf6b6_7="lhwf6b6_7";
+    public static String lhwf6b6_8="lhwf6b6_8";
+
+
+
+
 }
 
 
