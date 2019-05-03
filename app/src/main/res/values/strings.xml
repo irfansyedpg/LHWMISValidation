@@ -163,6 +163,126 @@
     <string name="lhwf5b7_8"> Immunization </string>
 
 
+<!-- Form 2 starts-->
+
+    <string name="lhwf2header_b"> Section B: House Hold Information </string>
+    <string name="lhwf2b1"> Khandan # of selected HH </string>
+    <string name="lhwf2b2"> Residential address (village name, mohalla name) </string>
+    <string name="lhwf2b3"> Contact # (optional) </string>
+    <string name="lhwf2c2"> # of PW in HH registered in last three months </string>
+    <string name="lhwf2c3"> Name of registered PW (any one) </string>
+    <string name="lhwf2c4"> Husband’s name </string>
+    <string name="lhwf2c5"> # of ANC visit(s) of PW </string>
+    <string name="lhwf2c6"> LHW vaccinated PW for TT vaccine </string>
+    <string name="lhwf2c7"> LHW referred for TT vaccine </string>
+    <string name="lhwf2c8"> LHW provided Iron folic acid to PW </string>
+    <string name="lhwf2c9"> LHW informed about danger signs </string>
+    <string name="lhwf2c10"> LHW counseled PW about ANC </string>
+    <string name="lhwf2c11"> LHW counseled PW about facility based delivery </string>
+    <string name="lhwf2header_d"> Section D: Maternal care after delivery </string>
+    <string name="lhwf2d2"> # of delivered women in HH in last three months </string>
+    <string name="lhwf2d3"> Name of mother delivered in last three months </string>
+    <string name="lhwf2d4"> Husband’s name </string>
+    <string name="lhwf2d5"> Where was delivery conducted? </string>
+    <string name="lhwf2d5_1"> Public HF </string>
+    <string name="lhwf2d5_2"> Private HF </string>
+    <string name="lhwf2d5_3"> CMW </string>
+    <string name="lhwf2d5_4"> Home </string>
+    <string name="lhwf2d6"> Outcome of delivery </string>
+    <string name="lhwf2d6_1"> still birth </string>
+    <string name="lhwf2d6_2"> live birth </string>
+    <string name="lhwf2d7"> Did LHW provide you clean delivery kit? </string>
+    <string name="lhwf2d8"> Did LHW inform you about use of kit? </string>
+    <string name="lhwf2d9"> LHW visited mother after delivery </string>
+    <string name="lhwf2d10"> LHW informed mother about danger signs after in her first PNC visit </string>
+    <string name="lhwf2d11"> LHW informed mother about PPH </string>
+    <string name="lhwf2d12"> LHW advised mother to visit health facility for PNC </string>
+    <string name="lhwf2header_e"> Section E: Newborn care </string>
+    <string name="lhwf2e2"> # of newborn registered in HH </string>
+    <string name="lhwf2e3"> Name of newborn (any one) </string>
+    <string name="lhwf2e4"> Name of mother </string>
+    <string name="lhwf2e5"> Birth weight recorded </string>
+    <string name="lhwf2e5a"> Where was newborn weighted? </string>
+    <string name="lhwf2e5a_1"> Health house </string>
+    <string name="lhwf2e5a_2"> Home </string>
+    <string name="lhwf2e5a_3"> Health Facility </string>
+    <string name="lhwf2e6"> Early initiation of breastfeeding recorded (within 24 hours) </string>
+    <string name="lhwf2e7"> Did newborn receive polio and BCG vaccine after birth </string>
+    <string name="lhwf2e8"> God Forbid, any neonatal death occurred in HH in last three months? </string>
+    <string name="lhwf2e9"> Did LHW visit newborn? </string>
+    <string name="lhwf2e10"> Did LHW inform mother about use of CHx </string>
+    <string name="lhwf2e11"> LHW informed mother about newborn danger signs </string>
+    <string name="lhwf2e12"> LHW referred in case of any newborn danger sign </string>
+    <string name="lhwf2e13"> Provided support to mother and newborn for initiation of breastfeeding </string>
+    <string name="lhwf2header_f"> Section F: Diarrhea Section </string>
+    <string name="lhwf2f3"> # of children less than five years of age in HH registered in last 3 months? </string>
+    <string name="lhwf2f4"> Name of child in HH who had diarrhea in last three months </string>
+    <string name="lhwf2f5"> Age of child (in months) in HH who had diarrhea in last three months </string>
+    <string name="lhwf2f6"> LHW provided ORS/LoORS for diarrhea </string>
+    <string name="lhwf2f7"> LHW provided Zinc DT/syrup for diarrhea </string>
+    <string name="lhwf2f8"> LHW referred child to the HF </string>
+    <string name="lhwf2f9"> Do you have EPI card of the child? </string>
+    <string name="lhwf2f10"> God forbid, any child mortality due to diarrhea in last three months </string>
+    <string name="lhwf2f11"> LHW educated mother about hand washing and sanitation. </string>
+    <string name="lhwf2f12"> LHW informed mother about danger signs of diarrhea. </string>
+    <string name="lhwf2f13"> LHW informed mother about home preparation of ORS. </string>
+    <string name="lhwf2header_g"> Section G: Cough or Difficult breathing </string>
+    <string name="lhwf2g3"> # of children in HH less than five years of age </string>
+    <string name="lhwf2g4"> Name of child in HH who had cough or difficult breathing in last three months </string>
+    <string name="lhwf2g5"> Age of child (in months) in HH who had cough or difficult breathing in last three months </string>
+    <string name="lhwf2g6"> LHW provided Amoxicillin DT/syrup </string>
+    <string name="lhwf2g7"> LHW referred child to the HF </string>
+    <string name="lhwf2g8"> Do you have EPI card of the child? </string>
+    <string name="lhwf2g9"> God forbid, any child mortality in HH due to pneumonia in last three months </string>
+    <string name="lhwf2g10"> LHW informed mother about danger signs of pneumonia </string>
+    <string name="lhwf2header_h"> Section H: Married Women of Reproductive Age </string>
+    <string name="lhwf2h2"> # of MWRA in HH </string>
+    <string name="lhwf2h3"> Name of MWRA in HH </string>
+    <string name="lhwf2h4"> Husband’s name </string>
+    <string name="lhwf2h5"> Age (in years) of MWRA </string>
+    <string name="lhwf2h6"> Did LHW visit in last three months? </string>
+    <string name="lhwf2h7"> What did she do in her visit? </string>
+    <string name="lhwf2h8"> Is there any PW in HH? </string>
+    <string name="lhwf2h9"> Is there any women delivered in last three months in HH? </string>
+    <string name="lhwf2h10"> Is there any newborn in the HH? </string>
+    <string name="lhwf2h11"> Is there any child under five years of age in HH? </string>
+
+
+    <!-- Form 4-->
+
+
+    <string name="lhwf4header_b"> Section B: Village Health Committee (VHC) </string>
+    <string name="lhwf4b0"> VHC Member Name </string>
+    <string name="lhwf4b1"> Are you aware of VHC? </string>
+    <string name="lhwf4b2"> Are you member of VHC? </string>
+    <string name="lhwf4b3"> # Of members (you know) in VHC? </string>
+    <string name="lhwf4b4"> Members name </string>
+    <string name="lhwf4b5"> Meeting conducted last month. </string>
+    <string name="lhwf4b6"> The decisions (if any) made in meeting were recorded by LHW? </string>
+
+
+
+    <!-- Form 6 -->
+
+
+    <string name="lhwf6header_b"> Section B: Village Health Committee (VHC) </string>
+    <string name="lhwf6b0"> WSG Member Name </string>
+    <string name="lhwf6b1"> Are you aware of WSG </string>
+    <string name="lhwf6b2"> Are you member of WSG </string>
+    <string name="lhwf6b3"> How many members (u know) are there in WSG? </string>
+    <string name="lhwf6b4"> # of sessions held in last month </string>
+    <string name="lhwf6b5"> # of participants attended the session </string>
+    <string name="lhwf6b6"> Topics covered in session </string>
+    <string name="lhwf6b6_1"> Maternal care during pregnancy </string>
+    <string name="lhwf6b6_2"> Maternal care after delivery </string>
+    <string name="lhwf6b6_3"> Newborn care </string>
+    <string name="lhwf6b6_4"> Diarrhea </string>
+    <string name="lhwf6b6_5"> Pneumonia </string>
+    <string name="lhwf6b6_6"> WASH </string>
+    <string name="lhwf6b6_7"> Family Planning </string>
+    <string name="lhwf6b6_8"> Immunization </string>
+
+
 
 </resources>
 

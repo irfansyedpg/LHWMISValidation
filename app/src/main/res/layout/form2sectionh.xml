@@ -1,0 +1,474 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LHWDashbord">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="com.irfansyed.umeedenau.validation.Form2SectionH" />
+    </data>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="50dip">
+        <!-- Parent layout starts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F1F1"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/uncolor"
+                    />
+                <TextView
+                    style="@style/TextView"
+                    android:text="@string/lhwf2header_h"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#008E45"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/hitnscolor" />
+
+
+
+
+
+            <!-- lhwf2h2 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h2"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h2"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_number"
+                        android:id="@+id/lhwf2h2"
+                        android:maxLength="1"
+                        android:hint="@string/lhwf2h2"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h2 ends-->
+
+            <!-- lhwf2h3 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h3"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h3"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_varchar"
+                        android:id="@+id/lhwf2h3"
+                        android:maxLength="20"
+                        android:hint="@string/lhwf2h3"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h3 ends-->
+
+            <!-- lhwf2h4 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h4"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h4"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_varchar"
+                        android:id="@+id/lhwf2h4"
+                        android:maxLength="20"
+                        android:hint="@string/lhwf2h4"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h4 ends-->
+
+
+
+            <!-- lhwf2h5 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h5"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h5"
+
+                        />
+
+
+                    <EditText
+                        style="@style/EditText_number"
+                        android:id="@+id/lhwf2h5"
+                        android:maxLength="2"
+                        android:hint="@string/lhwf2h5"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h5 ends-->
+
+
+
+            <!-- lhwf2h6 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h6"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h6"
+
+                        />
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h6_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h6_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h6 ends-->
+
+            <!-- lhwf2h7 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h7"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h7"
+
+                        />
+
+
+                    <EditText
+                        style="@style/EditText_varchar"
+                        android:id="@+id/lhwf2h7"
+                        android:maxLength="200"
+                        android:hint="@string/lhwf2h7"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h7 ends-->
+
+
+            <!-- lhwf2h8 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h8"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h8"
+
+                        />
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h8_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h8_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h8 ends-->
+
+
+            <!-- lhwf2h9 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h9"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h9"
+
+                        />
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h9_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h9_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h9 ends-->
+
+
+            <!-- lhwf2h10 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h10"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h10"
+
+                        />
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h10_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h10_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h10 ends-->
+
+
+
+            <!-- lhwf2h11 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h11"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2h11"
+
+                        />
+                    <RadioGroup
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h11_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h11_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h11 ends-->
+
+
+
+
+            <!-- Button -->
+            <android.support.v7.widget.CardView
+                style="@style/Q_CardView"
+
+                >
+
+
+
+
+                <Button
+                    android:id="@+id/btn_lhw_office"
+                    style="@style/Button_Next"
+                    android:layout_margin="10dp"
+                    android:layout_weight="50"
+                    android:text="LHW Office " />
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Button Next Ends-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>
