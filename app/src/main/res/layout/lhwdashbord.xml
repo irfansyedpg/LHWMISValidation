@@ -47,6 +47,37 @@
 
 
 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/uncolor"
+                    />
+                <TextView
+                    style="@style/TextView"
+                    android:text="Select LHW Information"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#008E45"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/hitnscolor" />
+
+
+
+
 
 
 
@@ -190,13 +221,13 @@
 
                     <LinearLayout style="@style/Q_Linerlayout_v">
 
-                        <Spinner
-                            style="@style/Combox"
+                        <TextView
+                            style="@style/TextView"
                             android:id="@+id/lhwf1a4"
                             >
 
 
-                        </Spinner>
+                        </TextView>
 
 
                     </LinearLayout>

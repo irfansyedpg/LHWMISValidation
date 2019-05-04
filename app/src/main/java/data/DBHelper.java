@@ -50,6 +50,9 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(TableF6SectionB.getCreateQuery());
 
 
+        db.execSQL(TableLoginData.getCreateQuery());
+
+
 
 
 

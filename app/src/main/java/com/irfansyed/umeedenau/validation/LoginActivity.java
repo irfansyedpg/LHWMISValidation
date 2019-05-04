@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -22,10 +23,15 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
+import data.LocalDataManager;
 import utils.MyPreferences;
 import utils.PostRequestData;
+
+import static data.LocalDataManager.database;
 
 public class LoginActivity extends AppCompatActivity implements View.OnTouchListener {
 
@@ -41,6 +47,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
         final MyPreferences preferences = new MyPreferences(this);
 
 
+        textPassword.setText("puser21");
+        textUsername.setText("user21");
 
         textlogout.setOnTouchListener(this);
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -192,18 +200,46 @@ class LoginAsync extends AsyncTask {
                 // for login id and data collectore Name irfan
 
              //   Toast.makeText(mContext, resp, Toast.LENGTH_SHORT).show();
-                String[] resp_arry=resp.split("/");
-                String userid=resp_arry[0];
+                String[] resp_arry=resp.split("!");
+
+                String Distric=resp_arry[0];
+                String tehsil=resp_arry[1];
+                String Reporting_LHS=resp_arry[2];
+                String Reporting_HF=resp_arry[3];
+                String LHW_name=resp_arry[4];
+                String lhw_ids=resp_arry[5];
 
 
+                String[] lst_Distric=Distric.split("%");
+                String[] lst_tehsil=tehsil.split("%");
+                String[] lst_Reporting_LHS=Reporting_LHS.split("%");
+                String[] lst_DReporting_HF=Reporting_HF.split("%");
+                String[] lst_LHW_name=LHW_name.split("%");
+                String[] lst_lhw_ids=lhw_ids.split("%");
 
-                prefs.setUserId(Integer.parseInt(userid));
+
+                for(int i=0;i<lst_Distric.length;i++)
+                {
+                    if(i==0)
+                    {
+                        Delelte_date();
+                    }
+
+                    insert_data(lst_Distric[i],lst_tehsil[i],lst_Reporting_LHS[i],
+
+                            lst_DReporting_HF[i],lst_LHW_name[i],lst_lhw_ids[i]
+                            );
+
+                }
+
 
                 prefs.setUsername(mUsername);
                 prefs.setPassword(mPassword);
                 prefs.setName(mUsername);
-                prefs.setUserId(Integer.parseInt(userid));
-                prefs.setLHWIDS(resp);
+                prefs.setUserId(1);
+
+
+             //   prefs.setLHWIDS(resp);
 
                 // redirect to another activity from here..
                 Intent intent = new Intent(mContext, HomeActivity.class);
@@ -229,6 +265,36 @@ class LoginAsync extends AsyncTask {
 
         super.onPostExecute(o);
     }
+
+
+    public void insert_data(String district,String Tehsil,String Reporting_LHS,String Reporting_HF,String LHW_Name,String LHW_Ids) {
+
+
+        String query = "insert into  TableLoginData (District,Tehsil,Reporting_LHS,Reporting_HF,LHW_Name,LHW_Ids) values('"+
+
+                district+"','"+Tehsil+"','"+Reporting_LHS+"','"+Reporting_HF+"','"+LHW_Name+"','"+LHW_Ids+"')";
+
+        query = String.format(query);
+
+        LocalDataManager validationactivity = new LocalDataManager(mContext);
+
+        validationactivity.database.execSQL(query);
+
+    }
+
+    public void Delelte_date() {
+
+
+        String query = " Delete from   TableLoginData ";
+
+        query = String.format(query);
+
+        LocalDataManager validationactivity = new LocalDataManager(mContext);
+
+        validationactivity.database.execSQL(query);
+
+    }
+
 }
 // end of Async - Login Class
 

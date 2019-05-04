@@ -26,7 +26,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     //    if (preferences.getReq1() == null) {
          //  preferences.setReq1("http://43.245.131.159/umeed/Monitoring");
 
-        preferences.setReqLogin("http://43.245.131.159/cmapp/Testing/check_user_id");
+      //  preferences.setReqLogin("http://43.245.131.159/cmapp/Testing/check_user_id");
         preferences.setReq1("http://43.245.131.159/cmapp/Testing/insert_Main");
         preferences.setReq2("http://43.245.131.159/cmapp/Testing/insert_vali_R");
         preferences.setReq3("http://43.245.131.159/cmapp/Testing/insert_MR");
@@ -38,7 +38,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
         //    preferences.setReq1("http://43.245.131.159/umeed/Testing/Monitoring");
-        //    preferences.setReqLogin("http://192.168.1.115:61259///Testing/check_user_id");
+            preferences.setReqLogin("http://10.199.3.64:61259///Testing/check_user_id");
 
      //   }
         new Handler().postDelayed(new Runnable() {
@@ -53,8 +53,8 @@ public class SplashScreenActivity extends AppCompatActivity {
                 } else {
                   //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
                 }
-             //   mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
-               mainIntent = new Intent(SplashScreenActivity.this, LHWDashbord.class);
+                mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+             // mainIntent = new Intent(SplashScreenActivity.this, LHWDashbord.class);
 
                     SplashScreenActivity.this.startActivity(mainIntent);
                     SplashScreenActivity.this.finish();

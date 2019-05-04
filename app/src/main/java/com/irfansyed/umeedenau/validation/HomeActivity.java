@@ -88,7 +88,7 @@ public class HomeActivity extends AppCompatActivity
 
 
         if (id == R.id.stage_2) {
-            intent = new Intent(this, pendinginterviews.class);
+            intent = new Intent(this, LHWDashbord.class);
         }
 
 
