@@ -241,11 +241,11 @@
 
 
                 <Button
-                    android:id="@+id/btn_lhw_office"
+                    android:id="@+id/btn_Next"
                     style="@style/Button_Next"
                     android:layout_margin="10dp"
                     android:layout_weight="50"
-                    android:text="LHW Office " />
+                    android:text="Submit " />
 
 
 

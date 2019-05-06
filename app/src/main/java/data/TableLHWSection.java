@@ -14,7 +14,11 @@ public class TableLHWSection {
                 Global.lhwf1a1+"  Text, "+
                 Global.lhwf1a2+"  Text, "+
                 Global.lhwf1a3+"  Text, "+
-                Global.lhwf1a4+"  Text "+
+                Global.lhwf1a4+"  Text, "+
+                "status"+"  Text, "+
+                "HH_count"+"  Text, "+
+                "VHC_count"+"  Text, "+
+                "WSG_count"+"  Text "+
 
 
 

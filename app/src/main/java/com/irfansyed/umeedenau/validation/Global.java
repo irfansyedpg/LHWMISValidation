@@ -5,6 +5,12 @@ public class Global {
 
 
 
+
+    public  static  int LhwSection_id;
+    public  static  int HH_count;
+    public  static  int VHC_count;
+    public  static  int WSG_cout;
+
     public static  String server_id="";
     public static  String datee="datee";
     public static  String timee="timee";

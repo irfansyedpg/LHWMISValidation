@@ -22,7 +22,7 @@ public  class Form1SectionD extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         bin= DataBindingUtil.setContentView(this, R.layout.form1sectiond);
 
-
+        bin.btnNext.setOnClickListener(this);
 
 
 
@@ -37,6 +37,7 @@ public  class Form1SectionD extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view)
     {
 
+        this.finish();
     }
 
 

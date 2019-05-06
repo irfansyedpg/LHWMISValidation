@@ -21,6 +21,7 @@ public  class Form1SectionH extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         bin= DataBindingUtil.setContentView(this, R.layout.form1sectionh);
 
+         bin.btnNext.setOnClickListener(this);
 
 
     }
@@ -33,6 +34,7 @@ public  class Form1SectionH extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view)
     {
+        this.finish();
 
     }
 

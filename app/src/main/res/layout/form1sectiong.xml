@@ -430,7 +430,7 @@
                     style="@style/Button_Next"
                     android:layout_margin="10dp"
                     android:layout_weight="50"
-                    android:text="Next " />
+                    android:text="Submit " />
 
 
 
