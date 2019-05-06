@@ -1,4 +1,4 @@
-package com.irfansyed.validation;
+package utils;
 
 import android.support.v7.widget.CardView;
 import android.view.View;

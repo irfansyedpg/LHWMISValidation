@@ -363,7 +363,7 @@
                         <RadioButton
                             android:id="@+id/lhwf1c8_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="@string/rb_yes"/>
 
                         <RadioButton
                             android:id="@+id/lhwf1c8_2"
