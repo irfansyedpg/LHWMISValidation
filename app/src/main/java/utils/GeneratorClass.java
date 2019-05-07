@@ -1,6 +1,7 @@
 package utils;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.CheckBox;
@@ -10,14 +11,18 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
+import com.irfansyed.umeedenau.validation.Global;
+
 import java.util.HashMap;
 
 import data.LocalDataManager;
 
+import static data.LocalDataManager.database;
+
 
 public abstract class GeneratorClass {
 
-   static HashMap<String, String> Has_Map = new HashMap<>();
+  public static HashMap<String, String> Has_Map = new HashMap<>();
 
     public static HashMap<String,String> Insert_table(LinearLayout lv, boolean flag, String... convention) {
 
@@ -40,7 +45,7 @@ public abstract class GeneratorClass {
                 } else if (view instanceof RadioGroup) {
 
                     RadioGroup rdp = (RadioGroup) view;
-                    assig_id += ValidatorClass.getIDComponent(rdp);
+                    assig_id += ValidatorClass_1.getIDComponent(rdp);
                     int rdbID = rdp.getCheckedRadioButtonId();
 
                     if (rdbID != -1) {
@@ -51,7 +56,7 @@ public abstract class GeneratorClass {
 
                                 RadioButton rdb = rdp.findViewById(((RadioGroup) view).getChildAt(j).getId());
 
-                                Has_Map.put(assig_id, getValues(ValidatorClass.getIDComponent(rdb)));
+                                Has_Map.put(assig_id, getValues(ValidatorClass_1.getIDComponent(rdb)));
 
                                 break;
                             }
@@ -62,17 +67,17 @@ public abstract class GeneratorClass {
                     }
 
                 } else if (view instanceof EditText) {
-                    assig_id += ValidatorClass.getIDComponent(view);
+                    assig_id += ValidatorClass_1.getIDComponent(view);
                     Has_Map.put(assig_id, ((EditText) view).getText().toString());
                 } else if (view instanceof CheckBox) {
-                    assig_id += ValidatorClass.getIDComponent(view);
+                    assig_id += ValidatorClass_1.getIDComponent(view);
                     if (((CheckBox) view).isChecked()) {
                         Has_Map.put(assig_id, getValues(assig_id));
                     } else {
                         Has_Map.put(assig_id, "0");
                     }
                 } else if (view instanceof Spinner) {
-                    assig_id += ValidatorClass.getIDComponent(view);
+                    assig_id += ValidatorClass_1.getIDComponent(view);
                     if (((Spinner) view).getSelectedItemPosition() != 0) {
                         Has_Map.put(assig_id, ((Spinner) view).getSelectedItem().toString());
                     } else {
@@ -121,8 +126,14 @@ public abstract class GeneratorClass {
     }
 
 
-    public static   void inert_db(String table_Name, Context mContext)
+    public static   void inert_db(String table_Name, Context mContext,HashMap<String,String> has_columns)
     {
+
+
+
+        Has_Map.putAll(has_columns);
+
+
         Object[] keys = Has_Map.keySet().toArray();
         String vv="";
         String kkg="";
@@ -157,6 +168,35 @@ public abstract class GeneratorClass {
         validationactivity.database.execSQL(query);
 
         int i=0;
+    }
+
+
+    public static int hh_section_count(String tbl_name, Context mContext)
+    {
+        int count=0;
+
+        String query2 = "select lhw.id from  TableLHWSection lhw join "+tbl_name+" tb2 "+
+        " on lhw.id=tb2.LhwSectionPKId where lhw.status='0' and tb2.LhwSectionPKId='"+Global.LhwSection_id+"'";
+
+        LocalDataManager Lm = new LocalDataManager(mContext);
+        Cursor c = database.rawQuery(query2, null);
+
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+
+
+                    count++;
+
+
+                } while (c.moveToNext());
+            }
+        }
+
+        return count;
+
+
     }
 
 }

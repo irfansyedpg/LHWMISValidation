@@ -38,7 +38,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
         //    preferences.setReq1("http://43.245.131.159/umeed/Testing/Monitoring");
-            preferences.setReqLogin("http://10.199.3.64:61259///Testing/check_user_id");
+            preferences.setReqLogin("http://10.199.16.98:61259///Testing/check_user_id");
 
      //   }
         new Handler().postDelayed(new Runnable() {
@@ -53,8 +53,8 @@ public class SplashScreenActivity extends AppCompatActivity {
                 } else {
                   //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
                 }
-             //   mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
-              mainIntent = new Intent(SplashScreenActivity.this, Form1SectionC.class);
+                mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+             // mainIntent = new Intent(SplashScreenActivity.this, Form1SectionC.class);
 
                     SplashScreenActivity.this.startActivity(mainIntent);
                     SplashScreenActivity.this.finish();

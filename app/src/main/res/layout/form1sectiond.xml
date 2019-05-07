@@ -62,7 +62,9 @@
                 android:layout_marginBottom="10dp"
                 android:background="@color/hitnscolor" />
 
-
+        <LinearLayout
+            android:id="@+id/Dsection"
+            style="@style/Q_Linerlayout_v">
 
 
             <!-- lhwf1d1 starts -->
@@ -218,6 +220,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf1d5"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -267,6 +270,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf1d6"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -288,6 +292,7 @@
 
 
 
+        </LinearLayout>
 
 
 

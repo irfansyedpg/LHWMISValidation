@@ -61,7 +61,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
 
         if (logic_error() == true) {
-            showLhwSelection(boolSourceRegister);
+
 
             if (boolSourceRegister == true) {
 
@@ -85,6 +85,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
                     );
                 }
             }
+            showLhwSelection(boolSourceRegister);
         }
     }
 
@@ -92,6 +93,9 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
     // Alert lhw selection
 
     void showLhwSelection(final boolean boolSourceRegister) {
+
+        get_HH_counts();
+
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
         builder.setTitle("LHW Selection");
@@ -383,9 +387,9 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
 
     void insert_db(String a1, String a2, String a3, String a4) {
-        String query = "insert into  TableLHWSection (lhwf1a1,lhwf1a2,lhwf1a3,lhwf1a4,status,HH_count,VHC_count,WSG_count) values('" +
+        String query = "insert into  TableLHWSection (lhwf1a1,lhwf1a2,lhwf1a3,lhwf1a4,status) values('" +
 
-                a1 + "','" + a2 + "','" + a3 + "','" + a4 + "','0','0','0','0')";
+                a1 + "','" + a2 + "','" + a3 + "','" + a4 + "','0')";
 
         query = String.format(query);
 
@@ -394,15 +398,13 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
         validationactivity.database.execSQL(query);
     }
 
-    int hh_count=0;
-    int vhc_count=0;
-    int wsg_count=0;
+
     int LHWsection_Pk_Id=0;
     String get_status_interview(String a1, String a2, String a3, String a4) {
 
         String status = "1";
 
-        String query = "select status,HH_count,VHC_count,WSG_count,id from  TableLHWSection where lhwf1a1='" + a1 + "'" +
+        String query = "select status,id from  TableLHWSection where lhwf1a1='" + a1 + "'" +
 
                 " and lhwf1a2='" + a2 + "'" +
                 " and lhwf1a3='" + a3 + "'";
@@ -419,10 +421,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
                 do {
 
                     status = c.getString(0);
-                    hh_count= c.getInt(1);
-                    vhc_count= c.getInt(2);
-                    wsg_count= c.getInt(3);
-                    LHWsection_Pk_Id= c.getInt(4);
+                    LHWsection_Pk_Id= c.getInt(1);
 
 
                 } while (c.moveToNext());
@@ -431,11 +430,36 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
 
         Global.LhwSection_id=LHWsection_Pk_Id;
-        Global.HH_count=hh_count;
-        Global.WSG_cout=wsg_count;
-        Global.VHC_count=vhc_count;
+
 
         return status;
+
+    }
+
+    int hh_count=0;
+    int vhc_count=0;
+    int wsg_count=0;
+    void get_HH_counts() {
+
+        hh_count=0;
+
+        String query2 = "select id from  TableHHSection where FK_id='" + Global.LhwSection_id + "'";
+
+        LocalDataManager Lm = new LocalDataManager(this);
+        Cursor c = database.rawQuery(query2, null);
+
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+
+
+                    hh_count++;
+
+
+                } while (c.moveToNext());
+            }
+        }
 
     }
 }
