@@ -11,6 +11,7 @@ public class TableHHSection {
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'FK_id' INTEGER,   " +
 
 
+                Global.Section+"  Text, "+
                 Global.lhwf1b1+"  Text, "+
                 Global.lhwf1b2+"  Text, "+
                 Global.lhwf1b3+"  Text "+

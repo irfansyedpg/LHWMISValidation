@@ -455,6 +455,7 @@ public class Global {
     public static String lhwf1a3="lhwf1a3";
     public static String lhwf1a4="lhwf1a4";
 
+    public static String Section="Section";
     public static String lhwf1b1="lhwf1b1";
     public static String lhwf1b2="lhwf1b2";
     public static String lhwf1b3="lhwf1b3";
@@ -583,7 +584,9 @@ public class Global {
     public static String lhwf3b1="lhwf3b1";
     public static String lhwf3b2="lhwf3b2";
     public static String lhwf3b3="lhwf3b3";
-    public static String lhwf3b4="lhwf3b4";
+    public static String lhwf3b4a="lhwf3b4a";
+    public static String lhwf3b4b="lhwf3b4b";
+    public static String lhwf3b4c="lhwf3b4c";
     public static String lhwf3b5="lhwf3b5";
     public static String lhwf3b6="lhwf3b6";
 
@@ -599,7 +602,9 @@ public class Global {
     public static String lhwf5b2="lhwf5b2";
     public static String lhwf5b3="lhwf5b3";
     public static String lhwf5b4="lhwf5b4";
-    public static String lhwf5b5="lhwf5b5";
+    public static String lhwf5b5a="lhwf5b5a";
+    public static String lhwf5b5b="lhwf5b5b";
+    public static String lhwf5b5c="lhwf5b5c";
     public static String lhwf5b6="lhwf5b6";
     public static String lhwf5b7_1="lhwf5b7_1";
     public static String lhwf5b7_2="lhwf5b7_2";

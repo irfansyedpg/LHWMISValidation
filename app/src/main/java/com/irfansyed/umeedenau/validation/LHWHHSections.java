@@ -107,6 +107,7 @@ public  class LHWHHSections extends AppCompatActivity implements View.OnClickLis
             public void onClick(View v) {
 
                 int requestCode=0;
+                String Section="";
 
 
                 if(Gothrough.IamHiden(lv_lhwf1b1)==false)
@@ -122,36 +123,44 @@ public  class LHWHHSections extends AppCompatActivity implements View.OnClickLis
                 {
                     intt=new Intent(getBaseContext(),Form1SectionC.class);
                     requestCode=1;
+                    Section="TableF1SectionC";
+
+
                 }
                 else if(click_view.getId()==R.id.btnSectionD)
                 {
                     intt=new Intent(getBaseContext(),Form1SectionD.class);
                     requestCode=2;
+                    Section="TableF1SectionD";
                 }
                 else if(click_view.getId()==R.id.btnSectionE)
                 {
                     intt=new Intent(getBaseContext(),Form1SectionE.class);
                     requestCode=3;
+                    Section="TableF1SectionE";
                 }
                 else if(click_view.getId()==R.id.btnSectionF)
                 {
                     intt=new Intent(getBaseContext(),Form1SectionF.class);
                     requestCode=4;
+                    Section="TableF1SectionF";
                 }
                 else if(click_view.getId()==R.id.btnSectionG)
                 {
                     intt=new Intent(getBaseContext(),Form1SectionG.class);
                     requestCode=5;
+                    Section="TableF1SectionG";
                 }
                 else
                 {
                     intt=new Intent(getBaseContext(),Form1SectionH.class);
                     requestCode=6;
+                    Section="TableF1SectionH";
                 }
 
 
 
-insert_db(lhwf1b1.getText().toString(),lhwf1b2.getText().toString(),lhwf1b3.getText().toString());
+insert_db(lhwf1b1.getText().toString(),lhwf1b2.getText().toString(),lhwf1b3.getText().toString(),Section);
 
 
                 dialog.dismiss();
@@ -232,11 +241,11 @@ insert_db(lhwf1b1.getText().toString(),lhwf1b2.getText().toString(),lhwf1b3.getT
         }
     }
 
-    public void insert_db(String lhwf1b1,String lhwf1b2,String lhwf1b3 )
+    public void insert_db(String lhwf1b1,String lhwf1b2,String lhwf1b3,String Section )
     {
-        String query = "insert into  TableHHSection (lhwf1b1,lhwf1b2,lhwf1b3,FK_id) values('" +
+        String query = "insert into  TableHHSection (lhwf1b1,lhwf1b2,lhwf1b3,FK_id,Section) values('" +
 
-                lhwf1b1 + "','" + lhwf1b2 + "','" + lhwf1b3 + "','" + Global.LhwSection_id+"')";
+                lhwf1b1 + "','" + lhwf1b2 + "','" + lhwf1b3 + "','" + Global.LhwSection_id+"','"+Section+  "')";
 
         query = String.format(query);
 

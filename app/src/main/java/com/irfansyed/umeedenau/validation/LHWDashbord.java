@@ -95,24 +95,26 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
     void showLhwSelection(final boolean boolSourceRegister) {
 
         get_HH_counts();
+        get_vhc_counts();
+        get_wsg_counts();
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
         builder.setTitle("LHW Selection");
         final View dialogLayout = inflater.inflate(R.layout.lhwselection, null);
         builder.setView(dialogLayout);
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-            }
-        });
+
+        final AlertDialog dialog = builder.create();
+
+
+
         builder.setCancelable(false);
-        builder.show();
+        dialog.show();
 
         final Button btnHH = dialogLayout.findViewById(R.id.btn_HH);
         final Button btnVHC = dialogLayout.findViewById(R.id.btn_vhc);
         final Button btnWSG = dialogLayout.findViewById(R.id.btn_WSG);
+        final Button btnCance = dialogLayout.findViewById(R.id.btnCance);
 
 
 
@@ -122,6 +124,25 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
             btnVHC.setText("Validate VHC("+vhc_count+")");
             btnWSG.setText("Validate WSG("+wsg_count+")");
 
+
+            if(vhc_count>0)
+            {
+                btnVHC.setVisibility(View.GONE);
+
+            }
+            if(wsg_count>0)
+            {
+
+                btnWSG.setVisibility(View.GONE);
+
+            }
+            if(hh_count>9)
+            {
+
+                btnHH.setVisibility(View.GONE);
+
+            }
+
         }
         else
         {
@@ -130,6 +151,16 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
             btnWSG.setText("Validate WSG");
 
         }
+
+
+        btnCance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                dialog.dismiss();
+
+            }
+        });
 
         // button HH
 
@@ -147,6 +178,8 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
                     startActivity(intt);
 
                 }
+
+                dialog.dismiss();
 
             }
         });
@@ -167,6 +200,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
                     Intent intt = new Intent(getBaseContext(), PendingInterviewsVHC.class);
                     startActivity(intt);
                 }
+                dialog.dismiss();
             }
         });
 
@@ -185,6 +219,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
                     Intent intt = new Intent(getBaseContext(), PendingInterviewsWSG.class);
                     startActivity(intt);
                 }
+                dialog.dismiss();
             }
         });
     }
@@ -455,6 +490,53 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
 
                     hh_count++;
+
+
+                } while (c.moveToNext());
+            }
+        }
+
+    }
+
+    void get_vhc_counts() {
+
+        vhc_count=0;
+
+        String query2 = "select id from  TableF3SectionB where FK_id='" + Global.LhwSection_id + "'";
+
+        LocalDataManager Lm = new LocalDataManager(this);
+        Cursor c = database.rawQuery(query2, null);
+
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+
+
+                    vhc_count++;
+
+
+                } while (c.moveToNext());
+            }
+        }
+
+    }
+    void get_wsg_counts() {
+
+        wsg_count=0;
+
+        String query2 = "select id from  TableF5SectionB where FK_id='" + Global.LhwSection_id + "'";
+
+        LocalDataManager Lm = new LocalDataManager(this);
+        Cursor c = database.rawQuery(query2, null);
+
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+
+
+                    wsg_count++;
 
 
                 } while (c.moveToNext());

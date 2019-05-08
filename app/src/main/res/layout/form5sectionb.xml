@@ -63,7 +63,9 @@
                 android:background="@color/hitnscolor" />
 
 
-
+        <LinearLayout
+            android:id="@+id/SectionB"
+            style="@style/Q_Linerlayout_v">
 
             <!-- lhwf5b1 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
@@ -87,15 +89,16 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf5b1"
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/lhwf5b1_yes"
+                            android:id="@+id/lhwf5b1_1"
                             style="@style/RadioButton"
                             android:text="@string/rb_yes"/>
 
                         <RadioButton
-                            android:id="@+id/lhwf5b1_no"
+                            android:id="@+id/lhwf5b1_2"
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
 
@@ -112,6 +115,7 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
 
+                android:visibility='@{lhwf5b12.checked? View.GONE : View.VISIBLE}'
                 >
 
 
@@ -142,7 +146,7 @@
 
             <!-- lhwf5b3 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
-
+                android:visibility='@{lhwf5b12.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -174,7 +178,7 @@
 
             <!-- lhwf5b4 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
-
+                android:visibility='@{lhwf5b12.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -206,16 +210,16 @@
 
 
 
-            <!-- lhwf5b5 starts -->
+            <!-- lhwf5b5a starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
-
+                android:visibility='@{lhwf5b12.checked? View.GONE : View.VISIBLE}'
 
                 >
 
 
 
                 <LinearLayout
-                    android:id="@+id/Lv_lhwf5b5"
+                    android:id="@+id/Lv_lhwf5b5a"
                     style="@style/Q_Linerlayout_v"
 
                     >
@@ -223,25 +227,92 @@
                     <TextView
 
                         style="@style/TextView"
-                        android:text="@string/lhwf5b5"
+                        android:text="@string/lhwf5b5a"
 
                         />
 
                     <EditText
                         style="@style/EditText_varchar"
-                        android:id="@+id/lhwf5b5"
-                        android:maxLength="5"
-                        android:hint="@string/lhwf5b5"/>
+                        android:id="@+id/lhwf5b5a"
+                        android:maxLength="10"
+                        android:hint="@string/lhwf5b5a"/>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
-            <!-- lhwf5b5 ends-->
+            <!-- lhwf5b5a ends-->
+
+
+
+            <!-- lhwf5b5b starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{lhwf5b12.checked? View.GONE : View.VISIBLE}'
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf5b5b"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf5b5b"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_varchar"
+                        android:id="@+id/lhwf5b5b"
+                        android:maxLength="10"
+                        android:hint="@string/lhwf5b5b"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf5b5b ends-->
+
+
+
+
+            <!-- lhwf5b5c starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+                android:visibility='@{lhwf5b12.checked? View.GONE : View.VISIBLE}'
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf5b5c"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf5b5c"
+
+                        />
+
+                    <EditText
+                        style="@style/EditText_varchar"
+                        android:id="@+id/lhwf5b5c"
+                        android:maxLength="10"
+                        android:hint="@string/lhwf5b5c"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf5b5c ends-->
 
 
             <!-- lhwf5b6 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-
+                android:visibility='@{lhwf5b12.checked? View.GONE : View.VISIBLE}'
                 >
 
 
@@ -273,7 +344,7 @@
             <!-- lhwf5b7 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-
+                android:visibility='@{lhwf5b12.checked? View.GONE : View.VISIBLE}'
                 >
 
 
@@ -346,6 +417,8 @@
 
 
 
+        </LinearLayout>
+
             <!-- Button -->
             <android.support.v7.widget.CardView
                 style="@style/Q_CardView"
@@ -356,7 +429,7 @@
 
 
                 <Button
-                    android:id="@+id/btn_lhw_office"
+                    android:id="@+id/btnNext"
                     style="@style/Button_Next"
                     android:layout_margin="10dp"
                     android:layout_weight="50"

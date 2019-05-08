@@ -137,7 +137,9 @@
     <string name="lhwf3b1"> Did LHW form VHC? </string>
     <string name="lhwf3b2"> Availability of VHC meeting recording form? </string>
     <string name="lhwf3b3"> Total # of members mentioned in meeting recording form </string>
-    <string name="lhwf3b4"> Members name </string>
+    <string name="lhwf3b4a"> Member1 name </string>
+    <string name="lhwf3b4b"> Member2 name </string>
+    <string name="lhwf3b4c"> Member3 name </string>
     <string name="lhwf3b5"> Meeting conducted last month? </string>
     <string name="lhwf3b6"> Record kept for last meeting in recording form? </string>
 
@@ -150,7 +152,10 @@
     <string name="lhwf5b3"> # of meetings held in previous month mentioned in meeting report/form </string>
 
     <string name="lhwf5b4"> # of members mentioned in WSG meeting report/form </string>
-    <string name="lhwf5b5"> Members name </string>
+    <string name="lhwf5b5a"> Member1 name </string>
+    <string name="lhwf5b5b"> Member2 name </string>
+    <string name="lhwf5b5c"> Member3 name </string>
+
     <string name="lhwf5b6"> # of participants attended the session mentioned in meeting report/form </string>
     <string name="lhwf5b7"> Topics covered in session </string>
     <string name="lhwf5b7_1"> Maternal care during pregnancy </string>
