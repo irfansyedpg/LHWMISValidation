@@ -38,7 +38,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
         //    preferences.setReq1("http://43.245.131.159/umeed/Testing/Monitoring");
-            preferences.setReqLogin("http://10.198.97.166:61259///Testing/check_user_id");
+            preferences.setReqLogin("http://10.199.5.216:61259///Testing/check_user_id");
 
      //   }
         new Handler().postDelayed(new Runnable() {

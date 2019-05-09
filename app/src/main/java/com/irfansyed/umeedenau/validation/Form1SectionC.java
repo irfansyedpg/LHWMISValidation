@@ -82,6 +82,7 @@ public  class Form1SectionC extends AppCompatActivity implements View.OnClickLis
 
         Has_Map.put("FK_id",Global.LhwHH_id+"");
         Has_Map.put("LhwSectionPKId",Global.LhwSection_id+"");
+        Has_Map.put("Status","0");
 
         GeneratorClass.Insert_table(bin.pp,true);
         GeneratorClass.inert_db("TableF1SectionC",this,Has_Map);

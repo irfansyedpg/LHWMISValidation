@@ -12,6 +12,7 @@ public class TableF1SectionG {
 
 
                 Global.LhwSectionPKId+"  Text, "+
+                "Status  Text, "+
                 Global.lhwf1g1+"  Text, "+
                 Global.lhwf1g2+"  Text, "+
                 Global.lhwf1g3+"  Text, "+

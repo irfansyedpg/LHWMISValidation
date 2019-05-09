@@ -68,6 +68,7 @@ public  class Form5SectionB extends AppCompatActivity implements View.OnClickLis
 
 
         Has_Map.put("FK_id",Global.LhwSection_id+"");
+        Has_Map.put("Status","0");
 
 
         GeneratorClass.Insert_table(bin.SectionB,true);

@@ -11,7 +11,7 @@ public class TableF2SectionG {
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'FK_id' INTEGER,   " +
 
 
-
+                Global.LhwSectionPKId+"  Text, "+
                 Global.lhwf2g3+"  Text, "+
                 Global.lhwf2g4+"  Text, "+
                 Global.lhwf2g5+"  Text, "+

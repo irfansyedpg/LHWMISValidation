@@ -13,7 +13,7 @@ public class TableF2SectionD {
 
 
 
-
+                Global.LhwSectionPKId+"  Text, "+
                 Global.lhwf2d2+"  Text, "+
                 Global.lhwf2d3+"  Text, "+
                 Global.lhwf2d4+"  Text, "+

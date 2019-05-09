@@ -14,7 +14,7 @@ public class TableF3SectionB {
 
 
 
-
+                " Status  Text, "+
                 Global.lhwf3b1+"  Text, "+
                 Global.lhwf3b2+"  Text, "+
                 Global.lhwf3b3+"  Text, "+

@@ -199,4 +199,15 @@ public abstract class GeneratorClass {
 
     }
 
+
+    public  static  void HH_update_Form1(String tbl_name,String pk_id, Context mContext)
+    {
+
+      String  query ="update "+tbl_name+" set Status='1' where id="+pk_id;
+
+        LocalDataManager validationactivity = new LocalDataManager(mContext);
+
+        validationactivity.database.execSQL(query);
+    }
+
 }

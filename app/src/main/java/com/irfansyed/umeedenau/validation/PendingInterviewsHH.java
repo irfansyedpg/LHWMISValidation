@@ -1,6 +1,8 @@
 package com.irfansyed.umeedenau.validation;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -56,11 +58,13 @@ public class PendingInterviewsHH extends AppCompatActivity {
     }
 
 
-    HashMap<String,String> map_add,map_contac;
+   public static HashMap<String,String> map_add=new HashMap<>();
+   public static HashMap<String,String> map_contac=new HashMap<>();
+
+    ;
     public   List<String> get_list()
     {
-        map_add=new HashMap<>();
-        map_contac=new HashMap<>();
+
 
         List<String> lst=new ArrayList<>();
         String query2 = "select id,lhwf1b1,Section,lhwf1b2,lhwf1b3 from  TableHHSection lhw where Fk_id="+Global.LhwSection_id;
@@ -75,10 +79,13 @@ public class PendingInterviewsHH extends AppCompatActivity {
                     String section=c.getString(2);
                     section=section.substring(7);
 
+                    if(Get_status(section,c.getString(0))==true)
+                        continue;
+
                     lst.add(c.getString(1)+"/"+section+"/"+c.getString(0));
 
                     map_add.put(c.getString(0),c.getString(3));
-                    map_add.put(c.getString(0),c.getString(4));
+                    map_contac.put(c.getString(0),c.getString(4));
 
                 } while (c.moveToNext());
             }
@@ -89,10 +96,44 @@ public class PendingInterviewsHH extends AppCompatActivity {
 
     }
 
-    private  void show_alert(String Addres,String Contact,String Respondent,String Mother)
+
+    public boolean   Get_status(String tbl_Name,String id)
     {
-        final android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(this);
-        LayoutInflater inflater = getLayoutInflater();
+
+
+        Boolean bol=true;
+        String tblName="TableF1"+tbl_Name;
+
+        String query2 = "select Status  from "+tblName+"  where Status='0' and Fk_id="+id;
+
+
+        Cursor c = database.rawQuery(query2, null);
+
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+
+
+                  bol=false;
+
+
+                } while (c.moveToNext());
+            }
+
+        }
+
+
+return bol;
+
+
+    }
+
+
+    public static   void show_alert(String Addres, String Contact, String Respondent, String Mother, final Context context, final String id, final String Section)
+    {
+        final android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(context);
+        LayoutInflater inflater =(LayoutInflater) context.getSystemService( Context.LAYOUT_INFLATER_SERVICE );
         final View dialogLayout = inflater.inflate(R.layout.dialogpendinghh, null);
         builder.setView(dialogLayout);
         builder.setCancelable(false);
@@ -138,7 +179,39 @@ public class PendingInterviewsHH extends AppCompatActivity {
             public void onClick(View v) {
 
 
+                Intent intt;
+
+                if(Section.equals("SectionC"))
+                {
+                    intt=new Intent(context,Form2SectionC.class);
+                }
+               else if(Section.equals("SectionD"))
+                {
+                    intt=new Intent(context,Form2SectionD.class);
+                }
+                else if(Section.equals("SectionE"))
+                {
+                    intt=new Intent(context,Form2SectionE.class);
+                }
+                else if(Section.equals("SectionF"))
+                {
+                    intt=new Intent(context,Form2SectionF.class);
+                }
+                else if(Section.equals("SectionG"))
+                {
+                    intt=new Intent(context,Form2SectionG.class);
+                }
+                else
+                {
+                    intt=new Intent(context,Form2SectionH.class);
+                }
+
+
+                intt.putExtra("pk_id",id);
+                context.startActivity(intt);
                 dialog.dismiss();
+                ((Activity)context).finish();
+
 
 
 
@@ -149,14 +222,15 @@ public class PendingInterviewsHH extends AppCompatActivity {
 
     }
 
-    public  void ininfo(String tblName,String id)
+    public static   void ininfo(String tbl_Name,String id,Context context)
     {
         String RespondentName="";
         String RespndehusbandName="";
+        String pkid="";
 
-        tblName="TableF1"+tblName;
+       String tblName="TableF1"+tbl_Name;
 
-        String query2 = "select *  from "+tblName+"  where Fk_id="+id;
+        String query2 = "select *  from "+tblName+"  where Status='0' and Fk_id="+id;
 
    //     LocalDataManager Lm = new LocalDataManager(this);
         Cursor c = database.rawQuery(query2, null);
@@ -167,15 +241,17 @@ public class PendingInterviewsHH extends AppCompatActivity {
                 do {
 
 
-                    RespondentName=c.getString(2);
-                    RespndehusbandName=c.getString(3);
+                    pkid=c.getString(0);
+                    RespondentName=c.getString(6);
+                    RespndehusbandName=c.getString(7);
 
 
                 } while (c.moveToNext());
             }
+            show_alert(map_add.get(id),map_contac.get(id),RespondentName,RespndehusbandName,context,pkid,tbl_Name);
         }
 
-        this.show_alert(map_add.get(id),map_contac.get(id),RespondentName,RespndehusbandName);
+
 
 
 
@@ -242,24 +318,9 @@ class  PendingInterviewsHHCustomAdapter extends RecyclerView.Adapter{
                          String id=arrr[2];
                          String tbl=arrr[1];
 
-                PendingInterviewsHH pw= new PendingInterviewsHH();
-
-                 pw.ininfo(tbl,id);
 
 
-                       // col_A.data_upload_id=arrr[0];
-                        // =arrr[0];
-
-                      //  Intent intent = new Intent(mContext, activity2.class);
-                       // intent.putExtra("id",arrr[0]);
-
-                        Global.global_id=arrr[3];
-                     //   mContext.startActivity(intent);
-
-                       // ((Activity)mContext).finish();
-
-                      //  new Upload_request1(mContext).execute();
-                    //    new UploadSectionEAsync(mContext, "3").execute(); // irfan
+               PendingInterviewsHH.ininfo(tbl,id,mContext);
 
 
 
@@ -287,5 +348,10 @@ class  PendingInterviewsHHCustomAdapter extends RecyclerView.Adapter{
             textId = (TextView) v.findViewById(R.id.text_item_survey_pending_id);
         }
     }
+
+
+
+
+
 
 }

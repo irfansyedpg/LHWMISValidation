@@ -70,6 +70,10 @@
 
 
 
+        <LinearLayout
+            style="@style/Q_Linerlayout_v"
+            android:id="@+id/SectionC"
+            >
 
 
 
@@ -225,6 +229,8 @@
 
                         />
                     <RadioGroup
+
+                        android:id="@+id/lhwf2c6"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -253,7 +259,7 @@
             <!-- lhwf2c7 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-
+                android:visibility='@{lhwf2c61.checked? View.GONE : View.VISIBLE}'
                 >
 
 
@@ -271,6 +277,7 @@
 
                         />
                     <RadioGroup
+                        android:id="@+id/lhwf2c7"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -343,12 +350,13 @@
 
                         />
                     <RadioGroup
+                        android:id="@+id/lhwf2c9"
                         style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/lhwf2c9_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="@string/rb_yes"/>
 
                         <RadioButton
                             android:id="@+id/lhwf2c9_2"
@@ -388,12 +396,13 @@
 
                         />
                     <RadioGroup
+                        android:id="@+id/lhwf2c10"
                         style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/lhwf2c10_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="@string/rb_yes"/>
 
                         <RadioButton
                             android:id="@+id/lhwf2c10_2"
@@ -429,12 +438,13 @@
 
                         />
                     <RadioGroup
+                        android:id="@+id/lhwf2c11"
                         style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/lhwf2c11_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="@string/rb_yes"/>
 
                         <RadioButton
                             android:id="@+id/lhwf2c11_2"
@@ -451,6 +461,7 @@
 
 
 
+        </LinearLayout>
 
 
 

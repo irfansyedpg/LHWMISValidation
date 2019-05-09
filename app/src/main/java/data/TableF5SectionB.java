@@ -12,7 +12,7 @@ public class TableF5SectionB {
 
 
 
-
+                " Status  Text, "+
                 Global.lhwf5b1+"  Text, "+
                 Global.lhwf5b2+"  Text, "+
                 Global.lhwf5b3+"  Text, "+

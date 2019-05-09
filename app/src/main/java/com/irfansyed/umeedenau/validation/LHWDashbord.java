@@ -62,15 +62,17 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
         if (logic_error() == true) {
 
+            String status = get_status_interview(bin.lhwf1a1.getSelectedItem().toString(), bin.lhwf1a2.getSelectedItem().toString(),
+
+                    bin.lhwf1a3.getSelectedItem().toString(), bin.lhwf1a4.getText().toString()
+            );
+
 
             if (boolSourceRegister == true) {
 
 
 
-                String status = get_status_interview(bin.lhwf1a1.getSelectedItem().toString(), bin.lhwf1a2.getSelectedItem().toString(),
 
-                        bin.lhwf1a3.getSelectedItem().toString(), bin.lhwf1a4.getText().toString()
-                );
 
                 if (status.equals("1")) {
                     insert_db(bin.lhwf1a1.getSelectedItem().toString(), bin.lhwf1a2.getSelectedItem().toString(),
@@ -197,7 +199,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
                     startActivity(intt);
 
                 } else {
-                    Intent intt = new Intent(getBaseContext(), PendingInterviewsVHC.class);
+                    Intent intt = new Intent(getBaseContext(), Form4SectionB.class);
                     startActivity(intt);
                 }
                 dialog.dismiss();
@@ -216,7 +218,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
                     startActivity(intt);
 
                 } else {
-                    Intent intt = new Intent(getBaseContext(), PendingInterviewsWSG.class);
+                    Intent intt = new Intent(getBaseContext(), Form6SectionB.class);
                     startActivity(intt);
                 }
                 dialog.dismiss();

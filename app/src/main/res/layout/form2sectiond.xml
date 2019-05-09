@@ -66,6 +66,13 @@
 
 
 
+        <LinearLayout
+            android:id="@+id/SectionD"
+            style="@style/Q_Linerlayout_v"
+
+            >
+
+
 
             <!-- lhwf2d2 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
@@ -187,6 +194,8 @@
                         />
 
                     <RadioGroup
+
+                        android:id="@+id/lhwf2d5"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -236,6 +245,8 @@
                         />
 
                     <RadioGroup
+
+                        android:id="@+id/lhwf2d6"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -311,6 +322,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2d7"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -342,6 +354,7 @@
             <!-- lhwf2d8 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
+                android:visibility='@{lhwf2d72.checked || lhwf2d73.checked ? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -361,6 +374,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2d8"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -411,6 +425,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2d9"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -438,7 +453,7 @@
 
             <!-- lhwf2d10 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
-
+                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked ? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -458,6 +473,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2d10"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -481,6 +497,7 @@
             <!-- lhwf2d11 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
+                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked ? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -500,6 +517,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2d11"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -523,6 +541,7 @@
 
             <!-- lhwf2d12 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked ? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -543,6 +562,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2d12"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -563,6 +583,7 @@
             </android.support.v7.widget.CardView>
             <!-- lhwf2d12 ends-->
 
+        </LinearLayout>
 
 
             <!-- Button -->

@@ -62,7 +62,11 @@
                 android:layout_marginBottom="10dp"
                 android:background="@color/hitnscolor" />
 
+        <LinearLayout
+            android:id="@+id/SectionH"
+            style="@style/Q_Linerlayout_v"
 
+            >
 
 
 
@@ -219,12 +223,13 @@
 
                         />
                     <RadioGroup
+                        android:id="@+id/lhwf2h6"
                         style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/lhwf2h6_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="@string/rb_yes"/>
 
                         <RadioButton
                             android:id="@+id/lhwf2h6_2"
@@ -242,7 +247,7 @@
             <!-- lhwf2h7 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-
+                android:visibility='@{lhwf2h62.checked? View.GONE : View.VISIBLE}'
                 >
 
 
@@ -293,12 +298,13 @@
 
                         />
                     <RadioGroup
+                        android:id="@+id/lhwf2h8"
                         style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/lhwf2h8_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="@string/rb_yes"/>
 
                         <RadioButton
                             android:id="@+id/lhwf2h8_2"
@@ -335,12 +341,13 @@
 
                         />
                     <RadioGroup
+                        android:id="@+id/lhwf2h9"
                         style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/lhwf2h9_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="@string/rb_yes"/>
 
                         <RadioButton
                             android:id="@+id/lhwf2h9_2"
@@ -377,12 +384,13 @@
 
                         />
                     <RadioGroup
+                        android:id="@+id/lhwf2h10"
                         style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/lhwf2h10_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="@string/rb_yes"/>
 
                         <RadioButton
                             android:id="@+id/lhwf2h10_2"
@@ -420,12 +428,13 @@
 
                         />
                     <RadioGroup
+                        android:id="@+id/lhwf2h11"
                         style="@style/RadioGroup">
 
                         <RadioButton
                             android:id="@+id/lhwf2h11_1"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="@string/rb_yes"/>
 
                         <RadioButton
                             android:id="@+id/lhwf2h11_2"
@@ -442,6 +451,7 @@
 
 
 
+        </LinearLayout>
 
             <!-- Button -->
             <android.support.v7.widget.CardView
@@ -453,11 +463,11 @@
 
 
                 <Button
-                    android:id="@+id/btn_lhw_office"
+                    android:id="@+id/btn_Next"
                     style="@style/Button_Next"
                     android:layout_margin="10dp"
                     android:layout_weight="50"
-                    android:text="LHW Office " />
+                    android:text="Save " />
 
 
 

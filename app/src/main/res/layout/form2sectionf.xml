@@ -67,7 +67,11 @@
 
 
 
+        <LinearLayout
+            android:id="@+id/SectionF"
+            style="@style/Q_Linerlayout_v"
 
+            >
 
             <!-- lhwf2f3 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
@@ -188,6 +192,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2f6"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -234,6 +239,8 @@
                         />
 
                     <RadioGroup
+
+                        android:id="@+id/lhwf2f7"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -277,6 +284,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2f8"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -320,6 +328,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2f9"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -362,6 +371,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2f10"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -440,6 +450,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2f11"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -482,6 +493,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2f12"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -525,6 +537,7 @@
                         />
 
                     <RadioGroup
+                        android:id="@+id/lhwf2f13"
                         style="@style/RadioGroup">
 
                         <RadioButton
@@ -547,6 +560,7 @@
 
 
 
+        </LinearLayout>
 
 
             <!-- Button -->
