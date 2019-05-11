@@ -32,8 +32,8 @@ public class SurveyCompletedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey_completed);
 
-          List<String> list = new LocalDataManager(this).getLogList_acivity1("1");
-        List<String> list2 = new LocalDataManager(this).getLogList_acivity3("1");
+        /*  List<String> list = new LocalDataManager(this).getLogList_acivity1("1");
+         List<String> list2 = new LocalDataManager(this).getLogList_acivity3("1");
 
 
         list.addAll(list2);
@@ -51,6 +51,8 @@ public class SurveyCompletedActivity extends AppCompatActivity {
 
         mAdapter = new SurveyCompletedCustomAdapter(this, list);
         mRecyclerView.setAdapter(mAdapter);
+
+        */
     }
 
 }
