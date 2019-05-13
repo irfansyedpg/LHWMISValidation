@@ -37,7 +37,6 @@ public class UploadF1F2SectionC extends AsyncTask {
     public UploadF1F2SectionC(Context context) {
 
 
-
         mContext = context;
         dialog = new ProgressDialog(context);
         param = new HashMap<>();
@@ -53,58 +52,53 @@ public class UploadF1F2SectionC extends AsyncTask {
         dialog.show();
 
 
-        int ccc=0;
+        int ccc = 0;
 
 
-
-        String Fk_id="";
+        String Fk_id = "";
 
         //region Query
 
-        String query = "select * from TableF1SectionC as F1 join TableHHSection as H on F1.Fk_id=H.id  where F1.LhwSectionPKId='"+Global.global_id+"'";
-
-
+        String query = "select * from TableF1SectionC as F1 join TableHHSection as H on F1.Fk_id=H.id  where F1.LhwSectionPKId='" + Global.global_id + "'";
 
 
         LocalDataManager Lm = new LocalDataManager(mContext);
         Cursor c = Lm.database.rawQuery(query, null);
 
 
-
-        if (c != null && c.getCount()!=0) {
+        int a=c.getCount();
+        if (c != null && c.getCount() != 0) {
             if (c.moveToFirst()) {
 
 
-                Global.loop_count=c.getCount();
+                Global.loop_count = c.getCount();
                 do {
 
 
-                if(ccc==Global.loop_Increment) {
+                    if (ccc == Global.loop_Increment) {
 
-    param.put("lhwf1c1", c.getString(c.getColumnIndex("lhwf1c1")));
-    param.put("lhwf1c2", c.getString(c.getColumnIndex("lhwf1c2")));
-    param.put("lhwf1c3", c.getString(c.getColumnIndex("lhwf1c3")));
-    param.put("lhwf1c4", c.getString(c.getColumnIndex("lhwf1c4")));
-    param.put("lhwf1c5", c.getString(c.getColumnIndex("lhwf1c5")));
-    param.put("lhwf1c6", c.getString(c.getColumnIndex("lhwf1c6")));
-    param.put("lhwf1c7", c.getString(c.getColumnIndex("lhwf1c7")));
-    param.put("lhwf1c8", c.getString(c.getColumnIndex("lhwf1c8")));
+                        param.put("lhwf1c1", c.getString(c.getColumnIndex("lhwf1c1")));
+                        param.put("lhwf1c2", c.getString(c.getColumnIndex("lhwf1c2")));
+                        param.put("lhwf1c3", c.getString(c.getColumnIndex("lhwf1c3")));
+                        param.put("lhwf1c4", c.getString(c.getColumnIndex("lhwf1c4")));
+                        param.put("lhwf1c5", c.getString(c.getColumnIndex("lhwf1c5")));
+                        param.put("lhwf1c6", c.getString(c.getColumnIndex("lhwf1c6")));
+                        param.put("lhwf1c7", c.getString(c.getColumnIndex("lhwf1c7")));
+                        param.put("lhwf1c8", c.getString(c.getColumnIndex("lhwf1c8")));
 
-    param.put("lhwf1b1", c.getString(c.getColumnIndex("lhwf1b1")));
-    param.put("lhwf1b2", c.getString(c.getColumnIndex("lhwf1b2")));
-    param.put("lhwf1b3", c.getString(c.getColumnIndex("lhwf1b3")));
+                        param.put("lhwf1b1", c.getString(c.getColumnIndex("lhwf1b1")));
+                        param.put("lhwf1b2", c.getString(c.getColumnIndex("lhwf1b2")));
+                        param.put("lhwf1b3", c.getString(c.getColumnIndex("lhwf1b3")));
 
-    Fk_id = c.getString(0);
-               }
+                        Fk_id = c.getString(0);
+                    }
                     ccc++;
 
 
                 } while (c.moveToNext());
             }
 
-        }
-        else
-        {
+        } else {
             param.put("lhwf1c1", "00");
             param.put("lhwf1c2", "00");
             param.put("lhwf1c3", "00");
@@ -122,41 +116,33 @@ public class UploadF1F2SectionC extends AsyncTask {
         }
 
 
-
-
-
-
-        String query2 = "select * from TableF2SectionC where LhwSectionPKId='"+Global.global_id+"' and Fk_id='"+Fk_id+"'";
-
-
+        String query2 = "select * from TableF2SectionC where LhwSectionPKId='" + Global.global_id + "' and Fk_id='" + Fk_id + "'";
 
 
         LocalDataManager Lm2 = new LocalDataManager(mContext);
         Cursor c2 = Lm2.database.rawQuery(query2, null);
 
 
-        int a= c2.getCount();
-        if (c2 != null && c2.getCount()!=0) {
+        int a = c2.getCount();
+        if (c2 != null && c2.getCount() != 0) {
             if (c2.moveToFirst()) {
 
-                param.put("lhwf2c2", c2.getString(	c2.getColumnIndex("lhwf2c2")));
-                param.put("lhwf2c3", c2.getString(	c2.getColumnIndex("lhwf2c3")));
-                param.put("lhwf2c4", c2.getString(	c2.getColumnIndex("lhwf2c4")));
-                param.put("lhwf2c5", c2.getString(	c2.getColumnIndex("lhwf2c5")));
-                param.put("lhwf2c6", c2.getString(	c2.getColumnIndex("lhwf2c6")));
-                param.put("lhwf2c7", c2.getString(	c2.getColumnIndex("lhwf2c7")));
-                param.put("lhwf2c8", c2.getString(	c2.getColumnIndex("lhwf2c8")));
-                param.put("lhwf2c9", c2.getString(	c2.getColumnIndex("lhwf2c9")));
-                param.put("lhwf2c10", c2.getString(	c2.getColumnIndex("lhwf2c10")));
-                param.put("lhwf2c11", c2.getString(	c2.getColumnIndex("lhwf2c11")));
-                param.put("LhwSectionPKId",Global.server_id );
+                param.put("lhwf2c2", c2.getString(c2.getColumnIndex("lhwf2c2")));
+                param.put("lhwf2c3", c2.getString(c2.getColumnIndex("lhwf2c3")));
+                param.put("lhwf2c4", c2.getString(c2.getColumnIndex("lhwf2c4")));
+                param.put("lhwf2c5", c2.getString(c2.getColumnIndex("lhwf2c5")));
+                param.put("lhwf2c6", c2.getString(c2.getColumnIndex("lhwf2c6")));
+                param.put("lhwf2c7", c2.getString(c2.getColumnIndex("lhwf2c7")));
+                param.put("lhwf2c8", c2.getString(c2.getColumnIndex("lhwf2c8")));
+                param.put("lhwf2c9", c2.getString(c2.getColumnIndex("lhwf2c9")));
+                param.put("lhwf2c10", c2.getString(c2.getColumnIndex("lhwf2c10")));
+                param.put("lhwf2c11", c2.getString(c2.getColumnIndex("lhwf2c11")));
+                param.put("LhwSectionPKId", Global.server_id);
 
 
             }
 
-        }
-        else
-        {
+        } else {
 
             param.put("lhwf2c2", "00");
             param.put("lhwf2c3", "00");
@@ -166,30 +152,25 @@ public class UploadF1F2SectionC extends AsyncTask {
             param.put("lhwf2c7", "00");
             param.put("lhwf2c8", "00");
             param.put("lhwf2c9", "00");
-            param.put("lhwf2c10","00");
-            param.put("lhwf2c11","00");
-            param.put("LhwSectionPKId",Global.server_id );
+            param.put("lhwf2c10", "00");
+            param.put("lhwf2c11", "00");
+            param.put("LhwSectionPKId", Global.server_id);
 
 
         }
 
 
-
-        if(param.containsValue(null))
-        {
-
-            for(Map.Entry<String, String > entry : param.entrySet()){
-                if (entry.getValue() == null) {
-                    param.put(entry.getKey(),"00");
-                }
-                System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+        for (Map.Entry<String, String> entry : param.entrySet()) {
+            if (entry.getValue() == null || entry.getValue().length() == 0) {
+                param.put(entry.getKey(), "00");
             }
+            System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+
         }
 
 
         super.onPreExecute();
     }
-
 
 
     @Override
@@ -209,8 +190,6 @@ public class UploadF1F2SectionC extends AsyncTask {
 
             OutputStream os = connection.getOutputStream();
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-
-
 
 
             bw.write(PostRequestData.getData(param));
@@ -247,7 +226,7 @@ public class UploadF1F2SectionC extends AsyncTask {
 
 
         try {
-            dialog.dismiss();
+            //   dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
@@ -255,28 +234,24 @@ public class UploadF1F2SectionC extends AsyncTask {
 
             //int houseId = Integer.parseInt(((String) o).replace("\"",""));
 
-        //    String result = (((String) o).replace("\"", ""));
+            //    String result = (((String) o).replace("\"", ""));
 
 
-          ///  Toast.makeText(mContext, "Interivew Has ben Uploaded", Toast.LENGTH_SHORT).show();
+            ///  Toast.makeText(mContext, "Interivew Has ben Uploaded", Toast.LENGTH_SHORT).show();
             // new LocalDataManager(mContext).uploadInterview();
 
-      //      Global.server_id=result;
-
+            //      Global.server_id=result;
 
 
             Global.loop_Increment++;
 
-            if (Global.loop_count != Global.loop_Increment && Global.loop_count!=0) {
-
+            if (Global.loop_count != Global.loop_Increment && Global.loop_count != 0) {
 
 
                 new UploadF1F2SectionC(mContext).execute();
-            }
-            else
-            {
-                Global.loop_Increment=0;
-                Global.loop_count=0;
+            } else {
+                Global.loop_Increment = 0;
+                Global.loop_count = 0;
 
 
                 new UploadF1F2SectionD(mContext).execute();
@@ -284,7 +259,7 @@ public class UploadF1F2SectionC extends AsyncTask {
             }
 
 
-    } catch (IOException e) {
+        } catch (IOException e) {
             //if connection was available via connecting but
             //we can't get data from server..
             if (mUserMsg == null)
@@ -304,8 +279,7 @@ public class UploadF1F2SectionC extends AsyncTask {
             return;
         }
 
-        */
-        finally {
+        */ finally {
             if (mUserMsg != null)
                 Toast.makeText(mContext, mUserMsg, Toast.LENGTH_SHORT).show();
         }

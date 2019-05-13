@@ -1,5 +1,6 @@
 package com.irfansyed.umeedenau.validation;
 
+import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Color;
@@ -164,6 +165,11 @@ public class PendingUploads extends AppCompatActivity {
                 Global.global_id=Pkid;
 
                 new UploadLHWSection(context).execute();
+
+
+                dialog.dismiss();
+
+
 
 
 

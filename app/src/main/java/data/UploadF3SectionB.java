@@ -26,7 +26,7 @@ import utils.PostRequestData;
 /**
  * Created by Umeed-e-Nau on 12/28/2016.
  */
-public class UploadF1F2SectionD extends AsyncTask {
+public class UploadF3SectionB extends AsyncTask {
 
     Context mContext;
     public static ProgressDialog dialog;
@@ -34,7 +34,7 @@ public class UploadF1F2SectionD extends AsyncTask {
     String[] interviewLogData;
     String mUserMsg;
 
-    public UploadF1F2SectionD(Context context) {
+    public UploadF3SectionB(Context context) {
 
 
         mContext = context;
@@ -59,7 +59,7 @@ public class UploadF1F2SectionD extends AsyncTask {
 
         //region Query
 
-        String query = "select * from TableF1SectionD as F1 join TableHHSection as H on F1.Fk_id=H.id  where F1.LhwSectionPKId='" + Global.global_id + "'";
+        String query = "select * from TableF3SectionB where Fk_id='" + Global.global_id + "'";
 
 
         LocalDataManager Lm = new LocalDataManager(mContext);
@@ -76,20 +76,20 @@ public class UploadF1F2SectionD extends AsyncTask {
 
                     if (ccc == Global.loop_Increment) {
 
-                        param.put("lhwf1d1", c.getString(c.getColumnIndex("lhwf1d1")));
-                        param.put("lhwf1d2", c.getString(c.getColumnIndex("lhwf1d2")));
-                        param.put("lhwf1d3", c.getString(c.getColumnIndex("lhwf1d3")));
-                        param.put("lhwf1d4", c.getString(c.getColumnIndex("lhwf1d4")));
-                        param.put("lhwf1d5", c.getString(c.getColumnIndex("lhwf1d5")));
-                        param.put("lhwf1d6", c.getString(c.getColumnIndex("lhwf1d6")));
+                        param.put("lhwf3b1", c.getString(c.getColumnIndex("lhwf3b1")));
+                        param.put("lhwf3b2", c.getString(c.getColumnIndex("lhwf3b2")));
+                        param.put("lhwf3b3", c.getString(c.getColumnIndex("lhwf3b3")));
+
+                        param.put("lhwf3b4a", c.getString(c.getColumnIndex("lhwf3b4a")));
+                        param.put("lhwf3b4b", c.getString(c.getColumnIndex("lhwf3b4b")));
+                        param.put("lhwf3b4c", c.getString(c.getColumnIndex("lhwf3b4c")));
+
+                        param.put("lhwf3b5", c.getString(c.getColumnIndex("lhwf3b5")));
+                        param.put("lhwf3b6", c.getString(c.getColumnIndex("lhwf3b6")));
+
+                        param.put("LhwSectionPKId", Global.server_id);
 
 
-                        param.put("lhwf1b1", c.getString(c.getColumnIndex("lhwf1b1")));
-                        param.put("lhwf1b2", c.getString(c.getColumnIndex("lhwf1b2")));
-                        param.put("lhwf1b3", c.getString(c.getColumnIndex("lhwf1b3")));
-
-
-                        Fk_id = c.getString(0);
                     }
                     ccc++;
 
@@ -97,68 +97,21 @@ public class UploadF1F2SectionD extends AsyncTask {
                 } while (c.moveToNext());
             }
 
-        } else {
-            param.put("lhwf1d1", "00");
-            param.put("lhwf1d2", "00");
-            param.put("lhwf1d3", "00");
-            param.put("lhwf1d4", "00");
-            param.put("lhwf1d5", "00");
-            param.put("lhwf1d6", "00");
-
-            param.put("lhwf1b1", "00");
-            param.put("lhwf1b2", "00");
-            param.put("lhwf1b3", "00");
-
-
-        }
-
-
-        String query2 = "select * from TableF2SectionD where LhwSectionPKId='" + Global.global_id + "' and Fk_id='" + Fk_id + "'";
-
-
-        LocalDataManager Lm2 = new LocalDataManager(mContext);
-        Cursor c2 = Lm2.database.rawQuery(query2, null);
-
-
-        int a = c2.getCount();
-        if (c != null && c2.getCount()!=0) {
-            if (c2.moveToFirst()) {
-
-                param.put("lhwf2d2", c2.getString(c2.getColumnIndex("lhwf2d2")));
-                param.put("lhwf2d3", c2.getString(c2.getColumnIndex("lhwf2d3")));
-                param.put("lhwf2d4", c2.getString(c2.getColumnIndex("lhwf2d4")));
-                param.put("lhwf2d5", c2.getString(c2.getColumnIndex("lhwf2d5")));
-                param.put("lhwf2d6", c2.getString(c2.getColumnIndex("lhwf2d6")));
-                param.put("lhwf2d7", c2.getString(c2.getColumnIndex("lhwf2d7")));
-                param.put("lhwf2d8", c2.getString(c2.getColumnIndex("lhwf2d8")));
-                param.put("lhwf2d9", c2.getString(c2.getColumnIndex("lhwf2d9")));
-                param.put("lhwf2d10", c2.getString(c2.getColumnIndex("lhwf2d10")));
-                param.put("lhwf2d11", c2.getString(c2.getColumnIndex("lhwf2d11")));
-                param.put("lhwf2d12", c2.getString(c2.getColumnIndex("lhwf2d12")));
-                param.put("LhwSectionPKId", Global.server_id);
-
-
-            }
-
         }
         else {
+            param.put("lhwf3b1", "00");
+            param.put("lhwf3b2", "00");
+            param.put("lhwf3b3", "00");
 
-            param.put("lhwf2d2", "00");
-            param.put("lhwf2d3", "00");
-            param.put("lhwf2d4", "00");
-            param.put("lhwf2d5", "00");
-            param.put("lhwf2d6", "00");
-            param.put("lhwf2d7", "00");
-            param.put("lhwf2d8", "00");
-            param.put("lhwf2d9", "00");
-            param.put("lhwf2d10", "00");
-            param.put("lhwf2d11", "00");
-            param.put("lhwf2d12", "00");
+            param.put("lhwf3b4a","00");
+            param.put("lhwf3b4b","00");
+            param.put("lhwf3b4c","00");
+
+            param.put("lhwf3b5", "00");
+            param.put("lhwf3b6", "00");
+
             param.put("LhwSectionPKId", Global.server_id);
-
-
         }
-
 
 
 
@@ -180,7 +133,7 @@ public class UploadF1F2SectionD extends AsyncTask {
 
         String urlString = new MyPreferences(mContext).getReq3();
 
-        urlString = urlString + "InsertF1F2SectionD";
+        urlString = urlString + "InsertF3SectionB";
 
         URL url;
         HttpURLConnection connection;
@@ -247,18 +200,22 @@ public class UploadF1F2SectionD extends AsyncTask {
             //      Global.server_id=result;
 
 
-            Global.loop_Increment++;
-
-            if (Global.loop_count != Global.loop_Increment && Global.loop_count!=0) {
 
 
-                new UploadF1F2SectionD(mContext).execute();
-            } else {
-                Global.loop_Increment = 0;
-                Global.loop_count = 0;
-                new UploadF1F2SectionE(mContext).execute();
+            Global.loop_Increment=0;
+            Global.loop_count=0;
 
-            }
+                new UploadF4SectionB(mContext).execute();
+
+
+
+
+
+
+
+
+
+
 
 
         } catch (IOException e) {

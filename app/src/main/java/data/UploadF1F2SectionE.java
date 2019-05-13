@@ -168,15 +168,15 @@ public class UploadF1F2SectionE extends AsyncTask {
         }
 
 
-        if (param.containsValue(null)) {
+
 
             for (Map.Entry<String, String> entry : param.entrySet()) {
-                if (entry.getValue() == null) {
+                if (entry.getValue() == null || entry.getValue().length()==0) {
                     param.put(entry.getKey(), "00");
                 }
                 System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
             }
-        }
+
 
 
         super.onPreExecute();
@@ -238,7 +238,7 @@ public class UploadF1F2SectionE extends AsyncTask {
 
 
         try {
-            dialog.dismiss();
+           // dialog.dismiss();
 
             if (mUserMsg != null)
                 throw new IOException();
@@ -265,6 +265,7 @@ public class UploadF1F2SectionE extends AsyncTask {
             } else {
                 Global.loop_Increment = 0;
                 Global.loop_count = 0;
+                new UploadF1F2SectionF(mContext).execute();
 
             }
 

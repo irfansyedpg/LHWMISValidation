@@ -141,7 +141,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
             if(hh_count>9)
             {
 
-                btnHH.setVisibility(View.GONE);
+               // btnHH.setVisibility(View.GONE);
 
             }
 

@@ -17,7 +17,6 @@ public class TableF4SectionB {
                 Global.lhwf4b1+"  Text, "+
                 Global.lhwf4b2+"  Text, "+
                 Global.lhwf4b3+"  Text, "+
-
                 Global.lhwf4b5+"  Text, "+
                 Global.lhwf4b6+"  Text "+
 
