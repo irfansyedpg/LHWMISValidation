@@ -18,11 +18,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
-import java.util.List;
 
 import utils.MyPreferences;
 import utils.PostRequestData;
-import utils.QuestionModel;
 
 /**
  * Created by Umeed-e-Nau on 12/28/2016.
@@ -156,7 +154,7 @@ public class UploadLHWSection extends AsyncTask {
 
 
             Global.loop_count=0;
-              new UploadF1F2SectionB(mContext).execute();
+              new UploadF1F2SectionC(mContext).execute();
 
 
 

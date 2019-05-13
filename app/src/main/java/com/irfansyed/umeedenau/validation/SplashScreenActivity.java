@@ -41,6 +41,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             preferences.setReqLogin("http://10.199.5.216:61259///Testing/check_user_id");
             preferences.setReq1("http://10.199.5.216:61259///Testing/InsertLHWSection");
             preferences.setReq2("http://10.199.5.216:61259///Testing/InsertF1F2SectionC");
+            preferences.setReq3("http://10.199.5.216:61259///Testing/");
 
 
 
