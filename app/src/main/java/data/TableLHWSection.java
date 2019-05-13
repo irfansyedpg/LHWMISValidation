@@ -15,7 +15,13 @@ public class TableLHWSection {
                 Global.lhwf1a2+"  Text, "+
                 Global.lhwf1a3+"  Text, "+
                 Global.lhwf1a4+"  Text, "+
-                "status"+"  Text"+
+                "status"+"  Text,"+
+                "LHWOfficeHHCount"+"  INTEGER,"+
+                "LHWCommunityHHCount"+"  INTEGER,"+
+                "LHWOfficeVHCCount"+"  INTEGER,"+
+                "LHWCommunityVHCCount"+"  INTEGER,"+
+                "LHWOfficeWSGCount"+"  INTEGER,"+
+                "LHWCommunityWSGCount"+"  INTEGER"+
 
 
 

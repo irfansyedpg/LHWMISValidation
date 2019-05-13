@@ -180,6 +180,7 @@ String Fk_id="";
 
         GeneratorClass.Insert_table(bin.SectionB,true);
         GeneratorClass.inert_db("TableF4SectionB",this,Has_Map);
+        GeneratorClass.LHWSectionUpdateCOunt("LHWCommunityVHCCount",Global.LhwSection_id,this);
 
 
 

@@ -82,7 +82,7 @@ public class HomeActivity extends AppCompatActivity
         final MyPreferences preferences = new MyPreferences(HomeActivity.this);
 
          if (id == R.id.upload_date) {
-             intent = new Intent(this, SurveyCompletedActivity.class);
+             intent = new Intent(this, PendingUploads.class);
         }
 
 

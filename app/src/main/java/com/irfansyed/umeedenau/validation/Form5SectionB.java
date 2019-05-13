@@ -73,6 +73,8 @@ public  class Form5SectionB extends AppCompatActivity implements View.OnClickLis
 
         GeneratorClass.Insert_table(bin.SectionB,true);
         GeneratorClass.inert_db("TableF5SectionB",this,Has_Map);
+        GeneratorClass.LHWSectionUpdateCOunt("LHWOfficeWSGCount",Global.LhwSection_id,this);
+
 
 
 

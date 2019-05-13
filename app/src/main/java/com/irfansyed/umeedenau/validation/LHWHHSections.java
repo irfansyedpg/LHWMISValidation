@@ -160,6 +160,16 @@ public  class LHWHHSections extends AppCompatActivity implements View.OnClickLis
 
 
 
+                if(lhwf1b2.getText().toString().length()==0)
+                {
+                    lhwf1b2.setText("00");
+                }
+
+                if(lhwf1b3.getText().toString().length()==0)
+                {
+                    lhwf1b3.setText("00");
+                }
+
 insert_db(lhwf1b1.getText().toString(),lhwf1b2.getText().toString(),lhwf1b3.getText().toString(),Section);
 
 

@@ -6,6 +6,8 @@ public class Global {
 
 
 
+    public  static  int loop_count=0;
+    public  static  int loop_Increment=0;
     public  static  int LhwSection_id;
     public  static  String LhwSectionPKId="LhwSectionPKId";
     public  static  int LhwHH_id;

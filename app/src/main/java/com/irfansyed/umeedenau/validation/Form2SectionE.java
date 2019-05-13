@@ -100,6 +100,8 @@ public  class Form2SectionE extends AppCompatActivity implements View.OnClickLis
         GeneratorClass.Insert_table(bin.SectionE, true);
         GeneratorClass.inert_db("TableF2SectionE", this, Has_Map);
         GeneratorClass.HH_update_Form1("TableF1SectionE", FK_id, this);
+        GeneratorClass.LHWSectionUpdateCOunt("LHWCommunityHHCount",Global.LhwSection_id,this);
+
 
 
     }

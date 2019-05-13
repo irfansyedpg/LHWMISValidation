@@ -3,6 +3,7 @@ package com.irfansyed.umeedenau.validation;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,11 +14,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import data.LocalDataManager;
 import data.Upload_request1;
+
+import static data.LocalDataManager.database;
 
 
 public class SurveyCompletedActivity extends AppCompatActivity {
@@ -32,11 +36,7 @@ public class SurveyCompletedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey_completed);
 
-        /*  List<String> list = new LocalDataManager(this).getLogList_acivity1("1");
-         List<String> list2 = new LocalDataManager(this).getLogList_acivity3("1");
-
-
-        list.addAll(list2);
+        List<String> list =get_list();
 
 
         if(list == null)
@@ -49,11 +49,42 @@ public class SurveyCompletedActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
 
-        mAdapter = new SurveyCompletedCustomAdapter(this, list);
+        mAdapter = new PendingInterviewsHHCustomAdapter(this, list);
         mRecyclerView.setAdapter(mAdapter);
-
-        */
     }
+
+    public   List<String> get_list()
+    {
+
+
+        List<String> lst=new ArrayList<>();
+        String query2 = "select id,lhwf1a2,lhwf1a3,lhwf1a4 from  TableLHWSection  where status='0'" ;
+
+        LocalDataManager Lm = new LocalDataManager(this);
+        Cursor c = database.rawQuery(query2, null);
+
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+
+
+
+
+                    lst.add(c.getString(0)+"/"+c.getString(1)+"/"+c.getString(2)+"/"+c.getString(3));
+
+
+
+                } while (c.moveToNext());
+            }
+        }
+
+        return lst;
+
+
+    }
+
+
 
 }
 

@@ -424,9 +424,9 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
 
     void insert_db(String a1, String a2, String a3, String a4) {
-        String query = "insert into  TableLHWSection (lhwf1a1,lhwf1a2,lhwf1a3,lhwf1a4,status) values('" +
+        String query = "insert into  TableLHWSection (lhwf1a1,lhwf1a2,lhwf1a3,lhwf1a4,status,LHWOfficeHHCount,LHWCommunityHHCount,LHWOfficeVHCCount,LHWCommunityVHCCount,LHWOfficeWSGCount,LHWCommunityWSGCount) values('" +
 
-                a1 + "','" + a2 + "','" + a3 + "','" + a4 + "','0')";
+                a1 + "','" + a2 + "','" + a3 + "','" + a4 + "','0','0','0','0','0','0','0')";
 
         query = String.format(query);
 

@@ -210,4 +210,29 @@ public abstract class GeneratorClass {
         validationactivity.database.execSQL(query);
     }
 
+    public  static  void LHWSectionUpdateCOunt(String COlumn_name,int pk_id, Context mContext)
+    {
+
+        int count=0;
+        String query2="select "+COlumn_name+" from TableLHWSection where id="+pk_id;
+        Cursor c = database.rawQuery(query2, null);
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+
+                    count=c.getInt(0);
+
+                } while (c.moveToNext());
+            }
+        }
+        count=count+1;
+
+        String  query ="update TableLHWSection set "+COlumn_name+"='"+count+"' where id="+pk_id;
+
+        LocalDataManager validationactivity = new LocalDataManager(mContext);
+
+        validationactivity.database.execSQL(query);
+    }
+
 }

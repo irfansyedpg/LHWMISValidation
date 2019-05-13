@@ -77,6 +77,7 @@ public  class Form1SectionD extends AppCompatActivity implements View.OnClickLis
         GeneratorClass.Has_Map.clear();
         GeneratorClass.Insert_table(bin.Dsection,true);
         GeneratorClass.inert_db("TableF1SectionD",this,Has_Map);
+        GeneratorClass.LHWSectionUpdateCOunt("LHWOfficeHHCount",Global.LhwSection_id,this);
 
 
 
