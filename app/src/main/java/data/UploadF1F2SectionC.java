@@ -123,7 +123,6 @@ public class UploadF1F2SectionC extends AsyncTask {
         Cursor c2 = Lm2.database.rawQuery(query2, null);
 
 
-        int a = c2.getCount();
         if (c2 != null && c2.getCount() != 0) {
             if (c2.moveToFirst()) {
 

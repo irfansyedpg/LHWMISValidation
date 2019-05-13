@@ -154,6 +154,7 @@ public class UploadLHWSection extends AsyncTask {
 
 
             Global.loop_count=0;
+            Global.loop_Increment=0;
               new UploadF1F2SectionC(mContext).execute();
 
 
