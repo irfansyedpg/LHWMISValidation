@@ -98,12 +98,12 @@
   android:orientation="horizontal"
 
   >
-<TextView
+<Button
   style="@style/TextView"
 
-  android:text="APP | 11.30"
+  android:text="APP Update"
   android:layout_width="wrap_content"
-
+   android:id="@+id/Updateapp"
   android:textColor="@color/hitnscolor"
   android:textSize="16sp"
   android:layout_marginLeft="40dp"

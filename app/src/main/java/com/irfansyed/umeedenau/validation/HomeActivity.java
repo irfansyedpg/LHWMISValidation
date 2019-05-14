@@ -113,15 +113,7 @@ public class HomeActivity extends AppCompatActivity
 
 
 
-        else if (id == R.id.nav_lang_e) {
-            preferences.setlanguage("en","US");
-            Toast.makeText(this,"Application Language Changed to English",Toast.LENGTH_LONG).show();
 
-        }
-        else if (id == R.id.nav_lang_u) {
-            preferences.setlanguage("en","GB");
-            Toast.makeText(this,"Application Language Changed to Urdu",Toast.LENGTH_LONG).show();
-        }
 
 
 

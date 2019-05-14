@@ -48,7 +48,7 @@ public class BackgroundTask2 extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... params) {
 
-        String login_url = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_Response2";
+        String login_url = "http://43.245.131.159:8080/uendashboard/sm/index.php/Welcome/collect_Response3";
         //final String login_url = "http://192.168.1.141/sm/Welcome/collect_Response2";
         String method = params[0];
 
