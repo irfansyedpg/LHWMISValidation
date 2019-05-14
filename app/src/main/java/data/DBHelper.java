@@ -54,6 +54,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.execSQL(TableLHWSection.getCreateQuery());
         db.execSQL(TableHHSection.getCreateQuery());
+        db.execSQL(TableMetadata.getCreateQuery());
 
 
 

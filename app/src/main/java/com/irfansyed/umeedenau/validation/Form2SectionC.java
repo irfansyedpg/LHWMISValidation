@@ -15,11 +15,15 @@ import android.widget.Toast;
 import com.irfansyed.umeedenau.validation.databinding.Form1sectioncBinding;
 import com.irfansyed.umeedenau.validation.databinding.Form2sectioncBinding;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.GeneratorClass;
+import utils.GetGpsHideForm;
+import utils.MyPreferences;
 import utils.ValidatorClass;
 
 import static data.LocalDataManager.database;
@@ -95,6 +99,18 @@ public  class Form2SectionC extends AppCompatActivity implements View.OnClickLis
 
         Has_Map.put("FK_id",FK_id+"");
         Has_Map.put("LhwSectionPKId",Global.LhwSection_id+"");
+
+        String start_time = DateFormat.getDateTimeInstance().format(new Date());
+        String gps_=GetGpsHideForm.get_gps(this);
+        String[] gps=gps_.split("/");
+        String Lat=gps[0];
+        String Long=gps[1];
+        Has_Map.put(Global.GPSLat,Lat);
+        Has_Map.put(Global.GPSLong,Long);
+        Has_Map.put(Global.InterviewTime,start_time);
+
+
+
 
         GeneratorClass.Insert_table(bin.SectionC,true);
         GeneratorClass.inert_db("TableF2SectionC",this,Has_Map);

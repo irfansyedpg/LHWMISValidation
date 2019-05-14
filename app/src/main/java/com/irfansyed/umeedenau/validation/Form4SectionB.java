@@ -13,12 +13,15 @@ import android.widget.Toast;
 
 import com.irfansyed.umeedenau.validation.databinding.Form4sectionbBinding;
 
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 import data.LocalDataManager;
 import utils.ClearAllcontrol;
 import utils.GeneratorClass;
+import utils.GetGpsHideForm;
 import utils.ValidatorClass;
 
 import static data.LocalDataManager.database;
@@ -175,6 +178,16 @@ String Fk_id="";
 
 
         Has_Map.put("FK_id",Fk_id);
+
+        String start_time = DateFormat.getDateTimeInstance().format(new Date());
+        String gps_=GetGpsHideForm.get_gps(this);
+        String[] gps=gps_.split("/");
+        String Lat=gps[0];
+        String Long=gps[1];
+        Has_Map.put(Global.GPSLat,Lat);
+        Has_Map.put(Global.GPSLong,Long);
+        Has_Map.put(Global.InterviewTime,start_time);
+
 
 
 

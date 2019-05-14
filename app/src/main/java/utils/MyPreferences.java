@@ -16,6 +16,8 @@ public class MyPreferences {
 
     final public static String  lhwIDS  = "lhwIDS";
     final public static String  USER_NAME  = "username";
+
+    final public static String  APP_VERSION  = "APP_VERSION";
     final public static String  NAME  = "name";
     final public static String  Pass_word  = "password";
     final public static String  REQ1  = "req1";
@@ -102,6 +104,11 @@ public class MyPreferences {
         editor.apply();
     }
 
+    public void setAppVersion(String appversin) {
+        editor.putString(APP_VERSION, appversin);
+        editor.apply();
+    }
+
 
 
     public void setLHWIDS(String arry_lhw_ids) {
@@ -123,6 +130,11 @@ public class MyPreferences {
     public String getUsername() {
         String username = sharedPreferences.getString(USER_NAME, null);
         return username;
+    }
+
+    public String getAppVersion() {
+        String appvserions = sharedPreferences.getString(APP_VERSION, null);
+        return appvserions;
     }
 
     public String getLhwIds() {

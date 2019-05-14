@@ -6,6 +6,10 @@ public class Global {
 
 
 
+
+    public  static  String GPSLat="GPSLat";
+    public  static  String GPSLong="GPSLong";
+    public  static  String InterviewTime="InterviewTime";
     public  static  int loop_count=0;
     public  static  int loop_Increment=0;
     public  static  int LhwSection_id;

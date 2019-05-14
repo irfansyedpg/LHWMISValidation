@@ -1,5 +1,6 @@
 package com.irfansyed.umeedenau.validation;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -17,9 +18,13 @@ import android.widget.Toast;
 
 import com.irfansyed.umeedenau.validation.databinding.LhwdashbordBinding;
 
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import data.LocalDataManager;
+import utils.GetGpsHideForm;
+import utils.LocationHelper;
 import utils.MyPreferences;
 
 import static data.LocalDataManager.database;
@@ -31,7 +36,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
     //region Initialization
     LhwdashbordBinding bin;
 
-
+    String gps_;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +51,9 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
         bin.lhwf1a1.setOnItemSelectedListener(this);
         bin.lhwf1a2.setOnItemSelectedListener(this);
         bin.lhwf1a3.setOnItemSelectedListener(this);
+
+
+         gps_=GetGpsHideForm.get_gps(this);
 
 
     }
@@ -85,6 +93,10 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
                             bin.lhwf1a3.getSelectedItem().toString(), bin.lhwf1a4.getText().toString()
                     );
+
+
+                    insertMetaData();
+
                 }
             }
             showLhwSelection(boolSourceRegister);
@@ -424,6 +436,12 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
 
     void insert_db(String a1, String a2, String a3, String a4) {
+
+
+
+
+
+
         String query = "insert into  TableLHWSection (lhwf1a1,lhwf1a2,lhwf1a3,lhwf1a4,status,LHWOfficeHHCount,LHWCommunityHHCount,LHWOfficeVHCCount,LHWCommunityVHCCount,LHWOfficeWSGCount,LHWCommunityWSGCount) values('" +
 
                 a1 + "','" + a2 + "','" + a3 + "','" + a4 + "','0','0','0','0','0','0','0')";
@@ -433,6 +451,38 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
         LocalDataManager validationactivity = new LocalDataManager(this);
 
         validationactivity.database.execSQL(query);
+
+
+
+    }
+
+
+    void insertMetaData() {
+
+
+       String start_time = DateFormat.getDateTimeInstance().format(new Date());
+
+        String User = new MyPreferences(this).getUsername();
+        String AppVersion = new MyPreferences(this).getAppVersion();
+
+        String[] gps=gps_.split("/");
+        String Lat=gps[0];
+        String Long=gps[1];
+
+
+
+        String query = "insert into  TableMetadata (user,appversion,gpslat,gpslng,datetimeInterview,LHWSectionId) values('" +
+
+              User+"','"+AppVersion+"','"+Lat+"','"+Long+"','"+start_time+"','"+LHWsection_Pk_Id+"')";
+
+        query = String.format(query);
+
+        LocalDataManager validationactivity = new LocalDataManager(this);
+
+        validationactivity.database.execSQL(query);
+
+
+
     }
 
 
@@ -546,4 +596,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
         }
 
     }
+
+
+
 }

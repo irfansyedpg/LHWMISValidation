@@ -24,8 +24,10 @@ public class TableF2SectionD {
                 Global.lhwf2d9+"  Text, "+
                 Global.lhwf2d10+"  Text, "+
                 Global.lhwf2d11+"  Text, "+
-                Global.lhwf2d12+"  Text "+
-
+                Global.lhwf2d12+"  Text ,"+
+                Global.GPSLat+"  Text,"+
+                Global.GPSLong+"  Text,"+
+                Global.InterviewTime+"  Text"+
 
 
 

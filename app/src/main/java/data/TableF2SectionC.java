@@ -20,7 +20,10 @@ public class TableF2SectionC {
                 Global.lhwf2c8+"  Text, "+
                 Global.lhwf2c9+"  Text, "+
                 Global.lhwf2c10+"  Text, "+
-                Global.lhwf2c11+"  Text"+
+                Global.lhwf2c11+"  Text,"+
+                Global.GPSLat+"  Text,"+
+                Global.GPSLong+"  Text,"+
+                Global.InterviewTime+"  Text"+
 
 
 
