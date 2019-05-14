@@ -19,6 +19,8 @@ public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     TextView Profile_name;
+
+    private  double Appversion=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +92,13 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.stage_2) {
             intent = new Intent(this, LHWDashbord.class);
         }
+
+
+        if (id == R.id.Updateapp) {
+
+
+
+         }
 
 
 

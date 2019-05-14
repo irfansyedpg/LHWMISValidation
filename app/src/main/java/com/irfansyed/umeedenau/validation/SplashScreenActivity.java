@@ -29,7 +29,7 @@ public class SplashScreenActivity extends AppCompatActivity {
       //  preferences.setReqLogin("http://43.245.131.159/cmapp/Testing/check_user_id");
        // preferences.setReq1("http://43.245.131.159/cmapp/Testing/insert_Main");
         //preferences.setReq2("http://43.245.131.159/cmapp/Testing/insert_vali_R");
-        preferences.setReq3("http://43.245.131.159/cmapp/Testing/insert_MR");
+      //  preferences.setReq3("http://43.245.131.159/cmapp/Testing/insert_MR");
 
 
        // preferences.setReq1("http://192.168.1.118:61259///Testing/insert_Main");

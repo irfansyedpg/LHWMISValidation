@@ -36,7 +36,7 @@ public  class Form2SectionC extends AppCompatActivity implements View.OnClickLis
     Form2sectioncBinding bin;
     String FK_id;
 
-
+    String Lat,Long;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +63,11 @@ public  class Form2SectionC extends AppCompatActivity implements View.OnClickLis
         bin.lhwf2c63.setOnCheckedChangeListener(this);
 
         bin.btnNext.setOnClickListener(this);
+
+        String gps_=GetGpsHideForm.get_gps(this);
+        String[] gps=gps_.split("/");
+         Lat=gps[0];
+         Long=gps[1];
 
 
 
@@ -101,10 +106,7 @@ public  class Form2SectionC extends AppCompatActivity implements View.OnClickLis
         Has_Map.put("LhwSectionPKId",Global.LhwSection_id+"");
 
         String start_time = DateFormat.getDateTimeInstance().format(new Date());
-        String gps_=GetGpsHideForm.get_gps(this);
-        String[] gps=gps_.split("/");
-        String Lat=gps[0];
-        String Long=gps[1];
+
         Has_Map.put(Global.GPSLat,Lat);
         Has_Map.put(Global.GPSLong,Long);
         Has_Map.put(Global.InterviewTime,start_time);

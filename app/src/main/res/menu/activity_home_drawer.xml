@@ -29,18 +29,15 @@
     </item>
 
 
-    <item android:title="Language">
+    <item android:title="Application Update">
         <menu>
 
 
+
             <item
-                android:id="@+id/nav_lang_e"
-                android:icon="@drawable/english"
-                android:title="English" />
-            <item
-                android:id="@+id/nav_lang_u"
+                android:id="@+id/Updateapp"
                 android:icon="@drawable/urdu"
-                android:title="Urdu" />
+                android:title="Update Application" />
 
         </menu>
     </item>

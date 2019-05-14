@@ -83,6 +83,12 @@ public class UploadF4SectionB extends AsyncTask {
                         param.put("lhwf4b5", c.getString(c.getColumnIndex("lhwf4b5")));
                         param.put("lhwf4b4", "NA");
                         param.put("lhwf4b6", c.getString(c.getColumnIndex("lhwf4b6")));
+
+
+                        param.put("GPSLat", c.getString(c.getColumnIndex("GPSLat")));
+                        param.put("GPSLong", c.getString(c.getColumnIndex("GPSLong")));
+                        param.put("InterviewTime", c.getString(c.getColumnIndex("InterviewTime")));
+
                         param.put("LhwSectionPKId", Global.server_id);
 
 
@@ -102,6 +108,11 @@ public class UploadF4SectionB extends AsyncTask {
             param.put("lhwf4b5", "00");
             param.put("lhwf4b4", "NA");
             param.put("lhwf4b6", "00");
+
+
+            param.put("GPSLat", "00");
+            param.put("GPSLong", "00");
+            param.put("InterviewTime","00");
 
             param.put("LhwSectionPKId", Global.server_id);
 

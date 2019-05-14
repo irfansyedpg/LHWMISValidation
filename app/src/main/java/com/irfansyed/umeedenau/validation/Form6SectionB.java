@@ -32,7 +32,7 @@ public  class Form6SectionB extends AppCompatActivity implements View.OnClickLis
 
     //region Initialization
     Form6sectionbBinding bin;
-
+    String Lat,Long;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,12 @@ public  class Form6SectionB extends AppCompatActivity implements View.OnClickLis
         bin.lhwf6b11.setOnCheckedChangeListener(this);
         bin.lhwf6b12.setOnCheckedChangeListener(this);
         bin.btnNext.setOnClickListener(this);
+
+        String gps_=GetGpsHideForm.get_gps(this);
+        String[] gps=gps_.split("/");
+         Lat=gps[0];
+         Long=gps[1];
+
 
     }
 
@@ -173,10 +179,7 @@ public  class Form6SectionB extends AppCompatActivity implements View.OnClickLis
         Has_Map.put("FK_id",Fk_id);
 
         String start_time = DateFormat.getDateTimeInstance().format(new Date());
-        String gps_=GetGpsHideForm.get_gps(this);
-        String[] gps=gps_.split("/");
-        String Lat=gps[0];
-        String Long=gps[1];
+
         Has_Map.put(Global.GPSLat,Lat);
         Has_Map.put(Global.GPSLong,Long);
         Has_Map.put(Global.InterviewTime,start_time);
