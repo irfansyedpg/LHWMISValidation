@@ -24,24 +24,24 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         final MyPreferences preferences = new MyPreferences(this);
     //    if (preferences.getReq1() == null) {
-         //  preferences.setReq1("http://43.245.131.159/umeed/Monitoring");
-
-      //  preferences.setReqLogin("http://43.245.131.159/cmapp/Testing/check_user_id");
-       // preferences.setReq1("http://43.245.131.159/cmapp/Testing/insert_Main");
-        //preferences.setReq2("http://43.245.131.159/cmapp/Testing/insert_vali_R");
-      //  preferences.setReq3("http://43.245.131.159/cmapp/Testing/insert_MR");
 
 
-       // preferences.setReq1("http://192.168.1.118:61259///Testing/insert_Main");
-       // preferences.setReq2("http://192.168.1.118:61259///Testing/insert_vali_R");
-       // preferences.setReq3("http://192.168.1.118:61259///Testing/insert_MR");
+
+
 
 
         //    preferences.setReq1("http://43.245.131.159/umeed/Testing/Monitoring");
-            preferences.setReqLogin("http://10.199.5.216:61259///Testing/check_user_id");
-            preferences.setReq1("http://10.199.5.216:61259///Testing/InsertLHWSection");
-            preferences.setReq2("http://10.199.5.216:61259///Testing/InsertF1F2SectionC");
-            preferences.setReq3("http://10.199.5.216:61259///Testing/");
+           // preferences.setReqLogin("http://10.199.5.216:61259///Testing/check_user_id");
+
+            preferences.setReqLogin("https://vcoe1.aku.edu/LHWMIS/Testing/check_user_id");
+            preferences.setReq1("https://vcoe1.aku.edu/LHWMIS/Testing/InsertLHWSection");
+            preferences.setReq2("https://vcoe1.aku.edu/LHWMIS/Testing/InsertF1F2SectionC");
+            preferences.setReq3("https://vcoe1.aku.edu/LHWMIS/Testing/");
+
+
+           // preferences.setReq1("http://10.199.5.216:61259///Testing/InsertLHWSection");
+           // preferences.setReq2("http://10.199.5.216:61259///Testing/InsertF1F2SectionC");
+           // preferences.setReq3("http://10.199.5.216:61259///Testing/");
 
 
 

@@ -91,6 +91,7 @@
                         style="@style/EditText_number"
                         android:id="@+id/lhwf1g1"
                         android:maxLength="2"
+                        android:digits="123456789"
                         android:hint="@string/lhwf1g1"/>
 
 
@@ -124,6 +125,7 @@
                         style="@style/EditText_number"
                         android:id="@+id/lhwf1g2"
                         android:maxLength="1"
+                        android:digits="123456789"
                         android:hint="@string/lhwf1g2"/>
 
 

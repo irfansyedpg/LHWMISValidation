@@ -124,7 +124,7 @@
                     <TextView
 
                         style="@style/TextView"
-                        android:text="Husband/Mohter Name"
+                        android:text="Husband/Mother Name"
 
                         />
 

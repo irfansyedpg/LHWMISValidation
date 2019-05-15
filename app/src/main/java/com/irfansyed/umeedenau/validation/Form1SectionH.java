@@ -45,6 +45,17 @@ public  class Form1SectionH extends AppCompatActivity implements View.OnClickLis
             return;
         }
 
+        if(bin.lhwf1h5.getText().length()>0)
+        {
+            int age=Integer.parseInt(bin.lhwf1h5.getText().toString());
+
+            if(age<15 || age>49)
+            {
+                Toast.makeText(this,"MARWA Age Must be Between 15 to 49",Toast.LENGTH_SHORT).show();
+                return;
+            }
+        }
+
         insert_data();
         int count= GeneratorClass.hh_section_count("TableF1SectionH",this);
 

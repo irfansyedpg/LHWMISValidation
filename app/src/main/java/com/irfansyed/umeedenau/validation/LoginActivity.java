@@ -31,6 +31,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
 
+import data.LocalDataManager;
 import utils.BackgroundTask2;
 import utils.MyPreferences;
 import utils.PostRequestData;
@@ -331,19 +332,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
             return null;
         }
 
+        LocalDataManager LmManger ;
         @Override
         protected void onPostExecute(Object o) {
             try {
 
                 //connection isn't available or something is wrong with server address
-                if (mUserMsg != null)
-                    throw new IOException();
+                if(mUserMsg != null)
+                    throw  new IOException();
 
-                String resp = (String) o;
+                String resp = (String)o;
 
-                if (resp == null || resp.equals(""))
+                if ( resp == null || resp.equals(""))
                     throw new NullPointerException("Server response is empty");
-                else if (resp.equals("-1")) {
+                else if(resp.equals("-1")){
                     mUserMsg = "Incorrect username or password";
                 } else {
                     mUserMsg = null;
@@ -352,17 +354,47 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
                     // for login id and data collectore Name irfan
 
                     //   Toast.makeText(mContext, resp, Toast.LENGTH_SHORT).show();
-                    String[] resp_arry = resp.split("/");
-                    String userid = resp_arry[0];
+                    String[] resp_arry=resp.split("!");
+
+                    String Distric=resp_arry[0];
+                    String tehsil=resp_arry[1];
+                    String Reporting_LHS=resp_arry[2];
+                    String Reporting_HF=resp_arry[3];
+                    String LHW_name=resp_arry[4];
+                    String lhw_ids=resp_arry[5];
 
 
-                    prefs.setUserId(Integer.parseInt(userid));
+                    String[] lst_Distric=Distric.split("%");
+                    String[] lst_tehsil=tehsil.split("%");
+                    String[] lst_Reporting_LHS=Reporting_LHS.split("%");
+                    String[] lst_DReporting_HF=Reporting_HF.split("%");
+                    String[] lst_LHW_name=LHW_name.split("%");
+                    String[] lst_lhw_ids=lhw_ids.split("%");
+
+                    LmManger = new LocalDataManager(mContext);
+
+                    for(int i=0;i<lst_Distric.length;i++)
+                    {
+                        if(i==0)
+                        {
+                            Delelte_date();
+                        }
+
+                        insert_data(lst_Distric[i],lst_tehsil[i],lst_Reporting_LHS[i],
+
+                                lst_DReporting_HF[i],lst_LHW_name[i],lst_lhw_ids[i]
+                        );
+
+                    }
+
 
                     prefs.setUsername(mUsername);
                     prefs.setPassword(mPassword);
                     prefs.setName(mUsername);
-                    prefs.setUserId(Integer.parseInt(userid));
-                    prefs.setLHWIDS(resp);
+                    prefs.setUserId(1);
+
+
+                    //   prefs.setLHWIDS(resp);
 
                     // redirect to another activity from here..
                     Intent intent = new Intent(mContext, HomeActivity.class);
@@ -370,10 +402,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
                     ((Activity) mContext).finish();
                 }
 
-            } catch (IOException e) {
+            }  catch (IOException e) {
                 //if connection was available via connecting but
                 //we can't get data from server..
-                if (mUserMsg == null)
+                if(mUserMsg == null)
                     mUserMsg = "Please check connection";
                 e.printStackTrace();
             } catch (NullPointerException e) {
@@ -390,7 +422,33 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
         }
 
 
-        // update app
+        public void insert_data(String district,String Tehsil,String Reporting_LHS,String Reporting_HF,String LHW_Name,String LHW_Ids) {
+
+
+            String query = "insert into  TableLoginData (District,Tehsil,Reporting_LHS,Reporting_HF,LHW_Name,LHW_Ids) values('"+
+
+                    district+"','"+Tehsil+"','"+Reporting_LHS+"','"+Reporting_HF+"','"+LHW_Name+"','"+LHW_Ids+"')";
+
+            query = String.format(query);
+
+
+
+            LmManger.database.execSQL(query);
+
+        }
+
+        public void Delelte_date() {
+
+
+            String query = " Delete from   TableLoginData ";
+
+            query = String.format(query);
+
+            LocalDataManager validationactivity = new LocalDataManager(mContext);
+
+            validationactivity.database.execSQL(query);
+
+        }
 
 
 
