@@ -1,6 +1,7 @@
 package com.irfansyed.umeedenau.validation;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -10,10 +11,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
+import data.LocalDataManager;
 import utils.MyPreferences;
+
+import static data.LocalDataManager.database;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -40,9 +47,68 @@ public class HomeActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
+        TextView txtSummry=(TextView)findViewById(R.id.txtSumry);
+
+        txtSummry.setText("");
+
+
 
 
     }
+
+
+    void select_tehsil() {
+
+
+
+        int O_HH_C=0;
+        int O_VHC_C=0;
+        int O_WSG_C=0;
+
+        int C_HH_C=0;
+        int C_VHC_C=0;
+        int C_WSG_C=0;
+
+
+
+
+
+        String query = "select LHWOfficeHHCount,LHWCommunityHHCount,LHWOfficeVHCCount,LHWCommunityVHCCount,LHWOfficeWSGCount,LHWCommunityWSGCount from TableLHWSection ";
+
+
+        query = String.format(query);
+
+        LocalDataManager Lm = new LocalDataManager(this);
+        Cursor c = database.rawQuery(query, null);
+
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+
+                    String s_O_HH_C;
+                    String s_O_VHC_C;
+                    String s_O_WSG_C;
+                    String s_C_HH_C;
+                    String s_C_VHC_C;
+                    String s_C_WSG_C;
+
+
+
+                    s_O_HH_C=c.getString(0);
+                    //s_O_VHC_C=c.getString();
+                    s_O_HH_C=c.getString(0);
+                    s_O_HH_C=c.getString(0);
+                    s_O_HH_C=c.getString(0);
+
+
+                } while (c.moveToNext());
+            }
+        }
+
+
+    }
+
 
     @Override
     public void onBackPressed() {

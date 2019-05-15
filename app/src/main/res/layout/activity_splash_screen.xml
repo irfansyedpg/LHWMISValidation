@@ -33,17 +33,29 @@ android:background="#EEEEEE">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text=" Supporting Women and Girls in Pakistan Scaling Up\n
-Empowerment and Care  Strategies  to Address Health and Survival\n
-Centre of Excellence Women &amp; Child Health\n
-Aga Khan University, Karachi, Pakistan"
+        android:textSize="18sp"
+        android:text="Summary"
+        android:textStyle="bold"
         android:id="@+id/textView7"
         android:layout_below="@id/imageView2"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="13dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Summary"
+        android:id="@+id/txtSumry"
+        android:layout_below="@id/textView7"
         android:layout_marginLeft="5dp"
         android:textColor="@color/colorPrimaryDark"
         android:layout_marginBottom="5dp"
-        android:layout_centerHorizontal="true"
+        android:layout_centerHorizontal="false"
         android:layout_marginTop="13dp"/>
 
 </RelativeLayout>

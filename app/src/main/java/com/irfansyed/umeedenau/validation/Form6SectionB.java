@@ -44,6 +44,12 @@ public  class Form6SectionB extends AppCompatActivity implements View.OnClickLis
 
         bin.lhwf6b11.setOnCheckedChangeListener(this);
         bin.lhwf6b12.setOnCheckedChangeListener(this);
+
+
+
+        bin.lhwf6b21.setOnCheckedChangeListener(this);
+        bin.lhwf6b22.setOnCheckedChangeListener(this);
+
         bin.btnNext.setOnClickListener(this);
 
         String gps_=GetGpsHideForm.get_gps(this);
@@ -216,6 +222,24 @@ public  class Form6SectionB extends AppCompatActivity implements View.OnClickLis
             }
 
         }
+
+        if(buttonView.getId()==R.id.lhwf6b2_1 || buttonView.getId()==R.id.lhwf6b2_2 )
+        {
+
+
+            if(bin.lhwf6b22.isChecked()) {
+
+
+                ClearAllcontrol.ClearAll(bin.LvLhwf6b3);
+                ClearAllcontrol.ClearAll(bin.LvLhwf6b4);
+                ClearAllcontrol.ClearAll(bin.LvLhwf6b5);
+                ClearAllcontrol.ClearAll(bin.LvLhwf6b6);
+
+
+            }
+
+        }
+
 
     }
 }
