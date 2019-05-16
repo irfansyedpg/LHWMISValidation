@@ -207,14 +207,15 @@ public class PendingUploads extends AppCompatActivity {
             if (c.moveToFirst()) {
                 do {
 
-                    LHWHHCount=c.getString(0);
-                    LHWVHCCount=c.getString(1);
-                    LHWWSGCount=c.getString(2);
-                    LHWFieldHHCount=c.getString(3);
-                    LHWFieldVHCCount=c.getString(4);
-                    LHWFieldWSGCount=c.getString(5);
-                    LHWName=c.getString(6);
-                    LHWID=c.getString(7);
+                    LHWHHCount=c.getString(c.getColumnIndex("LHWOfficeHHCount"));
+                    LHWFieldHHCount=c.getString(c.getColumnIndex("LHWCommunityHHCount"));
+                    LHWVHCCount=c.getString(c.getColumnIndex("LHWOfficeVHCCount"));
+                    LHWFieldVHCCount=c.getString(c.getColumnIndex("LHWCommunityVHCCount"));
+                    LHWWSGCount=c.getString(c.getColumnIndex("LHWOfficeWSGCount"));
+                    LHWFieldWSGCount=c.getString(c.getColumnIndex("LHWCommunityWSGCount"));
+                    LHWID=c.getString(6);
+                    LHWName=c.getString(7);
+
                     HF=c.getString(8);
 
 

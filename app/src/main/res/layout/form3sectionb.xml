@@ -292,7 +292,7 @@
 
             <!-- lhwf3b5 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{lhwf3b22.checked ? View.GONE : View.VISIBLE}'
+                android:visibility='@{lhwf3b12.checked || lhwf3b22.checked ? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -336,7 +336,7 @@
 
             <!-- lhwf3b6 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
-
+                android:visibility='@{lhwf3b12.checked || lhwf3b22.checked || lhwf3b52.checked  ? View.GONE : View.VISIBLE}'
 
                 >
 

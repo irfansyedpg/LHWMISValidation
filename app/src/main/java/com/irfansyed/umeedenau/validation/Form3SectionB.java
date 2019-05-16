@@ -42,6 +42,10 @@ public  class Form3SectionB extends AppCompatActivity implements View.OnClickLis
         bin.lhwf3b21.setOnCheckedChangeListener(this);
         bin.lhwf3b22.setOnCheckedChangeListener(this);
 
+
+        bin.lhwf3b51.setOnCheckedChangeListener(this);
+        bin.lhwf3b52.setOnCheckedChangeListener(this);
+
     }
 
 
@@ -81,7 +85,7 @@ public  class Form3SectionB extends AppCompatActivity implements View.OnClickLis
 
         GeneratorClass.Insert_table(bin.SectionB,true);
         GeneratorClass.inert_db("TableF3SectionB",this,Has_Map);
-        GeneratorClass.LHWSectionUpdateCOunt("LHWCommunityVHCCount",Global.LhwSection_id,this);
+        GeneratorClass.LHWSectionUpdateCOunt("LHWOfficeVHCCount",Global.LhwSection_id,this);
 
 
 
@@ -105,6 +109,8 @@ public  class Form3SectionB extends AppCompatActivity implements View.OnClickLis
                 ClearAllcontrol.ClearAll(bin.LvLhwf3b4a);
                 ClearAllcontrol.ClearAll(bin.LvLhwf3b4b);
                 ClearAllcontrol.ClearAll(bin.LvLhwf3b4c);
+                ClearAllcontrol.ClearAll(bin.LvLhwf3b5);
+                ClearAllcontrol.ClearAll(bin.LvLhwf3b6);
 
             }
 
@@ -123,6 +129,21 @@ public  class Form3SectionB extends AppCompatActivity implements View.OnClickLis
                 ClearAllcontrol.ClearAll(bin.LvLhwf3b4b);
                 ClearAllcontrol.ClearAll(bin.LvLhwf3b4c);
                 ClearAllcontrol.ClearAll(bin.LvLhwf3b5);
+                ClearAllcontrol.ClearAll(bin.LvLhwf3b6);
+
+            }
+
+        }
+
+        if(buttonView.getId()==R.id.lhwf3b5_1 || buttonView.getId()==R.id.lhwf3b5_2 )
+        {
+
+
+            if(bin.lhwf3b22.isChecked()) {
+
+
+
+                ClearAllcontrol.ClearAll(bin.LvLhwf3b6);
 
             }
 
