@@ -95,7 +95,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf2e2"
-                        android:maxLength="1"
+                        android:maxLength="3"
                         android:hint="@string/lhwf2e2"/>
 
 
@@ -216,6 +216,7 @@
             <!-- lhwf2e5a starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
+                android:visibility='@{lhwf2e52.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -387,10 +388,7 @@
                             android:id="@+id/lhwf2e8_2"
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
-                        <RadioButton
-                            android:id="@+id/lhwf2e8_3"
-                            style="@style/RadioButton"
-                            android:text="@string/rb_na"/>
+
 
 
 

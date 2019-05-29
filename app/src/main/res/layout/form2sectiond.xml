@@ -98,7 +98,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf2d2"
-                        android:maxLength="1"
+                        android:maxLength="3"
                         android:hint="@string/lhwf2d2"/>
 
 

@@ -180,7 +180,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf3b3"
-                        android:maxLength="1"
+                        android:maxLength="3"
                         android:hint="@string/lhwf3b3"/>
 
 

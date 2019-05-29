@@ -168,7 +168,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf5b3"
-                        android:maxLength="2"
+                        android:maxLength="3"
                         android:hint="@string/lhwf5b3"/>
 
 
@@ -200,7 +200,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf5b4"
-                        android:maxLength="2"
+                        android:maxLength="3"
                         android:hint="@string/lhwf5b4"/>
 
 
@@ -333,7 +333,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf5b6"
-                        android:maxLength="2"
+                        android:maxLength="3"
                         android:hint="@string/lhwf5b6"/>
 
                 </LinearLayout>

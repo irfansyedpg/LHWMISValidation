@@ -91,7 +91,7 @@
                             android:id="@+id/lhwf1c1"
                             style="@style/EditText_number"
                             android:hint="@string/lhwf1c1"
-                            android:maxLength="2" />
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -120,7 +120,7 @@
                             android:id="@+id/lhwf1c2"
                             style="@style/EditText_number"
                             android:hint="@string/lhwf1c2"
-                            android:maxLength="1" />
+                            android:maxLength="3" />
 
 
                     </LinearLayout>
@@ -215,7 +215,7 @@
                             android:id="@+id/lhwf1c5"
                             style="@style/EditText_number"
                             android:hint="@string/lhwf1c5"
-                            android:maxLength="1" />
+                            android:maxLength="3" />
 
 
                     </LinearLayout>

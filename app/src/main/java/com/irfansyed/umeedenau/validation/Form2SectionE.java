@@ -52,6 +52,11 @@ public  class Form2SectionE extends AppCompatActivity implements View.OnClickLis
 
         bin.lhwf2e91.setOnCheckedChangeListener(this);
         bin.lhwf2e92.setOnCheckedChangeListener(this);
+
+
+
+        bin.lhwf2e51.setOnCheckedChangeListener(this);
+        bin.lhwf2e52.setOnCheckedChangeListener(this);
         bin.btnNext.setOnClickListener(this);
 
 
@@ -88,6 +93,13 @@ public  class Form2SectionE extends AppCompatActivity implements View.OnClickLis
 
             ClearAllcontrol.ClearAll(bin.LvLhwf2e10);
             ClearAllcontrol.ClearAll(bin.LvLhwf2e11);
+
+        }
+
+        if (buttonView.getId() == R.id.lhwf2e5_1 || buttonView.getId() == R.id.lhwf2e5_2) {
+
+            ClearAllcontrol.ClearAll(bin.LvLhwf2e5a);
+
 
         }
 

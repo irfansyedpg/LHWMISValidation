@@ -99,7 +99,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf2c2"
-                        android:maxLength="1"
+                        android:maxLength="3"
                         android:hint="@string/lhwf2c2"/>
 
 
@@ -198,7 +198,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf2c5"
-                        android:maxLength="1"
+                        android:maxLength="3"
                         android:hint="@string/lhwf2c5"/>
 
 

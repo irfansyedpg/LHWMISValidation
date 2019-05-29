@@ -45,7 +45,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
 
-        preferences.setAppVersion("3");
+        preferences.setAppVersion("4");
 
      //   }
         new Handler().postDelayed(new Runnable() {
