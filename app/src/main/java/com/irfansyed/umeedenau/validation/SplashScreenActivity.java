@@ -33,6 +33,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         //    preferences.setReq1("http://43.245.131.159/umeed/Testing/Monitoring");
            // preferences.setReqLogin("http://10.199.5.216:61259///Testing/check_user_id");
 
+           //preferences.setReqLogin("https://vcoe1.aku.edu/LHWMIS/Testing/check_user_id");
             preferences.setReqLogin("https://vcoe1.aku.edu/LHWMIS/Testing/check_user_id");
             preferences.setReq1("https://vcoe1.aku.edu/LHWMIS/Testing/InsertLHWSection");
             preferences.setReq2("https://vcoe1.aku.edu/LHWMIS/Testing/InsertF1F2SectionC");
@@ -45,7 +46,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
 
-        preferences.setAppVersion("4");
+        preferences.setAppVersion("5");
 
      //   }
         new Handler().postDelayed(new Runnable() {

@@ -198,12 +198,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/lhwf2f6_yes"
+                            android:id="@+id/lhwf2f6_1"
                             style="@style/RadioButton"
                             android:text="@string/rb_yes"/>
 
                         <RadioButton
-                            android:id="@+id/lhwf2f6_no"
+                            android:id="@+id/lhwf2f6_2"
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
 
