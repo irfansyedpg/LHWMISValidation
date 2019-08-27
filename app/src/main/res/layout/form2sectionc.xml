@@ -130,9 +130,9 @@
                         />
 
                     <EditText
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_Name"
                         android:id="@+id/lhwf2c3"
-                        android:maxLength="20"
+                        android:maxLength="50"
                         android:hint="@string/lhwf2c3"/>
 
 
@@ -164,9 +164,9 @@
                         />
 
                     <EditText
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_Name"
                         android:id="@+id/lhwf2c4"
-                        android:maxLength="20"
+                        android:maxLength="50"
                         android:hint="@string/lhwf2c4"/>
 
 
@@ -198,7 +198,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf2c5"
-                        android:maxLength="3"
+                        android:maxLength="1"
                         android:hint="@string/lhwf2c5"/>
 
 

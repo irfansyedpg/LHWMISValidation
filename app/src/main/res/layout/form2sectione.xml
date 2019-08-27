@@ -125,9 +125,9 @@
                         />
 
                     <EditText
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_Name"
                         android:id="@+id/lhwf2e3"
-                        android:maxLength="20"
+                        android:maxLength="50"
                         android:hint="@string/lhwf2e3"/>
 
 
@@ -157,9 +157,9 @@
                         />
 
                     <EditText
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_Name"
                         android:id="@+id/lhwf2e4"
-                        android:maxLength="20"
+                        android:maxLength="50"
                         android:hint="@string/lhwf2e4"/>
 
 
@@ -202,7 +202,7 @@
                         <RadioButton
                             android:id="@+id/lhwf2e5_2"
                             style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
+                            android:text="Weight machine not working/available"/>
 
 
 

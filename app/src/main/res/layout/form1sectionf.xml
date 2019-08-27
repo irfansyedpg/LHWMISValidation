@@ -193,9 +193,9 @@
                         />
 
                     <EditText
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_Name"
                         android:id="@+id/lhwf1f4"
-                        android:maxLength="15"
+                        android:maxLength="50"
                         android:hint="@string/lhwf1f4"/>
 
 

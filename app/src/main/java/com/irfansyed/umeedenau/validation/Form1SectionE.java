@@ -32,6 +32,21 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
         bin.btnNext.setOnClickListener(this);
 
 
+
+        if(GeneratorClass.LHWsectionStatus("TableF1SectionE")==false)
+        {
+
+            bin.lhwf1e1.setText("000");
+            bin.lhwf1e1.setVisibility(View.GONE);
+        }
+
+
+
+        if(!GeneratorClass.checktextbox(bin.lhwf1e1,bin.lhwf1e2))
+        {
+            return;
+        }
+
     }
 
 

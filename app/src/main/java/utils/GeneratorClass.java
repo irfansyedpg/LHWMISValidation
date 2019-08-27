@@ -10,6 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextClock;
+import android.widget.Toast;
 
 import com.irfansyed.umeedenau.validation.Global;
 
@@ -261,4 +263,22 @@ public abstract class GeneratorClass {
 
     }
 
+
+    public  static  boolean checktextbox( EditText ed1, EditText ed2)
+    {
+        int i_ed1,i_ed2;
+        i_ed1=Integer.parseInt(ed1.getText().toString());
+        i_ed2=Integer.parseInt(ed2.getText().toString());
+
+        if(i_ed2>i_ed1)
+        {
+            ed1.setError("Should be greater then HH ");
+            ed2.setError("Should be Less then Sourcer Regsiter ");
+            ed1.requestFocus();
+            return false;
+
+        }
+
+        return true;
+    }
 }

@@ -232,9 +232,9 @@
                         />
 
                     <EditText
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_Name"
                         android:id="@+id/lhwf5b5a"
-                        android:maxLength="10"
+                        android:maxLength="50"
                         android:hint="@string/lhwf5b5a"/>
 
                 </LinearLayout>
@@ -265,9 +265,9 @@
                         />
 
                     <EditText
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_Name"
                         android:id="@+id/lhwf5b5b"
-                        android:maxLength="10"
+                        android:maxLength="50"
                         android:hint="@string/lhwf5b5b"/>
 
                 </LinearLayout>

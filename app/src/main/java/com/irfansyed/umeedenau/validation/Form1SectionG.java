@@ -34,6 +34,21 @@ public  class Form1SectionG extends AppCompatActivity implements View.OnClickLis
         bin.btnNext.setOnClickListener(this);
 
 
+
+
+
+        if(GeneratorClass.LHWsectionStatus("TableF1SectionG")==false)
+        {
+
+            bin.lhwf1g1.setText("000");
+            bin.lhwf1g1.setVisibility(View.GONE);
+
+            bin.lhwf1g2.setText("000");
+            bin.lhwf1g2.setVisibility(View.GONE);
+        }
+
+
+
         bin.lhwf1g1.addTextChangedListener(new TextWatcher() {
 
             @Override

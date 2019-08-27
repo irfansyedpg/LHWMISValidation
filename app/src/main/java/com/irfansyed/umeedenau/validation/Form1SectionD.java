@@ -31,6 +31,13 @@ public  class Form1SectionD extends AppCompatActivity implements View.OnClickLis
         bin.btnNext.setOnClickListener(this);
 
 
+        if(GeneratorClass.LHWsectionStatus("TableF1SectionD")==false)
+        {
+
+            bin.lhwf1d1.setText("000");
+            bin.lhwf1d1.setVisibility(View.GONE);
+        }
+
 
 
     }
@@ -45,6 +52,12 @@ public  class Form1SectionD extends AppCompatActivity implements View.OnClickLis
     {
 
         if (!formValidation()) {
+            return;
+        }
+
+
+        if(!GeneratorClass.checktextbox(bin.lhwf1d1,bin.lhwf1d2))
+        {
             return;
         }
 

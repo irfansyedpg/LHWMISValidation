@@ -100,7 +100,7 @@
     <string name="lhwf1e4"> Name of mother </string>
     <string name="lhwf1e5"> Birth weight recorded </string>
     <string name="lhwf1e6"> Early initiation of breastfeeding recorded (within 24 hours) </string>
-    <string name="lhwf1e7"> Record keeping for polio and BCG after birth </string>
+    <string name="lhwf1e7"> Record keeping for polio drops and BCG after birth </string>
     <string name="lhwf1e8"> God Forbid, any neonatal death occurred in HH in last three months? </string>
     <string name="lhwf1header_f"> Section F: Diarrhea Section </string>
     <string name="lhwf1f1"> # of children less than three years of age registered in last 3 months? </string>
@@ -191,7 +191,7 @@
     <string name="lhwf2d5"> Where was delivery conducted? </string>
     <string name="lhwf2d5_1"> Public HF </string>
     <string name="lhwf2d5_2"> Private HF </string>
-    <string name="lhwf2d5_3"> CMW </string>
+    <string name="lhwf2d5_3"> CMW Station </string>
     <string name="lhwf2d5_4"> Home </string>
     <string name="lhwf2d6"> Outcome of delivery </string>
     <string name="lhwf2d6_1"> still birth </string>
@@ -212,7 +212,7 @@
     <string name="lhwf2e5a_2"> Home </string>
     <string name="lhwf2e5a_3"> Health Facility </string>
     <string name="lhwf2e6"> Early initiation of breastfeeding recorded (within 24 hours) </string>
-    <string name="lhwf2e7"> Did newborn receive polio and BCG vaccine after birth </string>
+    <string name="lhwf2e7"> Did newborn receive polio drops and BCG vaccine after birth </string>
     <string name="lhwf2e8"> God Forbid, any neonatal death occurred in HH in last three months? </string>
     <string name="lhwf2e9"> Did LHW visit newborn? </string>
     <string name="lhwf2e10"> Did LHW inform mother about use of CHx </string>

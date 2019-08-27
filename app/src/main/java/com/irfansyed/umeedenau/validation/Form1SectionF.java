@@ -34,6 +34,19 @@ public  class Form1SectionF extends AppCompatActivity implements View.OnClickLis
 
 
 
+        if(GeneratorClass.LHWsectionStatus("TableF1SectionF")==false)
+        {
+
+            bin.lhwf1f1.setText("000");
+            bin.lhwf1f1.setVisibility(View.GONE);
+
+
+
+            bin.lhwf1f2.setText("000");
+            bin.lhwf1f2.setVisibility(View.GONE);
+        }
+
+
 
         bin.lhwf1f1.addTextChangedListener(new TextWatcher() {
 
@@ -102,6 +115,8 @@ public  class Form1SectionF extends AppCompatActivity implements View.OnClickLis
         if (!formValidation()) {
             return;
         }
+
+
 
         insert_data();
         int count= GeneratorClass.hh_section_count("TableF1SectionF",this);

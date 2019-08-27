@@ -124,9 +124,9 @@
                         />
 
                     <EditText
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_Name"
                         android:id="@+id/lhwf2h3"
-                        android:maxLength="20"
+                        android:maxLength="50"
                         android:hint="@string/lhwf2h3"/>
 
 
@@ -156,9 +156,9 @@
                         />
 
                     <EditText
-                        style="@style/EditText_varchar"
+                        style="@style/EditText_Name"
                         android:id="@+id/lhwf2h4"
-                        android:maxLength="20"
+                        android:maxLength="50"
                         android:hint="@string/lhwf2h4"/>
 
 
