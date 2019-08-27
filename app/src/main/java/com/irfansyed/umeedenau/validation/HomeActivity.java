@@ -160,11 +160,6 @@ public class HomeActivity extends AppCompatActivity
         }
 
 
-        if (id == R.id.Updateapp) {
-
-
-
-         }
 
 
 
@@ -185,7 +180,9 @@ public class HomeActivity extends AppCompatActivity
 
 
 
-intent.putExtra("put_extra",put_extr);
+
+     intent.putExtra("put_extra",put_extr);
+
         if (intent != null)
             startActivity(intent);
 

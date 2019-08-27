@@ -39,6 +39,13 @@ public  class Form1SectionC extends AppCompatActivity implements View.OnClickLis
       bin.lhwf1c62.setOnCheckedChangeListener(this);
       bin.lhwf1c63.setOnCheckedChangeListener(this);
 
+      if(GeneratorClass.LHWsectionStatus("TableF1SectionC")==false)
+      {
+
+          bin.lhwf1c1.setText("000");
+          bin.lhwf1c1.setVisibility(View.GONE);
+      }
+
 
     }
 

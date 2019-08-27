@@ -235,4 +235,30 @@ public abstract class GeneratorClass {
         validationactivity.database.execSQL(query);
     }
 
+    public static boolean LHWsectionStatus(String table_name)
+    {
+
+
+        String query2 = "select * from "+table_name+ " where LhwSectionPKId="+Global.LhwSection_id;
+
+        Cursor c = database.rawQuery(query2, null);
+
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+
+
+                return false;
+
+
+                } while (c.moveToNext());
+            }
+        }
+
+        return true;
+
+
+    }
+
 }

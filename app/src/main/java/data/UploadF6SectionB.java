@@ -63,7 +63,7 @@ public class UploadF6SectionB extends AsyncTask {
 
         //region Query
 
-        String query = "select * from TableF6SectionB f4 join TableF3SectionB F3 where F3.Fk_id='" + Global.global_id + "'";
+        String query = "select * from TableF6SectionB f6 join TableF5SectionB F5 on f6.FK_id=f5.id where F5.Fk_id='" + Global.global_id + "'";
 
 
         LocalDataManager Lm = new LocalDataManager(mContext);

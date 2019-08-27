@@ -34,10 +34,7 @@
 
 
 
-            <item
-                android:id="@+id/Updateapp"
-                android:icon="@drawable/urdu"
-                android:title="Update Application" />
+
 
         </menu>
     </item>
