@@ -67,12 +67,15 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
             boolSourceRegister = true;
         }
 
+        String LHid=bin.lhwf1a3.getSelectedItem().toString();
+        String[] a=LHid.split("/");
+        LHid=a[0];
 
         if (logic_error() == true) {
 
             String status = get_status_interview(bin.lhwf1a1.getSelectedItem().toString(), bin.lhwf1a2.getSelectedItem().toString(),
 
-                    bin.lhwf1a3.getSelectedItem().toString(), bin.lhwf1a4.getText().toString()
+                    LHid, bin.lhwf1a4.getText().toString()
             );
 
 
@@ -82,16 +85,17 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
 
 
+
                 if (status.equals("1")) {
                     insert_db(bin.lhwf1a1.getSelectedItem().toString(), bin.lhwf1a2.getSelectedItem().toString(),
 
-                            bin.lhwf1a3.getSelectedItem().toString(), bin.lhwf1a4.getText().toString()
+                            LHid, bin.lhwf1a4.getText().toString()
                     );
 
 
                     get_status_interview(bin.lhwf1a1.getSelectedItem().toString(), bin.lhwf1a2.getSelectedItem().toString(),
 
-                            bin.lhwf1a3.getSelectedItem().toString(), bin.lhwf1a4.getText().toString()
+                            LHid, bin.lhwf1a4.getText().toString()
                     );
 
 
@@ -323,7 +327,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
         bin.lhwf1a3.setAdapter(null);
 
         ArrayList<String> lst_tehsil = new ArrayList<>();
-        String query = "select distinct LHW_Ids from TableLoginData where Tehsil='" + Tehisl + "' and Reporting_HF='" + HF + "'";
+        String query = "select distinct LHW_Ids,LHW_Name from TableLoginData where Tehsil='" + Tehisl + "' and Reporting_HF='" + HF + "'";
 
 
         query = String.format(query);
@@ -338,7 +342,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
             if (c.moveToFirst()) {
                 do {
 
-                    lst_tehsil.add(c.getString(0));
+                    lst_tehsil.add(c.getString(0)+"/"+c.getString(1));
 
                 } while (c.moveToNext());
             }
@@ -361,6 +365,9 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
 
         String Tehisl = bin.lhwf1a3.getSelectedItem().toString();
+
+        String[] a=Tehisl.split("/");
+        Tehisl=a[0];
 
 
         String query = "select distinct LHW_Name from TableLoginData where LHW_Ids='" + Tehisl + "'";

@@ -61,9 +61,29 @@ public class PendingInterviewsHH extends AppCompatActivity {
    public static HashMap<String,String> map_add=new HashMap<>();
    public static HashMap<String,String> map_contac=new HashMap<>();
 
+    public static HashMap<String,String> section_dic=new HashMap<>();
+    public static HashMap<String,String> section_di2=new HashMap<>();
+
     ;
+
     public   List<String> get_list()
     {
+
+        section_dic.put("SectionC","Maternal Care During Pregnancy");
+        section_dic.put("SectionD","Maternal Care After Delivery");
+        section_dic.put("SectionE","New Born Care");
+        section_dic.put("SectionF","Diarreha");
+        section_dic.put("SectionG","Cough or Diffcult Breathing");
+        section_dic.put("SectionH","MWRA");
+
+
+        section_di2.put("Maternal Care During Pregnancy","SectionC");
+        section_di2.put("Maternal Care After Delivery","SectionD");
+        section_di2.put("New Born Care","SectionE");
+        section_di2.put("Diarreha","SectionF");
+        section_di2.put("Cough or Diffcult Breathing","SectionG");
+        section_di2.put("MWRA","SectionH");
+
 
 
         List<String> lst=new ArrayList<>();
@@ -79,10 +99,14 @@ public class PendingInterviewsHH extends AppCompatActivity {
                     String section=c.getString(2);
                     section=section.substring(7);
 
+
+
                     if(Get_status(section,c.getString(0))==true)
                         continue;
 
-                    lst.add(c.getString(1)+"/"+section+"/"+c.getString(0));
+                    section=section_dic.get(section);
+
+                    lst.add(c.getString(1)+"/"+section+"/"+c.getString(0)+"/"+c.getString(3));
 
                     map_add.put(c.getString(0),c.getString(3));
                     map_contac.put(c.getString(0),c.getString(4));
@@ -224,6 +248,10 @@ return bol;
 
     public static   void ininfo(String tbl_Name,String id,Context context)
     {
+
+
+        tbl_Name=section_di2.get(tbl_Name);
+
         String RespondentName="";
         String RespndehusbandName="";
         String pkid="";
@@ -317,6 +345,9 @@ class  PendingInterviewsHHCustomAdapter extends RecyclerView.Adapter{
                         String[] arrr=memberId.split("/");
                          String id=arrr[2];
                          String tbl=arrr[1];
+
+
+
 
 
 

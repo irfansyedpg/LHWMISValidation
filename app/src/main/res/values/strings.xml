@@ -220,7 +220,7 @@
     <string name="lhwf2e12"> LHW referred in case of any newborn danger sign </string>
     <string name="lhwf2e13"> Provided support to mother and newborn for initiation of breastfeeding </string>
     <string name="lhwf2header_f"> Section F: Diarrhea Section </string>
-    <string name="lhwf2f3"> # of children less than five years of age in HH registered in last 3 months? </string>
+    <string name="lhwf2f3"> # of children with Diarhea less than five years of age in HH registered in last 3 months? </string>
     <string name="lhwf2f4"> Name of child in HH who had diarrhea in last three months </string>
     <string name="lhwf2f5"> Age of child (in months) in HH who had diarrhea in last three months </string>
     <string name="lhwf2f6"> LHW provided ORS/LoORS for diarrhea </string>
@@ -232,7 +232,7 @@
     <string name="lhwf2f12"> LHW informed mother about danger signs of diarrhea. </string>
     <string name="lhwf2f13"> LHW informed mother about home preparation of ORS. </string>
     <string name="lhwf2header_g"> Section G: Cough or Difficult breathing </string>
-    <string name="lhwf2g3"> # of children in HH less than five years of age </string>
+    <string name="lhwf2g3"> # of children with Pneumonia in HH less than five years of age </string>
     <string name="lhwf2g4"> Name of child in HH who had cough or difficult breathing in last three months </string>
     <string name="lhwf2g5"> Age of child (in months) in HH who had cough or difficult breathing in last three months </string>
     <string name="lhwf2g6"> LHW provided Amoxicillin DT/syrup </string>

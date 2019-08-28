@@ -270,7 +270,8 @@ public abstract class GeneratorClass {
         i_ed1=Integer.parseInt(ed1.getText().toString());
         i_ed2=Integer.parseInt(ed2.getText().toString());
 
-        if(i_ed2>i_ed1)
+
+        if(i_ed2>i_ed1 && i_ed1!=00)
         {
             ed1.setError("Should be greater then HH ");
             ed2.setError("Should be Less then Sourcer Regsiter ");
