@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
@@ -66,12 +68,63 @@ public  class Form2SectionE extends AppCompatActivity implements View.OnClickLis
          Long=gps[1];
 
 
+
+
+        bin.lhwf2e2.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable s) {}
+
+            public void beforeTextChanged(CharSequence s, int start,
+                                          int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start,
+                                      int before, int count) {
+
+                if(bin.lhwf2e2.getText().toString().equals("999"))
+                {
+
+                    bin.LvLhwf2e3.setVisibility(View.GONE);
+                    bin.LvLhwf2e4.setVisibility(View.GONE);
+                    bin.LvLhwf2e5.setVisibility(View.GONE);
+                    bin.LvLhwf2e5a.setVisibility(View.GONE);
+                    bin.LvLhwf2e6.setVisibility(View.GONE);
+                    bin.LvLhwf2e7.setVisibility(View.GONE);
+                    bin.LvLhwf2e8.setVisibility(View.GONE);
+                    bin.LvLhwf2e9.setVisibility(View.GONE);
+                    bin.LvLhwf2e10.setVisibility(View.GONE);
+                    bin.LvLhwf2e11.setVisibility(View.GONE);
+                    bin.LvLhwf2e12.setVisibility(View.GONE);
+                    bin.LvLhwf2e13.setVisibility(View.GONE);
+
+
+
+
+                }
+                else
+                {
+                    bin.LvLhwf2e3.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e4.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e5.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e5a.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e6.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e7.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e8.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e9.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e10.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e11.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e12.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2e13.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
     }
 
 
     @Override
     public void onClick(View view) {
-        if (!formValidation()) {
+        if (!formValidation() && !bin.lhwf2e2.getText().toString().equals("999")) {
             return;
         }
 

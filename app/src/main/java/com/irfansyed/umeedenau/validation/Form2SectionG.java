@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
 
@@ -60,7 +62,59 @@ public  class Form2SectionG extends AppCompatActivity implements View.OnClickLis
          Lat=gps[0];
          Long=gps[1];
 
+
+
+
+        bin.lhwf2g3.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable s) {}
+
+            public void beforeTextChanged(CharSequence s, int start,
+                                          int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start,
+                                      int before, int count) {
+
+                if(bin.lhwf2g3.getText().toString().equals("999"))
+                {
+
+
+                    bin.LvLhwf2g4.setVisibility(View.GONE);
+                    bin.LvLhwf2g5.setVisibility(View.GONE);
+                    bin.LvLhwf2g6.setVisibility(View.GONE);
+                    bin.LvLhwf2g7.setVisibility(View.GONE);
+                    bin.LvLhwf2g8.setVisibility(View.GONE);
+                    bin.LvLhwf2g9.setVisibility(View.GONE);
+                    bin.LvLhwf2g10.setVisibility(View.GONE);
+
+
+
+
+
+                }
+                else
+                {
+
+                    bin.LvLhwf2g4.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2g5.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2g6.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2g7.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2g8.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2g9.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2g10.setVisibility(View.VISIBLE);
+
+
+                }
+            }
+        });
+
+
     }
+
+
+
+
 
 
 
@@ -69,7 +123,7 @@ public  class Form2SectionG extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view)
-    {      if (!formValidation()) {
+    {      if (!formValidation() && !bin.lhwf2g3.getText().toString().equals("999")) {
         return;
     }
 

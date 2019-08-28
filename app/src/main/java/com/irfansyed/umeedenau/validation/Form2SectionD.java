@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
@@ -68,6 +70,54 @@ public  class Form2SectionD extends AppCompatActivity implements View.OnClickLis
         String[] gps=gps_.split("/");
          Lat=gps[0];
          Long=gps[1];
+
+
+
+        bin.lhwf2d2.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable s) {}
+
+            public void beforeTextChanged(CharSequence s, int start,
+                                          int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start,
+                                      int before, int count) {
+
+                if(bin.lhwf2d2.getText().toString().equals("999"))
+                {
+
+                    bin.LvLhwf2d3.setVisibility(View.GONE);
+                    bin.LvLhwf2d4.setVisibility(View.GONE);
+                    bin.LvLhwf2d5.setVisibility(View.GONE);
+                    bin.LvLhwf2d6.setVisibility(View.GONE);
+                    bin.LvLhwf2d7.setVisibility(View.GONE);
+                    bin.LvLhwf2d8.setVisibility(View.GONE);
+                    bin.LvLhwf2d9.setVisibility(View.GONE);
+                    bin.LvLhwf2d10.setVisibility(View.GONE);
+                    bin.LvLhwf2d11.setVisibility(View.GONE);
+                    bin.LvLhwf2d12.setVisibility(View.GONE);
+
+
+
+                }
+                else
+                {
+                    bin.LvLhwf2d3.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2d4.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2d5.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2d6.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2d7.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2d8.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2d9.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2d10.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2d11.setVisibility(View.VISIBLE);
+                    bin.LvLhwf2d12.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+
     }
 
 
@@ -78,7 +128,7 @@ public  class Form2SectionD extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view)
     {
-        if (!formValidation()) {
+        if (!formValidation() && !bin.lhwf2d2.getText().toString().equals("999")) {
             return;
         }
 

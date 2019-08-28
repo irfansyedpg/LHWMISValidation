@@ -42,10 +42,7 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
 
 
 
-        if(!GeneratorClass.checktextbox(bin.lhwf1e1,bin.lhwf1e2))
-        {
-            return;
-        }
+
 
     }
 
@@ -58,6 +55,12 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view)
     {
         if (!formValidation()) {
+            return;
+        }
+
+
+        if(!GeneratorClass.checktextbox(bin.lhwf1e1,bin.lhwf1e2))
+        {
             return;
         }
 
