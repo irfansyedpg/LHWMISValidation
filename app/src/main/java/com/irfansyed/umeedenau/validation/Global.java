@@ -481,6 +481,7 @@ public class Global {
     public static String lhwf1d4="lhwf1d4";
     public static String lhwf1d5="lhwf1d5";
     public static String lhwf1d6="lhwf1d6";
+    public static String lhwf1d7="lhwf1d7";
 
     public static String lhwf1e1="lhwf1e1";
     public static String lhwf1e2="lhwf1e2";

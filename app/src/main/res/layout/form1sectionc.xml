@@ -358,6 +358,7 @@
 
 
                             <RadioButton
+                                android:visibility="gone"
                                 android:id="@+id/lhwf1c8_3"
                                 style="@style/RadioButton"
                                 android:text="@string/lhw_stockout" />
@@ -369,6 +370,106 @@
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <!-- lhwf1c8 ends-->
+
+
+                <!-- lhwf1c9 starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+                    android:visibility='@{lhwf1c81.checked? View.GONE : View.VISIBLE}'
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/Lv_lhwf1c9"
+                        style="@style/Q_Linerlayout_v"
+
+                        >
+
+                        <TextView
+
+                            style="@style/TextView"
+                            android:text="If ‘no’ please give reason"
+
+                            />
+
+                        <RadioGroup
+                            android:id="@+id/lhwf1c9"
+
+                            style="@style/RadioGroup">
+
+                            <RadioButton
+                                android:id="@+id/lhwf1c9_1"
+                                style="@style/RadioButton"
+                                android:text="Stock Out" />
+
+                            <RadioButton
+                                android:id="@+id/lhwf1c9_2"
+                                style="@style/RadioButton"
+                                android:text="Limited Stock" />
+
+
+                            <RadioButton
+
+                                android:id="@+id/lhwf1c9_3"
+                                style="@style/RadioButton"
+                                android:text="Purchased Privately by PW" />
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!-- lhwf1c9 ends-->
+
+                <!-- lhwf1c10 starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/Lv_lhwf1c10"
+                        style="@style/Q_Linerlayout_v"
+
+                        >
+
+                        <TextView
+
+                            style="@style/TextView"
+                            android:text="Any maternal death (during pregnancy) in last three months registered for this HH?"
+
+                            />
+
+                        <RadioGroup
+                            android:id="@+id/lhwf1c10"
+
+                            style="@style/RadioGroup">
+
+                            <RadioButton
+                                android:id="@+id/lhwf1c10_1"
+                                style="@style/RadioButton"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:id="@+id/lhwf1c10_2"
+                                style="@style/RadioButton"
+                                android:text="No" />
+
+
+
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!-- lhwf1c10 ends-->
+
+
+
 
 
             </LinearLayout>

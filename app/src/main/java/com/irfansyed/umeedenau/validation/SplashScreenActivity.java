@@ -46,7 +46,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
 
-        preferences.setAppVersion("7");
+        preferences.setAppVersion("8");
 
      //   }
         new Handler().postDelayed(new Runnable() {
@@ -61,9 +61,9 @@ public class SplashScreenActivity extends AppCompatActivity {
                 } else {
                   //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
                 }
-             //   mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+              mainIntent = new Intent(SplashScreenActivity.this, LoginActivity.class);
 
-                 mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
+             //  mainIntent = new Intent(SplashScreenActivity.this, HomeActivity.class);
 
 
                     SplashScreenActivity.this.startActivity(mainIntent);

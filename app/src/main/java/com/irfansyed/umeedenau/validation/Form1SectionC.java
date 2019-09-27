@@ -38,6 +38,9 @@ public  class Form1SectionC extends AppCompatActivity implements View.OnClickLis
       bin.lhwf1c61.setOnCheckedChangeListener(this);
       bin.lhwf1c62.setOnCheckedChangeListener(this);
       bin.lhwf1c63.setOnCheckedChangeListener(this);
+      bin.lhwf1c81.setOnCheckedChangeListener(this);
+        bin.lhwf1c82.setOnCheckedChangeListener(this);
+        bin.lhwf1c83.setOnCheckedChangeListener(this);
 
       if(GeneratorClass.LHWsectionStatus("TableF1SectionC")==false)
       {
@@ -115,6 +118,16 @@ public  class Form1SectionC extends AppCompatActivity implements View.OnClickLis
                   ClearAllcontrol.ClearAll(bin.LvLhwf1c7);
 
       }
+
+        if(buttonView.getId()==R.id.lhwf1c8_1 || buttonView.getId()==R.id.lhwf1c8_2 || buttonView.getId()==R.id.lhwf1c8_3)
+        {
+
+
+
+                ClearAllcontrol.ClearAll(bin.LvLhwf1c9);
+
+
+        }
 
     }
 }

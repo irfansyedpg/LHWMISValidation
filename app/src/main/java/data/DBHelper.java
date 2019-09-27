@@ -13,7 +13,7 @@ import android.util.Log;
 public class DBHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "LHWMIS.db";
-    private static final int VERSION = 1;
+    private static final int VERSION = 5;
 
     Context mContext;
 
@@ -69,13 +69,16 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
-        String query="";
-        db.beginTransaction();
-       // query = "DROP TABLE IF EXISTS " + validationactivity2.TABLE_NAME;
-        db.execSQL(query);
-
-        db.setTransactionSuccessful();
-        db.endTransaction();
+      //  String query="";
+      //  db.beginTransaction();
+      //  query = "DROP TABLE IF EXISTS " + TableF1SectionC.TABLE_NAME;
+      //  db.execSQL(query);
+//
+      //  db.execSQL(TableF1SectionC.getCreateQuery());
+//
+//
+      //  db.setTransactionSuccessful();
+      //  db.endTransaction();
     }
 
     public Cursor execRAW(String query) {

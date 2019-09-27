@@ -1,6 +1,7 @@
 package com.irfansyed.umeedenau.validation;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -8,6 +9,8 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -35,7 +38,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
     //region Initialization
     LhwdashbordBinding bin;
-
+    String IMEi="";
     String gps_;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +57,17 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
 
          gps_=GetGpsHideForm.get_gps(this);
+
+        TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+
+        try {
+         IMEi = telephonyManager.getDeviceId().toString();
+    }
+    catch (SecurityException e)
+    {
+
+    }
+        Log.d("Ime",IMEi);
 
 
     }
@@ -480,7 +494,7 @@ public class LHWDashbord extends AppCompatActivity implements View.OnClickListen
 
         String query = "insert into  TableMetadata (user,appversion,gpslat,gpslng,datetimeInterview,LHWSectionId) values('" +
 
-              User+"','"+AppVersion+"','"+Lat+"','"+Long+"','"+start_time+"','"+LHWsection_Pk_Id+"')";
+              User+"','"+AppVersion+"/"+IMEi+"','"+Lat+"','"+Long+"','"+start_time+"','"+LHWsection_Pk_Id+"')";
 
         query = String.format(query);
 

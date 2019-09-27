@@ -84,7 +84,7 @@ public class UploadF1F2SectionC extends AsyncTask {
                         param.put("lhwf1c5", c.getString(c.getColumnIndex("lhwf1c5")));
                         param.put("lhwf1c6", c.getString(c.getColumnIndex("lhwf1c6")));
                         param.put("lhwf1c7", c.getString(c.getColumnIndex("lhwf1c7")));
-                        param.put("lhwf1c8", c.getString(c.getColumnIndex("lhwf1c8")));
+                        param.put("lhwf1c8", c.getString(c.getColumnIndex("lhwf1c8"))+"-"+c.getString(c.getColumnIndex("lhwf1c9"))+"-"+c.getString(c.getColumnIndex("lhwf1c10")));
 
                         param.put("lhwf1b1", c.getString(c.getColumnIndex("lhwf1b1")));
                         param.put("lhwf1b2", c.getString(c.getColumnIndex("lhwf1b2")));
