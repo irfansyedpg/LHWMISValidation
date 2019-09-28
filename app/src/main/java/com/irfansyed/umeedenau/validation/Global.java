@@ -488,8 +488,11 @@ public class Global {
     public static String lhwf1e3="lhwf1e3";
     public static String lhwf1e4="lhwf1e4";
     public static String lhwf1e5="lhwf1e5";
+    public static String lhwf1e5b="lhwf1e5b";
     public static String lhwf1e6="lhwf1e6";
+    public static String lhwf1e6b="lhwf1e6b";
     public static String lhwf1e7="lhwf1e7";
+    public static String lhwf1e7b="lhwf1e7b";
     public static String lhwf1e8="lhwf1e8";
 
     public static String lhwf1f1="lhwf1f1";

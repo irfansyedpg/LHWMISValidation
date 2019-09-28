@@ -6,17 +6,20 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.irfansyed.umeedenau.validation.databinding.Form1sectioneBinding;
 
 import java.util.HashMap;
 
+import utils.ClearAllcontrol;
 import utils.GeneratorClass;
 import utils.ValidatorClass;
 
 
-public  class Form1SectionE extends AppCompatActivity implements View.OnClickListener {
+public  class Form1SectionE extends AppCompatActivity implements View.OnClickListener, RadioButton.OnCheckedChangeListener  {
 
 
     //region Initialization
@@ -41,6 +44,8 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
         }
 
 
+        bin.lhwf1e51.setOnClickListener(this);
+        bin.lhwf1e52.setOnClickListener(this);
 
 
 
@@ -96,6 +101,16 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
 
 
 
+    }
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+
+        if (buttonView.getId() == R.id.lhwf1e5_1 || buttonView.getId() == R.id.lhwf1e5_2) {
+
+            ClearAllcontrol.ClearAll(bin.LvLhwf1e5b);
+
+        }
     }
 
 
