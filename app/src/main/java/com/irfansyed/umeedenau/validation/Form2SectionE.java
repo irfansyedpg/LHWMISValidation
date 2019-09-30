@@ -59,6 +59,10 @@ public  class Form2SectionE extends AppCompatActivity implements View.OnClickLis
         bin.lhwf2e6a3.setOnCheckedChangeListener(this);
 
 
+        bin.rlhwf2e11.setOnCheckedChangeListener(this);
+        bin.rlhwf2e12.setOnCheckedChangeListener(this);
+
+
 
         bin.lhwf2e51.setOnCheckedChangeListener(this);
         bin.lhwf2e52.setOnCheckedChangeListener(this);
@@ -84,41 +88,7 @@ public  class Form2SectionE extends AppCompatActivity implements View.OnClickLis
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
 
-                if(bin.lhwf2e2.getText().toString().equals("999"))
-                {
 
-                    bin.LvLhwf2e3.setVisibility(View.GONE);
-                    bin.LvLhwf2e4.setVisibility(View.GONE);
-                    bin.LvLhwf2e5.setVisibility(View.GONE);
-                    bin.LvLhwf2e5a.setVisibility(View.GONE);
-                    bin.LvLhwf2e6.setVisibility(View.GONE);
-                    bin.LvLhwf2e7.setVisibility(View.GONE);
-                    bin.LvLhwf2e8.setVisibility(View.GONE);
-                    bin.LvLhwf2e9.setVisibility(View.GONE);
-                    bin.LvLhwf2e10.setVisibility(View.GONE);
-                    bin.LvLhwf2e11.setVisibility(View.GONE);
-                    bin.LvLhwf2e12.setVisibility(View.GONE);
-                    bin.LvLhwf2e13.setVisibility(View.GONE);
-
-
-
-
-                }
-                else
-                {
-                    bin.LvLhwf2e3.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e4.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e5.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e5a.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e6.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e7.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e8.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e9.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e10.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e11.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e12.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2e13.setVisibility(View.VISIBLE);
-                }
             }
         });
 
@@ -129,6 +99,19 @@ public  class Form2SectionE extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         if (!formValidation() && !bin.lhwf2e2.getText().toString().equals("999")) {
             return;
+        }
+
+
+
+        if(bin.lhwf2e2.getText().toString().length()>0)
+        {
+            int a=Integer.parseInt(bin.lhwf2e2.getText().toString());
+            if(a>10)
+            {
+                bin.lhwf2e2.setError("should be less then 10");
+                bin.lhwf2e2.requestFocus();
+                return;
+            }
         }
 
         insert_data();
@@ -166,6 +149,75 @@ public  class Form2SectionE extends AppCompatActivity implements View.OnClickLis
 
             ClearAllcontrol.ClearAll(bin.lhwf2e7);
             ClearAllcontrol.ClearAll(bin.lhwf2e7a);
+
+
+        }
+
+
+
+
+        if (buttonView.getId() == R.id.rlhwf2e1_1 || buttonView.getId() == R.id.rlhwf2e1_2) {
+
+
+
+            if(bin.rlhwf2e12.isChecked())
+            {
+
+
+                bin.LvLhwf2e2.setVisibility(View.GONE);
+                bin.LvLhwf2e3.setVisibility(View.GONE);
+                bin.LvLhwf2e4.setVisibility(View.GONE);
+                bin.LvLhwf2e5.setVisibility(View.GONE);
+                bin.LvLhwf2e5a.setVisibility(View.GONE);
+                bin.LvLhwf2e6.setVisibility(View.GONE);
+                bin.LvLhwf2e6a.setVisibility(View.GONE);
+                bin.LvLhwf2e7.setVisibility(View.GONE);
+                bin.LvLhwf2e7a.setVisibility(View.GONE);
+                bin.LvLhwf2e8.setVisibility(View.GONE);
+                bin.LvLhwf2e9.setVisibility(View.GONE);
+                bin.LvLhwf2e10.setVisibility(View.GONE);
+                bin.LvLhwf2e11.setVisibility(View.GONE);
+                bin.LvLhwf2e12.setVisibility(View.GONE);
+                bin.LvLhwf2e13.setVisibility(View.GONE);
+
+                ClearAllcontrol.ClearAll(bin.LvLhwf2e2);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2e3);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2e4);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2e5);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2e5a);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2e6);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2e6a);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2e7);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2e7a);
+                ClearAllcontrol.ClearAll( bin.LvLhwf2e8);
+                ClearAllcontrol.ClearAll( bin.LvLhwf2e9);
+                ClearAllcontrol.ClearAll( bin.LvLhwf2e10);
+                ClearAllcontrol.ClearAll( bin.LvLhwf2e11);
+                ClearAllcontrol.ClearAll( bin.LvLhwf2e12);
+                ClearAllcontrol.ClearAll( bin.LvLhwf2e13);
+
+
+
+
+            }
+            else
+            {
+                bin.LvLhwf2e2.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e3.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e4.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e5.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e5a.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e6.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e6a.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e7.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e7a.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e8.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e9.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e10.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e11.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e12.setVisibility(View.VISIBLE);
+                bin.LvLhwf2e13.setVisibility(View.VISIBLE);
+            }
 
 
         }

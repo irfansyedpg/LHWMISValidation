@@ -96,12 +96,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/lhwf2e1_1"
+                            android:id="@+id/rlhwf2e1_1"
                             style="@style/RadioButton"
                             android:text="@string/rb_yes"/>
 
                         <RadioButton
-                            android:id="@+id/lhwf2e1_2"
+                            android:id="@+id/rlhwf2e1_2"
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
 
@@ -138,7 +138,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf2e2"
-                        android:maxLength="3"
+                        android:maxLength="2"
                         android:hint="@string/lhwf2e2"/>
 
 
@@ -245,7 +245,7 @@
                         <RadioButton
                             android:id="@+id/lhwf2e5_2"
                             style="@style/RadioButton"
-                            android:text="Weight machine not working/available"/>
+                            android:text="No"/>
 
 
 

@@ -226,8 +226,10 @@
     <string name="lhwf2f6"> LHW provided ORS/LoORS for diarrhea </string>
     <string name="lhwf2f7"> LHW provided Zinc DT/syrup for diarrhea </string>
     <string name="lhwf2f8"> LHW referred child to the HF </string>
-    <string name="lhwf2f9"> Do you have EPI card of the child? </string>
-    <string name="lhwf2f10"> God forbid, any child mortality due to diarrhea in last three months </string>
+    <string name="lhwf2f9"> Is the child immunized?
+(immunization is complete as per his/her age) // check the EPI card
+ </string>
+    <string name="lhwf2f10"> Any under-five death due to diarrhea in last three months? </string>
     <string name="lhwf2f11"> LHW educated mother about hand washing and sanitation. </string>
     <string name="lhwf2f12"> LHW informed mother about danger signs of diarrhea. </string>
     <string name="lhwf2f13"> LHW informed mother about home preparation of ORS. </string>

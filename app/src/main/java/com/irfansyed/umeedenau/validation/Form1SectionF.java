@@ -139,23 +139,15 @@ public  class Form1SectionF extends AppCompatActivity implements View.OnClickLis
 
         if(bin.lhwf1f3.getText().length()>0) {
             int b = Integer.parseInt(bin.lhwf1f3.getText().toString());
-            if (b > 30) {
+            if (b > 20) {
                 bin.lhwf1f3.requestFocus();
-                bin.lhwf1f3.setError("Should be less then 30");
+                bin.lhwf1f3.setError("Should be less then 20");
 
                 return;
             }
         }
 
-        if(bin.lhwf1f3.getText().length()>0) {
-            int b = Integer.parseInt(bin.lhwf1f3.getText().toString());
-            if (b > 30) {
-                bin.lhwf1f3.requestFocus();
-                bin.lhwf1f3.setError("Should be less then 30");
 
-                return;
-            }
-        }
 
         if(bin.lhwf1f5.getText().length()>0) {
             int b = Integer.parseInt(bin.lhwf1f5.getText().toString());

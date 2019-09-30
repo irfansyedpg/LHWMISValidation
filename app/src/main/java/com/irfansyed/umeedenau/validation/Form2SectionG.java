@@ -67,6 +67,10 @@ public  class Form2SectionG extends AppCompatActivity implements View.OnClickLis
 
 
 
+         bin.rlhwf2g11.setOnCheckedChangeListener(this);
+        bin.rlhwf2g12.setOnCheckedChangeListener(this);
+        bin.lhwf2g5a2.setOnCheckedChangeListener(this);
+        bin.lhwf2g5a1.setOnCheckedChangeListener(this);
 
         bin.lhwf2g3.addTextChangedListener(new TextWatcher() {
 
@@ -83,13 +87,13 @@ public  class Form2SectionG extends AppCompatActivity implements View.OnClickLis
                 {
 
 
-                    bin.LvLhwf2g4.setVisibility(View.GONE);
-                    bin.LvLhwf2g5.setVisibility(View.GONE);
-                    bin.LvLhwf2g6.setVisibility(View.GONE);
-                    bin.LvLhwf2g7.setVisibility(View.GONE);
-                    bin.LvLhwf2g8.setVisibility(View.GONE);
-                    bin.LvLhwf2g9.setVisibility(View.GONE);
-                    bin.LvLhwf2g10.setVisibility(View.GONE);
+                   // bin.LvLhwf2g4.setVisibility(View.GONE);
+                   // bin.LvLhwf2g5.setVisibility(View.GONE);
+                   // bin.LvLhwf2g6.setVisibility(View.GONE);
+                   // bin.LvLhwf2g7.setVisibility(View.GONE);
+                   // bin.LvLhwf2g8.setVisibility(View.GONE);
+                   // bin.LvLhwf2g9.setVisibility(View.GONE);
+                   // bin.LvLhwf2g10.setVisibility(View.GONE);
 
 
 
@@ -99,13 +103,13 @@ public  class Form2SectionG extends AppCompatActivity implements View.OnClickLis
                 else
                 {
 
-                    bin.LvLhwf2g4.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2g5.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2g6.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2g7.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2g8.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2g9.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2g10.setVisibility(View.VISIBLE);
+                   // bin.LvLhwf2g4.setVisibility(View.VISIBLE);
+                   // bin.LvLhwf2g5.setVisibility(View.VISIBLE);
+                   // bin.LvLhwf2g6.setVisibility(View.VISIBLE);
+                   // bin.LvLhwf2g7.setVisibility(View.VISIBLE);
+                   // bin.LvLhwf2g8.setVisibility(View.VISIBLE);
+                   // bin.LvLhwf2g9.setVisibility(View.VISIBLE);
+                   // bin.LvLhwf2g10.setVisibility(View.VISIBLE);
 
 
                 }
@@ -130,6 +134,28 @@ public  class Form2SectionG extends AppCompatActivity implements View.OnClickLis
         return;
     }
 
+
+        if(bin.lhwf2g3.getText().toString().length()>0)
+        {
+            int a=Integer.parseInt(bin.lhwf2g3.getText().toString());
+            if(a>20)
+            {
+                bin.lhwf2g3.setError("should be less then 20");
+                bin.lhwf2g3.requestFocus();
+                return;
+            }
+        }
+
+        if(bin.lhwf2g5.getText().toString().length()>0)
+        {
+            int a=Integer.parseInt(bin.lhwf2g5.getText().toString());
+            if(a>59)
+            {
+                bin.lhwf2g5.setError("should be less then 60");
+                bin.lhwf2g5.requestFocus();
+                return;
+            }
+        }
         insert_data();
 
 
@@ -204,9 +230,10 @@ public  class Form2SectionG extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        if (buttonView.getId() == R.id.lhwf2g1_1 || buttonView.getId() == R.id.lhwf2g1_2) {
 
-            if (bin.lhwf2g12.isChecked() == true) {
+        if (buttonView.getId() == R.id.rlhwf2g1_1 || buttonView.getId() == R.id.rlhwf2g1_2) {
+
+            if (bin.rlhwf2g12.isChecked() == true) {
 
 
 
@@ -240,6 +267,44 @@ public  class Form2SectionG extends AppCompatActivity implements View.OnClickLis
                 bin.LvLhwf2g4.setVisibility(View.VISIBLE);
                 bin.LvLhwf2g5.setVisibility(View.VISIBLE);
                 bin.LvLhwf2g5a.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g6.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g7.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g8.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g9.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g10.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g11.setVisibility(View.VISIBLE);
+            }
+
+        }
+
+
+        if (buttonView.getId() == R.id.lhwf2g5a_1 || buttonView.getId() == R.id.lhwf2g5a_2) {
+
+            if (bin.lhwf2g5a2.isChecked() == true) {
+
+
+
+
+                bin.LvLhwf2g6.setVisibility(View.GONE);
+                bin.LvLhwf2g7.setVisibility(View.GONE);
+                bin.LvLhwf2g8.setVisibility(View.GONE);
+                bin.LvLhwf2g9.setVisibility(View.GONE);
+                bin.LvLhwf2g10.setVisibility(View.GONE);
+                bin.LvLhwf2g11.setVisibility(View.GONE);
+
+
+
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g6);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g7);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g8);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g9);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g10);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g11);
+
+            }
+            else
+            {
+
                 bin.LvLhwf2g6.setVisibility(View.VISIBLE);
                 bin.LvLhwf2g7.setVisibility(View.VISIBLE);
                 bin.LvLhwf2g8.setVisibility(View.VISIBLE);

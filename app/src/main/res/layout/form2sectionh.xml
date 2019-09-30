@@ -94,12 +94,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/lhwf2h1_1"
+                            android:id="@+id/rlhwf2h1_1"
                             style="@style/RadioButton"
                             android:text="@string/rb_yes"/>
 
                         <RadioButton
-                            android:id="@+id/lhwf2h1_2"
+                            android:id="@+id/rlhwf2h1_2"
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
 

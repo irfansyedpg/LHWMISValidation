@@ -100,12 +100,12 @@
                         style="@style/RadioGroup">
 
                         <RadioButton
-                            android:id="@+id/lhwf2g1_1"
+                            android:id="@+id/rlhwf2g1_1"
                             style="@style/RadioButton"
                             android:text="@string/rb_yes"/>
 
                         <RadioButton
-                            android:id="@+id/lhwf2g1_2"
+                            android:id="@+id/rlhwf2g1_2"
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
 
@@ -146,7 +146,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf2g3"
-                        android:maxLength="3"
+                        android:maxLength="2"
                         android:hint="@string/lhwf2g3"/>
 
 
@@ -211,7 +211,7 @@
                     <EditText
                         style="@style/EditText_number"
                         android:id="@+id/lhwf2g5"
-                        android:maxLength="3"
+                        android:maxLength="2"
                         android:hint="@string/lhwf2g5"/>
 
 
@@ -543,7 +543,7 @@
                     <TextView
 
                         style="@style/TextView"
-                        android:text="@string/lhwf2g11"
+                        android:text="LHW informed mother about hazards of indoor air pollution?"
 
                         />
 

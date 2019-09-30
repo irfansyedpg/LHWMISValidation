@@ -66,8 +66,8 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
          Lat=gps[0];
          Long=gps[1];
 
-        lhwf2f1_1=findViewById(R.id.lhwf2f1_1);
-        lhwf2f1_2=findViewById(R.id.lhwf2f1_2);
+        lhwf2f1_1=findViewById(R.id.rlhwf2f1_1);
+        lhwf2f1_2=findViewById(R.id.rlhwf2f1_2);
 
 
         lhwf2f1_1.setOnCheckedChangeListener(this);
@@ -90,16 +90,16 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
                 {
 
 
-                    bin.LvLhwf2f4.setVisibility(View.GONE);
-                    bin.LvLhwf2f5.setVisibility(View.GONE);
-                    bin.LvLhwf2f6.setVisibility(View.GONE);
-                    bin.LvLhwf2f7.setVisibility(View.GONE);
-                    bin.LvLhwf2f8.setVisibility(View.GONE);
-                    bin.LvLhwf2f9.setVisibility(View.GONE);
-                    bin.LvLhwf2f10.setVisibility(View.GONE);
-                    bin.LvLhwf2f11.setVisibility(View.GONE);
-                    bin.LvLhwf2f12.setVisibility(View.GONE);
-                    bin.LvLhwf2f13.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f4.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f5.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f6.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f7.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f8.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f9.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f10.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f11.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f12.setVisibility(View.GONE);
+                  //  bin.LvLhwf2f13.setVisibility(View.GONE);
 
 
 
@@ -108,16 +108,16 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
                 else
                 {
 
-                    bin.LvLhwf2f4.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2f5.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2f6.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2f7.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2f8.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2f9.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2f10.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2f11.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2f12.setVisibility(View.VISIBLE);
-                    bin.LvLhwf2f13.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f4.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f5.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f6.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f7.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f8.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f9.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f10.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f11.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f12.setVisibility(View.VISIBLE);
+                 //   bin.LvLhwf2f13.setVisibility(View.VISIBLE);
 
                 }
             }
@@ -138,6 +138,31 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
         if (!formValidation() && !bin.lhwf2f3.getText().toString().equals("999")) {
             return;
         }
+
+
+        if(bin.lhwf2f3.getText().toString().length()>0)
+        {
+            int a=Integer.parseInt(bin.lhwf2f3.getText().toString());
+            if(a>20)
+            {
+                bin.lhwf2f3.setError("should be less then 20");
+                bin.lhwf2f3.requestFocus();
+                return;
+            }
+        }
+
+        if(bin.lhwf2f5.getText().toString().length()>0)
+        {
+            int a=Integer.parseInt(bin.lhwf2f5.getText().toString());
+            if(a>59)
+            {
+                bin.lhwf2f5.setError("should be less then 60");
+                bin.lhwf2f5.requestFocus();
+                return;
+            }
+        }
+
+
 
         insert_data();
 
@@ -210,12 +235,12 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        if (buttonView.getId() == R.id.lhwf2f1_1 || buttonView.getId() == R.id.lhwf2f1_2) {
+        if (buttonView.getId() == R.id.rlhwf2f1_1 || buttonView.getId() == R.id.rlhwf2f1_2) {
 
             if(lhwf2f1_2.isChecked()==true) {
 
 
-                bin.LvLhwf2f1.setVisibility(View.GONE);
+
                 bin.LvLhwf2f3.setVisibility(View.GONE);
                 bin.LvLhwf2f4.setVisibility(View.GONE);
                 bin.LvLhwf2f5.setVisibility(View.GONE);
@@ -230,7 +255,7 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
                 bin.LvLhwf2f13.setVisibility(View.GONE);
 
 
-                ClearAllcontrol.ClearAll(bin.LvLhwf2f1);
+
                 ClearAllcontrol.ClearAll(bin.LvLhwf2f3);
                 ClearAllcontrol.ClearAll(bin.LvLhwf2f4);
                 ClearAllcontrol.ClearAll(bin.LvLhwf2f5);
@@ -254,7 +279,7 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
             {
 
 
-                bin.LvLhwf2f1.setVisibility(View.VISIBLE);
+
                 bin.LvLhwf2f3.setVisibility(View.VISIBLE);
                 bin.LvLhwf2f4.setVisibility(View.VISIBLE);
                 bin.LvLhwf2f5.setVisibility(View.VISIBLE);
