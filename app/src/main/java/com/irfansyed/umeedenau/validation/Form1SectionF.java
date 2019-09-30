@@ -117,6 +117,58 @@ public  class Form1SectionF extends AppCompatActivity implements View.OnClickLis
         }
 
 
+        if(bin.lhwf1f1.getText().length()>0) {
+            int a = Integer.parseInt(bin.lhwf1f1.getText().toString());
+            if (a > 100) {
+                bin.lhwf1f1.requestFocus();
+                bin.lhwf1f1.setError("Should be less then 100");
+
+                return;
+            }
+        }
+
+        if(bin.lhwf1f2.getText().length()>0) {
+        int b = Integer.parseInt(bin.lhwf1f2.getText().toString());
+        if (b > 100) {
+            bin.lhwf1f2.requestFocus();
+            bin.lhwf1f2.setError("Should be less then 100");
+
+            return;
+        }
+    }
+
+        if(bin.lhwf1f3.getText().length()>0) {
+            int b = Integer.parseInt(bin.lhwf1f3.getText().toString());
+            if (b > 30) {
+                bin.lhwf1f3.requestFocus();
+                bin.lhwf1f3.setError("Should be less then 30");
+
+                return;
+            }
+        }
+
+        if(bin.lhwf1f3.getText().length()>0) {
+            int b = Integer.parseInt(bin.lhwf1f3.getText().toString());
+            if (b > 30) {
+                bin.lhwf1f3.requestFocus();
+                bin.lhwf1f3.setError("Should be less then 30");
+
+                return;
+            }
+        }
+
+        if(bin.lhwf1f5.getText().length()>0) {
+            int b = Integer.parseInt(bin.lhwf1f5.getText().toString());
+            if (b > 59) {
+                bin.lhwf1f5.requestFocus();
+                bin.lhwf1f5.setError("age of child should be less then  60");
+
+                return;
+            }
+        }
+
+
+
 
         insert_data();
         int count= GeneratorClass.hh_section_count("TableF1SectionF",this);

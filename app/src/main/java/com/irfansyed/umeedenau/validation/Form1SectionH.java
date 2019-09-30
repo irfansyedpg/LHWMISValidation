@@ -55,6 +55,30 @@ public  class Form1SectionH extends AppCompatActivity implements View.OnClickLis
 
 
 
+        if(bin.lhwf1h1.getText().length()>0) {
+            int a = Integer.parseInt(bin.lhwf1h1.getText().toString());
+            if (a > 20) {
+                bin.lhwf1h1.requestFocus();
+                bin.lhwf1h1.setError("Should be less then 20");
+
+                return;
+            }
+
+        }
+
+
+        if(bin.lhwf1h1.getText().length()>0) {
+            int a = Integer.parseInt(bin.lhwf1h2.getText().toString());
+            if (a > 10) {
+                bin.lhwf1h2.requestFocus();
+                bin.lhwf1h2.setError("Should be less then 10");
+
+                return;
+            }
+
+        }
+
+
         if(!GeneratorClass.checktextbox(bin.lhwf1h1,bin.lhwf1h2))
         {
             return;

@@ -68,6 +68,27 @@ public  class Form1SectionC extends AppCompatActivity implements View.OnClickLis
             return;
         }
 
+        if(bin.lhwf1c1.getText().length()>0) {
+            int a = Integer.parseInt(bin.lhwf1c1.getText().toString());
+            if (a > 30) {
+                bin.lhwf1c1.requestFocus();
+                bin.lhwf1c1.setError("Should be less then 30");
+
+                return;
+            }
+        }
+
+        int b=Integer.parseInt(bin.lhwf1c2.getText().toString());
+        if(b>5)
+        {
+            bin.lhwf1c2.requestFocus();
+            bin.lhwf1c2.setError("Should be less then 5");
+
+            return;
+        }
+
+
+
         insert_data();
         int count= GeneratorClass.hh_section_count("TableF1SectionC",this);
 

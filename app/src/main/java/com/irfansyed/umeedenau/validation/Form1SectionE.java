@@ -44,8 +44,11 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
         }
 
 
-        bin.lhwf1e51.setOnClickListener(this);
-        bin.lhwf1e52.setOnClickListener(this);
+        bin.lhwf1e51.setOnCheckedChangeListener(this);
+        bin.lhwf1e52.setOnCheckedChangeListener(this);
+        bin.lhwf1e61.setOnCheckedChangeListener(this);
+        bin.lhwf1e62.setOnCheckedChangeListener(this);
+
 
 
 
@@ -68,6 +71,27 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
         {
             return;
         }
+
+
+        if(bin.lhwf1e1.getText().length()>0) {
+            int a = Integer.parseInt(bin.lhwf1e1.getText().toString());
+            if (a > 60) {
+                bin.lhwf1e1.requestFocus();
+                bin.lhwf1e1.setError("Should be less then 60");
+
+                return;
+            }
+
+        }
+        int b=Integer.parseInt(bin.lhwf1e2.getText().toString());
+        if(b>5)
+        {
+            bin.lhwf1e2.requestFocus();
+            bin.lhwf1e2.setError("Should be less then 10");
+
+            return;
+        }
+
 
         insert_data();
         int count= GeneratorClass.hh_section_count("TableF1SectionE",this);
@@ -109,6 +133,13 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
         if (buttonView.getId() == R.id.lhwf1e5_1 || buttonView.getId() == R.id.lhwf1e5_2) {
 
             ClearAllcontrol.ClearAll(bin.LvLhwf1e5b);
+
+        }
+
+
+        if (buttonView.getId() == R.id.lhwf1e6_1 || buttonView.getId() == R.id.lhwf1e6_2) {
+
+            ClearAllcontrol.ClearAll(bin.LvLhwf1e6b);
 
         }
     }

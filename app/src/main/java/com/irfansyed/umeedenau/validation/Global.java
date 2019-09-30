@@ -521,6 +521,10 @@ public class Global {
     public static String lhwf1h3="lhwf1h3";
     public static String lhwf1h4="lhwf1h4";
     public static String lhwf1h5="lhwf1h5";
+    public static String lhwf1h6="lhwf1h6";
+    public static String lhwf1h7="lhwf1h7";
+    public static String lhwf1h8="lhwf1h8";
+    public static String lhwf1h9="lhwf1h9";
 
     public static String lhwf2c2="lhwf2c2";
     public static String lhwf2c3="lhwf2c3";

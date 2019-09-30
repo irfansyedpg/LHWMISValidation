@@ -353,7 +353,7 @@
 
             <!-- lhwf1e6b starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
-
+                android:visibility='@{lhwf1e62.checked? View.GONE : View.VISIBLE}'
 
                 >
 
