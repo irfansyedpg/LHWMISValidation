@@ -65,6 +65,10 @@ public  class Form2SectionC extends AppCompatActivity implements View.OnClickLis
         bin.lhwf2c62.setOnCheckedChangeListener(this);
         bin.lhwf2c63.setOnCheckedChangeListener(this);
 
+        bin.lhwf2c11.setOnCheckedChangeListener(this);
+        bin.lhwf2c12.setOnCheckedChangeListener(this);
+
+
         bin.btnNext.setOnClickListener(this);
 
         String gps_=GetGpsHideForm.get_gps(this);
@@ -209,5 +213,52 @@ public  class Form2SectionC extends AppCompatActivity implements View.OnClickLis
 
         }
 
+        if(buttonView.getId()==R.id.lhwf2c1_1 || buttonView.getId()==R.id.lhwf2c1_2 ) {
+
+            if (bin.lhwf2c11.isChecked() == true) {
+
+                bin.LvLhwf2c2.setVisibility(View.GONE);
+                bin.LvLhwf2c3.setVisibility(View.GONE);
+                bin.LvLhwf2c4.setVisibility(View.GONE);
+                bin.LvLhwf2c4a.setVisibility(View.GONE);
+                bin.LvLhwf2c5.setVisibility(View.GONE);
+                bin.LvLhwf2c6.setVisibility(View.GONE);
+                bin.LvLhwf2c7.setVisibility(View.GONE);
+                bin.LvLhwf2c8.setVisibility(View.GONE);
+                bin.LvLhwf2c8a.setVisibility(View.GONE);
+                bin.LvLhwf2c9.setVisibility(View.GONE);
+                bin.LvLhwf2c10.setVisibility(View.GONE);
+                bin.LvLhwf2c11.setVisibility(View.GONE);
+
+
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c2);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c3);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c4);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c4a);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c5);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c6);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c7);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c8);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c8a);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c9);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c10);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2c11);
+
+
+            } else {
+                bin.LvLhwf2c2.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c3.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c4.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c4a.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c5.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c6.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c7.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c8.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c8a.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c9.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c10.setVisibility(View.VISIBLE);
+                bin.LvLhwf2c11.setVisibility(View.VISIBLE);
+            }
+        }
     }
 }

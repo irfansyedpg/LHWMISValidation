@@ -526,22 +526,27 @@ public class Global {
     public static String lhwf1h8="lhwf1h8";
     public static String lhwf1h9="lhwf1h9";
 
+    public static String lhwf2c1="lhwf2c1";
     public static String lhwf2c2="lhwf2c2";
     public static String lhwf2c3="lhwf2c3";
     public static String lhwf2c4="lhwf2c4";
+    public static String lhwf2c4a="lhwf2c4a";
     public static String lhwf2c5="lhwf2c5";
     public static String lhwf2c6="lhwf2c6";
     public static String lhwf2c7="lhwf2c7";
     public static String lhwf2c8="lhwf2c8";
+    public static String lhwf2c8a="lhwf2c8a";
     public static String lhwf2c9="lhwf2c9";
     public static String lhwf2c10="lhwf2c10";
     public static String lhwf2c11="lhwf2c11";
 
+    public static String lhwf2d1="lhwf2d1";
     public static String lhwf2d2="lhwf2d2";
     public static String lhwf2d3="lhwf2d3";
     public static String lhwf2d4="lhwf2d4";
     public static String lhwf2d5="lhwf2d5";
     public static String lhwf2d6="lhwf2d6";
+    public static String lhwf2d6a="lhwf2d6a";
     public static String lhwf2d7="lhwf2d7";
     public static String lhwf2d8="lhwf2d8";
     public static String lhwf2d9="lhwf2d9";
