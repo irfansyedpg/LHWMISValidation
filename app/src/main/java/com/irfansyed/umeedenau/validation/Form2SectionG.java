@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.irfansyed.umeedenau.validation.databinding.Form1sectiongBinding;
@@ -18,6 +20,7 @@ import java.util.Date;
 import java.util.HashMap;
 
 import data.LocalDataManager;
+import utils.ClearAllcontrol;
 import utils.GeneratorClass;
 import utils.GetGpsHideForm;
 import utils.ValidatorClass;
@@ -25,7 +28,7 @@ import utils.ValidatorClass;
 import static data.LocalDataManager.database;
 
 
-public  class Form2SectionG extends AppCompatActivity implements View.OnClickListener {
+public  class Form2SectionG extends AppCompatActivity implements View.OnClickListener, RadioButton.OnCheckedChangeListener {
 
 
     //region Initialization
@@ -199,5 +202,52 @@ public  class Form2SectionG extends AppCompatActivity implements View.OnClickLis
     }
 
 
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        if (buttonView.getId() == R.id.lhwf2g1_1 || buttonView.getId() == R.id.lhwf2g1_2) {
 
+            if (bin.lhwf2g12.isChecked() == true) {
+
+
+
+                bin.LvLhwf2g3.setVisibility(View.GONE);
+                bin.LvLhwf2g4.setVisibility(View.GONE);
+                bin.LvLhwf2g5.setVisibility(View.GONE);
+                bin.LvLhwf2g5a.setVisibility(View.GONE);
+                bin.LvLhwf2g6.setVisibility(View.GONE);
+                bin.LvLhwf2g7.setVisibility(View.GONE);
+                bin.LvLhwf2g8.setVisibility(View.GONE);
+                bin.LvLhwf2g9.setVisibility(View.GONE);
+                bin.LvLhwf2g10.setVisibility(View.GONE);
+                bin.LvLhwf2g11.setVisibility(View.GONE);
+
+
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g3);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g4);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g5);
+                ClearAllcontrol.ClearAll(    bin.LvLhwf2g5a);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g6);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g7);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g8);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g9);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g10);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2g11);
+
+            }
+            else
+            {
+                bin.LvLhwf2g3.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g4.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g5.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g5a.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g6.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g7.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g8.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g9.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g10.setVisibility(View.VISIBLE);
+                bin.LvLhwf2g11.setVisibility(View.VISIBLE);
+            }
+
+        }
+    }
 }

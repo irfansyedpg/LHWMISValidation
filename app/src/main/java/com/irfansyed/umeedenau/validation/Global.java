@@ -554,13 +554,16 @@ public class Global {
     public static String lhwf2d11="lhwf2d11";
     public static String lhwf2d12="lhwf2d12";
 
+    public static String lhwf2e1="lhwf2e1";
     public static String lhwf2e2="lhwf2e2";
     public static String lhwf2e3="lhwf2e3";
     public static String lhwf2e4="lhwf2e4";
     public static String lhwf2e5="lhwf2e5";
     public static String lhwf2e5a="lhwf2e5a";
     public static String lhwf2e6="lhwf2e6";
+    public static String lhwf2e6a="lhwf2e6a";
     public static String lhwf2e7="lhwf2e7";
+    public static String lhwf2e7a="lhwf2e7a";
     public static String lhwf2e8="lhwf2e8";
     public static String lhwf2e9="lhwf2e9";
     public static String lhwf2e10="lhwf2e10";
@@ -568,9 +571,11 @@ public class Global {
     public static String lhwf2e12="lhwf2e12";
     public static String lhwf2e13="lhwf2e13";
 
+    public static String lhwf2f1="lhwf2f1";
     public static String lhwf2f3="lhwf2f3";
     public static String lhwf2f4="lhwf2f4";
     public static String lhwf2f5="lhwf2f5";
+    public static String lhwf2f5a="lhwf2f5a";
     public static String lhwf2f6 ="lhwf2f6 ";
     public static String lhwf2f7="lhwf2f7";
     public static String lhwf2f8="lhwf2f8";
@@ -580,15 +585,19 @@ public class Global {
     public static String lhwf2f12="lhwf2f12";
     public static String lhwf2f13="lhwf2f13";
 
+    public static String lhwf2g1="lhwf2g1";
     public static String lhwf2g3="lhwf2g3";
     public static String lhwf2g4="lhwf2g4";
     public static String lhwf2g5="lhwf2g5";
+    public static String lhwf2g5a="lhwf2g5a";
     public static String lhwf2g6="lhwf2g6";
     public static String lhwf2g7="lhwf2g7";
     public static String lhwf2g8="lhwf2g8";
     public static String lhwf2g9="lhwf2g9";
     public static String lhwf2g10="lhwf2g10";
+    public static String lhwf2g11="lhwf2g11";
 
+    public static String lhwf2h1="lhwf2h1";
     public static String lhwf2h2="lhwf2h2";
     public static String lhwf2h3="lhwf2h3";
     public static String lhwf2h4="lhwf2h4";

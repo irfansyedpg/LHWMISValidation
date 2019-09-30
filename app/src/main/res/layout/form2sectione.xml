@@ -71,6 +71,49 @@
 
 
 
+            <!-- lhwf2E1 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2e1"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="Is there any newborn in HH?"
+
+                        />
+                    <RadioGroup
+                        android:id="@+id/lhwf2e1"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2e1_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2e1_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2E1 ends-->
+
+
             <!-- lhwf2e2 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
@@ -307,10 +350,61 @@
             </android.support.v7.widget.CardView>
             <!-- lhwf2e6 ends-->
 
-            <!-- lhwf2e7 starts -->
+
+            <!-- lhwf2e6a starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
 
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2e6a"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="Do you have EPI card for (name of newborn)?  Can you please show it to me"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/lhwf2e6a"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2e6a_1"
+                            style="@style/RadioButton"
+                            android:text="Card available but not shown"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2e6a_2"
+                            style="@style/RadioButton"
+                            android:text="Card not available"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2e6a_3"
+                            style="@style/RadioButton"
+                            android:text="Card available and shown"/>
+
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2e6a ends-->
+
+
+
+            <!-- lhwf2e7 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+                android:visibility='@{lhwf2e6a1.checked || lhwf2e6a2.checked ? View.GONE : View.VISIBLE}'
                 >
 
 
@@ -342,6 +436,7 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/lhwf2e7_3"
                             style="@style/RadioButton"
                             android:text="@string/rb_na"/>
@@ -353,6 +448,53 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!-- lhwf2e7 ends-->
+
+
+            <!-- lhwf2e7a starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+                android:visibility='@{lhwf2e6a1.checked || lhwf2e6a2.checked ? View.GONE : View.VISIBLE}'
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2e7a"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="Did newborn receive BCG vaccine after birth"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/lhwf2e7a"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2e7a_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2e7a_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2e7a ends-->
+
+
 
             <!-- lhwf2e8 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
@@ -469,6 +611,10 @@
                             android:id="@+id/lhwf2e9_2"
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
+                        <RadioButton
+                            android:id="@+id/lhwf2e9_3"
+                            style="@style/RadioButton"
+                            android:text="Devlivery conducted in some other area"/>
 
 
                     </RadioGroup>
@@ -481,7 +627,7 @@
             <!-- lhwf2e10 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{lhwf2e92.checked? View.GONE : View.VISIBLE}'
+                android:visibility="gone"
                 >
 
 
@@ -598,6 +744,7 @@
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/lhwf2e12_3"
                             style="@style/RadioButton"
                             android:text="@string/rb_na"/>

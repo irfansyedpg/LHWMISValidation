@@ -69,6 +69,49 @@
             >
 
 
+            <!-- lhwf2h1 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2h1"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="is there any MWRA in HH"
+
+                        />
+                    <RadioGroup
+                        android:id="@+id/lhwf2h1"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h1_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h1_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2h1 ends-->
+
+
 
             <!-- lhwf2h2 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
@@ -203,7 +246,7 @@
 
 
             <!-- lhwf2h6 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+   <android.support.v7.widget.CardView style="@style/Q_CardView"
 
 
                 >
@@ -244,6 +287,9 @@
             </android.support.v7.widget.CardView>
             <!-- lhwf2h6 ends-->
 
+
+
+
             <!-- lhwf2h7 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
@@ -265,12 +311,30 @@
 
                         />
 
-
-                    <EditText
-                        style="@style/EditText_varchar"
+                    <RadioGroup
                         android:id="@+id/lhwf2h7"
-                        android:maxLength="200"
-                        android:hint="@string/lhwf2h7"/>
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h7_1"
+                            style="@style/RadioButton"
+                            android:text="Routine Visit"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2h7_2"
+                            style="@style/RadioButton"
+                            android:text="Immunization"/>
+                        <RadioButton
+                            android:id="@+id/lhwf2h7_3"
+                            style="@style/RadioButton"
+                            android:text="Family planning"/>
+                        <RadioButton
+                            android:id="@+id/lhwf2h7_4"
+                            style="@style/RadioButton"
+                            android:text="Other"/>
+
+
+                    </RadioGroup>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>

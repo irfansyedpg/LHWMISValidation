@@ -14,13 +14,16 @@ public class TableF2SectionE {
 
 
                 Global.LhwSectionPKId+"  Text, "+
+                Global.lhwf2e1+"  Text, "+
                 Global.lhwf2e2+"  Text, "+
                 Global.lhwf2e3+"  Text, "+
                 Global.lhwf2e4+"  Text, "+
                 Global.lhwf2e5+"  Text, "+
                 Global.lhwf2e5a+"  Text, "+
                 Global.lhwf2e6+"  Text, "+
+                Global.lhwf2e6a+"  Text, "+
                 Global.lhwf2e7+"  Text, "+
+                Global.lhwf2e7a+"  Text, "+
                 Global.lhwf2e8+"  Text, "+
                 Global.lhwf2e9+"  Text, "+
                 Global.lhwf2e10+"  Text, "+

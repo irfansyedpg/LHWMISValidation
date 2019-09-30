@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.irfansyed.umeedenau.validation.databinding.Form1sectionfBinding;
@@ -18,6 +20,7 @@ import java.util.Date;
 import java.util.HashMap;
 
 import data.LocalDataManager;
+import utils.ClearAllcontrol;
 import utils.GeneratorClass;
 import utils.GetGpsHideForm;
 import utils.ValidatorClass;
@@ -25,7 +28,7 @@ import utils.ValidatorClass;
 import static data.LocalDataManager.database;
 
 
-public  class Form2SectionF extends AppCompatActivity implements View.OnClickListener {
+public  class Form2SectionF extends AppCompatActivity implements View.OnClickListener, RadioButton.OnCheckedChangeListener {
 
 
     //region Initialization
@@ -33,6 +36,7 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
 
     String FK_id;
     String Lat,Long;
+    RadioButton lhwf2f1_1,lhwf2f1_2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,8 +66,14 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
          Lat=gps[0];
          Long=gps[1];
 
+        lhwf2f1_1=findViewById(R.id.lhwf2f1_1);
+        lhwf2f1_2=findViewById(R.id.lhwf2f1_2);
 
 
+        lhwf2f1_1.setOnCheckedChangeListener(this);
+        lhwf2f1_2.setOnCheckedChangeListener(this);
+        bin.lhwf2f5a1.setOnCheckedChangeListener(this);
+        bin.lhwf2f5a2.setOnCheckedChangeListener(this);
 
         bin.lhwf2f3.addTextChangedListener(new TextWatcher() {
 
@@ -197,4 +207,124 @@ public  class Form2SectionF extends AppCompatActivity implements View.OnClickLis
 
     }
 
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        if (buttonView.getId() == R.id.lhwf2f1_1 || buttonView.getId() == R.id.lhwf2f1_2) {
+
+            if(lhwf2f1_2.isChecked()==true) {
+
+
+                bin.LvLhwf2f1.setVisibility(View.GONE);
+                bin.LvLhwf2f3.setVisibility(View.GONE);
+                bin.LvLhwf2f4.setVisibility(View.GONE);
+                bin.LvLhwf2f5.setVisibility(View.GONE);
+                bin.LvLhwf2f5a.setVisibility(View.GONE);
+                bin.LvLhwf2f6.setVisibility(View.GONE);
+                bin.LvLhwf2f7.setVisibility(View.GONE);
+                bin.LvLhwf2f8.setVisibility(View.GONE);
+                bin.LvLhwf2f9.setVisibility(View.GONE);
+                bin.LvLhwf2f10.setVisibility(View.GONE);
+                bin.LvLhwf2f11.setVisibility(View.GONE);
+                bin.LvLhwf2f12.setVisibility(View.GONE);
+                bin.LvLhwf2f13.setVisibility(View.GONE);
+
+
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f1);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f3);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f4);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f5);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f5a);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f6);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f7);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f8);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f9);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f10);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f11);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f12);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f13);
+
+
+
+
+
+
+            }
+            else
+            {
+
+
+                bin.LvLhwf2f1.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f3.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f4.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f5.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f5a.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f6.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f7.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f8.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f9.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f10.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f11.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f12.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f13.setVisibility(View.VISIBLE);
+
+
+
+            }
+
+        }
+
+
+
+        if (buttonView.getId() == R.id.lhwf2f5a_1 || buttonView.getId() == R.id.lhwf2f5a_2) {
+
+            if(bin.lhwf2f5a2.isChecked()==true) {
+
+
+
+                bin.LvLhwf2f6.setVisibility(View.GONE);
+                bin.LvLhwf2f7.setVisibility(View.GONE);
+                bin.LvLhwf2f8.setVisibility(View.GONE);
+                bin.LvLhwf2f9.setVisibility(View.GONE);
+                bin.LvLhwf2f10.setVisibility(View.GONE);
+                bin.LvLhwf2f11.setVisibility(View.GONE);
+                bin.LvLhwf2f12.setVisibility(View.GONE);
+                bin.LvLhwf2f13.setVisibility(View.GONE);
+
+
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f6);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f7);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f8);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f9);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f10);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f11);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f12);
+                ClearAllcontrol.ClearAll(bin.LvLhwf2f13);
+
+
+
+
+
+
+            }
+            else
+            {
+
+
+
+                bin.LvLhwf2f6.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f7.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f8.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f9.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f10.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f11.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f12.setVisibility(View.VISIBLE);
+                bin.LvLhwf2f13.setVisibility(View.VISIBLE);
+
+
+
+            }
+
+        }
     }
+}

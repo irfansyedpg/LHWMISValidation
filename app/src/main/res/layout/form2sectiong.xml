@@ -74,6 +74,53 @@
 
 
 
+            <!-- lhwf2g1 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2g1"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="is ther any 0-59 month child who had pneumonia in last three months?"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/lhwf2g1"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2g1_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2g1_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2g1 ends-->
+
+
+
 
             <!-- lhwf2g3 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
@@ -171,6 +218,56 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!-- lhwf2g5 ends-->
+
+
+
+
+            <!-- lhwf2g5a starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2g5a"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="Did LHW visit the child during pneumonia?"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/lhwf2g5a"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2g5a_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2g5a_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2g5a ends-->
+
+
 
             <!-- lhwf2g6 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
@@ -427,7 +524,55 @@
 
 
 
-</LinearLayout>
+
+
+            <!-- lhwf2g11 starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2g11"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="@string/lhwf2g11"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/lhwf2g11"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2g11_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2g11_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2g11 ends-->
+
+
+
+        </LinearLayout>
             <!-- Button -->
             <android.support.v7.widget.CardView
                 style="@style/Q_CardView"
