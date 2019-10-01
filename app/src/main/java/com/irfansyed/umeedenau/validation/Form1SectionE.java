@@ -75,9 +75,9 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
 
         if(bin.lhwf1e1.getText().length()>0) {
             int a = Integer.parseInt(bin.lhwf1e1.getText().toString());
-            if (a > 60) {
+            if (a > 60 ) {
                 bin.lhwf1e1.requestFocus();
-                bin.lhwf1e1.setError("Should be less then 60");
+                bin.lhwf1e1.setError("Should be less then 60 and greater then 0 ");
 
                 return;
             }

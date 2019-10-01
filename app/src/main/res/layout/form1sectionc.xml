@@ -90,9 +90,9 @@
                         <EditText
                             android:id="@+id/lhwf1c1"
                             style="@style/EditText_number"
-                            android:digits="123456789"
+                            android:digits="0123456789"
                             android:hint="@string/lhwf1c1"
-                            android:maxLength="3" />
+                            android:maxLength="2" />
 
 
                     </LinearLayout>
@@ -120,8 +120,9 @@
                         <EditText
                             android:id="@+id/lhwf1c2"
                             style="@style/EditText_number"
+                            android:digits="123456789"
                             android:hint="@string/lhwf1c2"
-                            android:maxLength="3" />
+                            android:maxLength="1" />
 
 
                     </LinearLayout>

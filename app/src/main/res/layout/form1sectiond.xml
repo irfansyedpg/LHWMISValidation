@@ -87,7 +87,7 @@
 
                         <EditText
                             android:id="@+id/lhwf1d1"
-                            android:digits="123456789"
+                            android:digits="0123456789"
                             style="@style/EditText_number"
                             android:hint="@string/lhwf1d1"
                             android:maxLength="2" />
@@ -123,7 +123,7 @@
                             style="@style/EditText_number"
                             android:digits="123456789"
                             android:hint="@string/lhwf1d2"
-                            android:maxLength="2" />
+                            android:maxLength="1" />
 
 
                     </LinearLayout>
