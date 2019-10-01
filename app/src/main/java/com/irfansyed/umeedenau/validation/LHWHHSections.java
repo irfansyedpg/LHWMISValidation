@@ -76,6 +76,7 @@ public  class LHWHHSections extends AppCompatActivity implements View.OnClickLis
 
         final EditText lhwf1b1,lhwf1b2,lhwf1b3;
         final LinearLayout lv_lhwf1b1=dialogLayout.findViewById(R.id.lv_lhwf1b1);
+        final LinearLayout lv_lhwf1b2=dialogLayout.findViewById(R.id.lv_lhwf1b2);
 
         lhwf1b1= dialogLayout.findViewById(R.id.lhwf1b1);
         lhwf1b2= dialogLayout.findViewById(R.id.lhwf1b2);
@@ -111,6 +112,12 @@ public  class LHWHHSections extends AppCompatActivity implements View.OnClickLis
 
 
                 if(Gothrough.IamHiden(lv_lhwf1b1)==false)
+                {
+
+                    return;
+                }
+
+                if(Gothrough.IamHiden(lv_lhwf1b2)==false)
                 {
 
                     return;
