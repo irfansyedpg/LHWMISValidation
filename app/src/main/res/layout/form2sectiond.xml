@@ -78,7 +78,8 @@
 
 
             <!-- lhwf2d1 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+
 
 
                 >
@@ -121,9 +122,10 @@
 
 
             <!-- lhwf2d2 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
-
+                
                 >
 
 
@@ -153,7 +155,8 @@
             <!-- lhwf2d2 ends-->
 
             <!-- lhwf2d3 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -185,7 +188,8 @@
             <!-- lhwf2d3 ends-->
 
             <!-- lhwf2d4 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -219,7 +223,8 @@
 
 
             <!-- lhwf2d5 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -270,7 +275,8 @@
 
 
             <!-- lhwf2d6 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -317,7 +323,8 @@
 
 
             <!-- lhwf2d6a starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -363,7 +370,8 @@
 
 
             <!-- Quality Indicators starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -394,7 +402,8 @@
 
 
             <!-- lhwf2d7 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -445,9 +454,10 @@
 
 
             <!-- lhwf2d8 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{lhwf2d72.checked || lhwf2d73.checked ? View.GONE : View.VISIBLE}'
+
+                android:visibility='@{lhwf2d72.checked || lhwf2d73.checked || rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -498,7 +508,8 @@
 
 
             <!-- lhwf2d9 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -546,8 +557,9 @@
 
 
             <!-- lhwf2d10 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked ? View.GONE : View.VISIBLE}'
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked || rlhwf2d12.checked ? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -589,9 +601,10 @@
             <!-- lhwf2d10 ends-->
 
             <!-- lhwf2d11 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked ? View.GONE : View.VISIBLE}'
+
+                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked || rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -634,8 +647,9 @@
 
 
             <!-- lhwf2d12 starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked ? View.GONE : View.VISIBLE}'
+          <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked || rlhwf2d12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
