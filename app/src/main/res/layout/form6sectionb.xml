@@ -311,6 +311,10 @@
 
                         />
 
+                <LinearLayout
+                    style="@style/Q_Linerlayout_v"
+                    android:tag="0"
+                    >
                   <CheckBox
 
                     style="@style/CheckBox"
@@ -360,6 +364,7 @@
                         android:text="@string/lhwf6b6_8"
                         />
 
+                </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!-- lhwf6b6 ends-->

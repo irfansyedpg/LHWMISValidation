@@ -63,6 +63,9 @@ public  class Form1SectionC extends AppCompatActivity implements View.OnClickLis
         if (!formValidation()) {
              return;
         }
+
+
+
         if(!GeneratorClass.checktextbox(bin.lhwf1c1,bin.lhwf1c2))
         {
             return;

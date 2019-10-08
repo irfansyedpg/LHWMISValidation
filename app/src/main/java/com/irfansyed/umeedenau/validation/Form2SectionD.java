@@ -186,18 +186,18 @@ public  class Form2SectionD extends AppCompatActivity implements View.OnClickLis
 
             if(lhwf2d1_2.isChecked()==true) {
 
-                bin.LvLhwf2d2.setVisibility(View.GONE);
-                bin.LvLhwf2d3.setVisibility(View.GONE);
-                bin.LvLhwf2d4.setVisibility(View.GONE);
-                bin.LvLhwf2d5.setVisibility(View.GONE);
-                bin.LvLhwf2d6.setVisibility(View.GONE);
-                bin.LvLhwf2d6a.setVisibility(View.GONE);
-                bin.LvLhwf2d7.setVisibility(View.GONE);
-                bin.LvLhwf2d8.setVisibility(View.GONE);
-                bin.LvLhwf2d9.setVisibility(View.GONE);
-                bin.LvLhwf2d10.setVisibility(View.GONE);
-                bin.LvLhwf2d11.setVisibility(View.GONE);
-                bin.LvLhwf2d12.setVisibility(View.GONE);
+               // bin.LvLhwf2d2.setVisibility(View.GONE);
+               // bin.LvLhwf2d3.setVisibility(View.GONE);
+               // bin.LvLhwf2d4.setVisibility(View.GONE);
+               // bin.LvLhwf2d5.setVisibility(View.GONE);
+               // bin.LvLhwf2d6.setVisibility(View.GONE);
+               // bin.LvLhwf2d6a.setVisibility(View.GONE);
+               // bin.LvLhwf2d7.setVisibility(View.GONE);
+               // bin.LvLhwf2d8.setVisibility(View.GONE);
+               // bin.LvLhwf2d9.setVisibility(View.GONE);
+               // bin.LvLhwf2d10.setVisibility(View.GONE);
+               // bin.LvLhwf2d11.setVisibility(View.GONE);
+               // bin.LvLhwf2d12.setVisibility(View.GONE);
 
 
                 ClearAllcontrol.ClearAll(bin.LvLhwf2d2);
@@ -223,18 +223,18 @@ public  class Form2SectionD extends AppCompatActivity implements View.OnClickLis
                 else {
 
 
-                bin.LvLhwf2d2.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d3.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d4.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d5.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d6.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d6a.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d7.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d8.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d9.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d10.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d11.setVisibility(View.VISIBLE);
-                bin.LvLhwf2d12.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d2.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d3.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d4.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d5.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d6.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d6a.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d7.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d8.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d9.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d10.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d11.setVisibility(View.VISIBLE);
+               // bin.LvLhwf2d12.setVisibility(View.VISIBLE);
             }
         }
     }

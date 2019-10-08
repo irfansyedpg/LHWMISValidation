@@ -84,12 +84,12 @@ public  class Form1SectionE extends AppCompatActivity implements View.OnClickLis
 
         }
         int b=Integer.parseInt(bin.lhwf1e2.getText().toString());
-        if(b>5)
+        if(b>10)
         {
             bin.lhwf1e2.requestFocus();
             bin.lhwf1e2.setError("Should be less then 10");
 
-            return;
+           // return;
         }
 
 

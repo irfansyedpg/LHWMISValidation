@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
     android:layout_marginTop="10dp"
     android:background="#EEEEEE"
     android:orientation="vertical">
@@ -87,8 +88,12 @@
                         style="@style/EditText_number"
                         android:id="@+id/lhwf1b1"
                         android:maxLength="8"
-                        android:digits="123456789"
+                        android:digits="0123456789"
                         android:hint="@string/lhwf1b1"/>
+
+
+
+
 
 
                 </LinearLayout>

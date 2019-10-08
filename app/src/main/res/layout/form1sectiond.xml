@@ -1,5 +1,6 @@
- <layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LHWDashbord">
 
     <data>
@@ -85,12 +86,17 @@
 
                             />
 
-                        <EditText
+
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/lhwf1d1"
-                            android:digits="0123456789"
                             style="@style/EditText_number"
-                            android:hint="@string/lhwf1d1"
-                            android:maxLength="2" />
+                            android:inputType="number"
+
+                            app:maxValue="30"
+                            app:minValue="1"
+                            app:required="true"
+                            app:type="range" />
 
 
                     </LinearLayout>
@@ -118,12 +124,19 @@
 
                             />
 
-                        <EditText
+
+
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/lhwf1d2"
                             style="@style/EditText_number"
-                            android:digits="123456789"
-                            android:hint="@string/lhwf1d2"
-                            android:maxLength="1" />
+                            android:inputType="number"
+
+                            app:maxValue="5"
+                            app:minValue="1"
+                            app:required="true"
+                            app:type="range" />
+
 
 
                     </LinearLayout>

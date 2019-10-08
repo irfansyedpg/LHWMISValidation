@@ -123,6 +123,11 @@ public  class LHWHHSections extends AppCompatActivity implements View.OnClickLis
                     return;
                 }
 
+                if(lhwf1b1.getText().toString().equals("0"))
+                {
+                    lhwf1b1.setError("not be equals to 0 ");
+                    return;
+                }
 
                 Intent intt;
 
@@ -176,6 +181,8 @@ public  class LHWHHSections extends AppCompatActivity implements View.OnClickLis
                 {
                     lhwf1b3.setText("00");
                 }
+
+
 
 insert_db(lhwf1b1.getText().toString(),lhwf1b2.getText().toString(),lhwf1b3.getText().toString(),Section);
 

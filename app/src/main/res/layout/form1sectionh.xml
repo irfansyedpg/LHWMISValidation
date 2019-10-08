@@ -1,5 +1,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LHWDashbord">
 
     <data>
@@ -91,11 +92,18 @@
 
                         />
 
-                    <EditText
-                        style="@style/EditText_number"
+
+
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/lhwf1h1"
-                        android:maxLength="3"
-                        android:hint="@string/lhwf1h1"/>
+                        style="@style/EditText_number"
+                        android:inputType="number"
+
+                        app:maxValue="20"
+                        app:minValue="1"
+                        app:required="true"
+                        app:type="range" />
 
 
                 </LinearLayout>
@@ -124,12 +132,20 @@
 
                         />
 
-                    <EditText
-                        style="@style/EditText_number"
+
+
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/lhwf1h2"
-                        android:maxLength="3"
-                        android:digits="123456789"
-                        android:hint="@string/lhwf1h2"/>
+                        style="@style/EditText_number"
+                        android:inputType="number"
+
+                        app:maxValue="10"
+                        app:minValue="1"
+                        app:required="true"
+                        app:type="range" />
+
+
 
 
                 </LinearLayout>
@@ -224,11 +240,17 @@
                         />
 
 
-                    <EditText
-                        style="@style/EditText_number"
+
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/lhwf1h5"
-                        android:maxLength="3"
-                        android:hint="@string/lhwf1h5"/>
+                        style="@style/EditText_number"
+                        android:inputType="number"
+
+                        app:maxValue="49"
+                        app:minValue="14"
+                        app:required="true"
+                        app:type="range" />
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>

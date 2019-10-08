@@ -1,4 +1,4 @@
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -87,12 +87,17 @@
 
                             />
 
-                        <EditText
+
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/lhwf1c1"
                             style="@style/EditText_number"
-                            android:digits="0123456789"
-                            android:hint="@string/lhwf1c1"
-                            android:maxLength="2" />
+                            android:inputType="number"
+
+                            app:maxValue="30"
+                            app:minValue="1"
+                            app:required="true"
+                            app:type="range" />
 
 
                     </LinearLayout>
@@ -117,12 +122,18 @@
 
                             />
 
-                        <EditText
+
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/lhwf1c2"
                             style="@style/EditText_number"
-                            android:digits="123456789"
-                            android:hint="@string/lhwf1c2"
-                            android:maxLength="1" />
+                            android:inputType="number"
+
+                            app:maxValue="5"
+                            app:minValue="1"
+                            app:required="true"
+                            app:type="range" />
+
 
 
                     </LinearLayout>
@@ -213,11 +224,18 @@
 
                             />
 
-                        <EditText
+
+
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/lhwf1c5"
                             style="@style/EditText_number"
-                            android:hint="@string/lhwf1c5"
-                            android:maxLength="1" />
+                            android:inputType="number"
+
+                            app:maxValue="9"
+                            app:minValue="0"
+                            app:required="true"
+                            app:type="range" />
 
 
                     </LinearLayout>
