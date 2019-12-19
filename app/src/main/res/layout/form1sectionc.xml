@@ -90,14 +90,14 @@
 
 
                         <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/lhwf1c1"
-                            style="@style/EditText_number"
-                            android:inputType="number"
-
-                            app:maxValue="30"
-                            app:minValue="1"
-                            app:required="true"
-                            app:type="range" />
+                        android:id="@+id/lhwf1c1"
+                        style="@style/EditText_number"
+                        android:inputType="number"
+                            android:maxLength="2"
+                        app:maxValue="50"
+                        app:minValue="1"
+                        app:required="true"
+                        app:type="range" />
 
 
                     </LinearLayout>
@@ -128,7 +128,7 @@
                             android:id="@+id/lhwf1c2"
                             style="@style/EditText_number"
                             android:inputType="number"
-
+                            android:maxLength="1"
                             app:maxValue="5"
                             app:minValue="1"
                             app:required="true"
@@ -172,6 +172,55 @@
                 </android.support.v7.widget.CardView>
                 <!-- lhwf1c3 ends-->
 
+                <!-- lhwf1c3a starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/Lv_lhwf1c3A"
+                        style="@style/Q_Linerlayout_v"
+
+                        >
+
+                        <TextView
+
+                            style="@style/TextView"
+                            android:text="@string/lhwf1c3A"
+
+                            />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/lhwf1c3Aa"
+                            style="@style/EditText_number"
+                            android:inputType="number"
+                            android:hint="month"
+                            android:maxLength="2"
+
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:required="true"
+                            app:type="range" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/lhwf1c3Ab"
+                            style="@style/EditText_number"
+                            android:inputType="number"
+                            android:hint="Year"
+                            android:maxLength="2"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:required="true"
+                            app:type="range" />
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!-- lhwf1c3a ends-->
+
 
                 <!-- lhwf1c4 starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView"
@@ -204,6 +253,45 @@
                 </android.support.v7.widget.CardView>
                 <!-- lhwf1c4 ends-->
 
+
+                <!-- lhwf1c4a starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/Lv_lhwf1c4a"
+                        style="@style/Q_Linerlayout_v"
+
+                        >
+
+                        <TextView
+
+                            style="@style/TextView"
+                            android:text="@string/lhwf1c4A"
+
+                            />
+
+
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/lhwf1c4A"
+                            style="@style/EditText_number"
+                            android:inputType="number"
+                            android:hint="month"
+                            android:maxLength="1"
+                            app:maxValue="9"
+                            app:minValue="1"
+                            app:required="true"
+                            app:type="range" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!-- lhwf1c4a ends-->
+
                 <!-- lhwf1c5 starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView"
 
@@ -231,7 +319,7 @@
                             android:id="@+id/lhwf1c5"
                             style="@style/EditText_number"
                             android:inputType="number"
-
+                            android:maxLength="1"
                             app:maxValue="9"
                             app:minValue="0"
                             app:required="true"
@@ -282,6 +370,7 @@
                             <RadioButton
                                 android:id="@+id/lhwf1c6_3"
                                 style="@style/RadioButton"
+                                android:visibility="gone"
                                 android:text="Not Authorized" />
 
                         </RadioGroup>
@@ -337,6 +426,55 @@
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <!-- lhwf1c7 ends-->
+
+
+
+
+                <!-- lhwf1c7A starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+                    android:visibility='@{lhwf1c61.checked? View.GONE : View.VISIBLE}'
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/Lv_lhwf1c7A"
+                        style="@style/Q_Linerlayout_v"
+
+                        >
+
+                        <TextView
+
+                            style="@style/TextView"
+                            android:text="@string/lhwf1c7A"
+
+                            />
+
+                        <RadioGroup
+                            android:id="@+id/lhwf1c7A"
+
+                            style="@style/RadioGroup">
+
+                            <RadioButton
+                                android:id="@+id/lhwf1c7A_1"
+                                style="@style/RadioButton"
+                                android:text="@string/lhwf1c7Aa" />
+
+                            <RadioButton
+                                android:id="@+id/lhwf1c7A_2"
+                                style="@style/RadioButton"
+                                android:text="@string/lhwf1c7Aa" />
+
+
+
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!-- lhwf1c7A ends-->
 
 
 

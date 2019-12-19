@@ -140,6 +140,7 @@ public  class Form1SectionC extends AppCompatActivity implements View.OnClickLis
       {
 
                   ClearAllcontrol.ClearAll(bin.LvLhwf1c7);
+                  ClearAllcontrol.ClearAll(bin.LvLhwf1c7A);
 
       }
 

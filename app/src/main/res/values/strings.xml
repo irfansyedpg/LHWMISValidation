@@ -75,12 +75,24 @@
     <string name="lhwf1c1"> # of registered PW in last three months </string>
     <string name="lhwf1c2"> # of PW in HH registered in last three months </string>
     <string name="lhwf1c3"> Name of registered PW  </string>
+    <string name="lhwf1c3A"> Date of registration/LHW first visit  </string>
     <string name="lhwf1c4"> Husband’s name </string>
-    <string name="lhwf1c5"> # of ANC visit(s)  </string>
-    <string name="lhwf1c6"> LHW vaccinated PW for TT vaccine </string>
-    <string name="lhwf1c7"> LHW referred for TT vaccine </string>
+
+    <string name="lhwf1c4A"> Gestational age of pregnancy </string>
+
+    <string name="lhwf1c5"> Total Number of ANC visit(s) recorded </string>
+    <string name="lhwf1c6"> Is PW vaccinated for TT?   </string>
+    <string name="lhwf1c7"> LHW referred PW to HF for TT vaccine </string>
+    <string name="lhwf1c7A"> Who vaccinated PW for TT </string>
+
+    <string name="lhwf1c7Aa"> LHW </string>
+    <string name="lhwf1c7Ab"> Vaccinator </string>
+
     <string name="lhwf1c8"> LHW provided Iron folic acid to PW </string>
+
+
     <string name="lhwf1header_d"> Section D: Maternal care after delivery </string>
+
     <string name="lhwf1d1"> # of deliveries registered in last three months </string>
     <string name="lhwf1d2"> # of delivered women in HH registered in last three months </string>
     <string name="lhwf1d3"> Name of mother  </string>

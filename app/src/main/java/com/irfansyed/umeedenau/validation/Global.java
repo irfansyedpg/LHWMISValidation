@@ -469,10 +469,14 @@ public class Global {
     public static String lhwf1c1="lhwf1c1";
     public static String lhwf1c2="lhwf1c2";
     public static String lhwf1c3="lhwf1c3";
+    public static String lhwf1c3Aa="lhwf1c3Aa";
+    public static String lhwf1c3Ab="lhwf1c3Ab";
     public static String lhwf1c4="lhwf1c4";
+    public static String lhwf1c4A="lhwf1c4A";
     public static String lhwf1c5="lhwf1c5";
     public static String lhwf1c6="lhwf1c6";
     public static String lhwf1c7="lhwf1c7";
+    public static String lhwf1c7A="lhwf1c7A";
     public static String lhwf1c8="lhwf1c8";
 
     public static String lhwf1d1="lhwf1d1";
