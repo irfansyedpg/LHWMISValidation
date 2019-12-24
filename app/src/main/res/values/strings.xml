@@ -97,6 +97,11 @@
     <string name="lhwf1d2"> # of delivered women in HH registered in last three months </string>
     <string name="lhwf1d3"> Name of mother  </string>
     <string name="lhwf1d4"> Husband’s name </string>
+
+    <string name="lhwf1d4A"> Date of LHW first PNC visit </string>
+    <string name="lhwf1d4Aa"> Month </string>
+    <string name="lhwf1d4Ab"> Year </string>
+
     <string name="lhwf1d5"> Where was delivery conducted? </string>
     <string name="lhwf1d5_1"> Public HF </string>
     <string name="lhwf1d5_2"> Private HF </string>
@@ -110,6 +115,7 @@
     <string name="lhwf1e2"> # of newborn registered in HH </string>
     <string name="lhwf1e3"> Name of newborn (any one) </string>
     <string name="lhwf1e4"> Name of mother </string>
+    <string name="lhwf1e4A"> Date of LHW first visit to newborn </string>
     <string name="lhwf1e5"> Birth weight recorded </string>
     <string name="lhwf1e6"> Early initiation of breastfeeding recorded  </string>
     <string name="lhwf1e7"> Record keeping for polio drops  after birth </string>
@@ -119,6 +125,10 @@
     <string name="lhwf1f2"> # of children less than five years of age registered for the diarrhea in last 3 months? </string>
     <string name="lhwf1f3"> # of children in HH less than five years of age registered for the diarrhea in last 3 months?</string>
     <string name="lhwf1f4"> Name of child in HH who had diarrhea in last three months </string>
+
+
+    <string name="lhwf1f4A"> Date of LHW visit during diarrhea </string>
+
     <string name="lhwf1f5"> Age of child (in months) in HH who had diarrhea in last three months </string>
     <string name="lhwf1f6"> LHW provided ORS/LoORS for diarrhea </string>
     <string name="lhwf1f7"> LHW provided Zinc DT/syrup for diarrhea </string>
@@ -130,6 +140,8 @@
     <string name="lhwf1g2"> # of children less than five years of age registered for cough or difficult breathing/pneumonia in last three months. </string>
     <string name="lhwf1g3"># of children in HH less than five years of age who had cough or difficult breathing/pneumonia in last three months </string>
     <string name="lhwf1g4"> Name of child in HH who had cough or difficult breathing in last three months </string>
+    <string name="lhwf1g4A"> Date of LHW visit during pneumonia </string>
+
     <string name="lhwf1g5"> Age of child (in months) in HH who had cough or difficult breathing in last three months </string>
     <string name="lhwf1g6"> LHW provided Amoxicillin DT/syrup in case of pneumonia </string>
     <string name="lhwf1g7"> LHW referred child to the HF for pneumonia </string>
@@ -190,8 +202,8 @@
     <string name="lhwf2c3"> Name of PW/Respndent  </string>
     <string name="lhwf2c4"> Husband’s name </string>
     <string name="lhwf2c5"> How many ANC visits PW did?</string>
-    <string name="lhwf2c6"> Did LHW vaccinated PW ? </string>
-    <string name="lhwf2c7"> LHW referred for TT vaccine </string>
+    <string name="lhwf2c6"> Is  PW vaccinated for TT? </string>
+    <string name="lhwf2c7"> LHW referred PW to HF for TT vaccine </string>
     <string name="lhwf2c8"> LHW provided Iron folic acid to PW </string>
     <string name="lhwf2c9"> LHW informed about danger signs During pragnancy </string>
     <string name="lhwf2c10"> LHW counseled PW about ANC </string>

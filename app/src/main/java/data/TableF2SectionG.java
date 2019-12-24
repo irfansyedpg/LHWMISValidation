@@ -15,6 +15,7 @@ public class TableF2SectionG {
                 Global.lhwf2g1+"  Text, "+
                 Global.lhwf2g3+"  Text, "+
                 Global.lhwf2g4+"  Text, "+
+                Global.lhwf2g4A+"  Text, "+
                 Global.lhwf2g5+"  Text, "+
                 Global.lhwf2g5a+"  Text, "+
                 Global.lhwf2g6+"  Text, "+
