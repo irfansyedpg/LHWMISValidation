@@ -15,6 +15,7 @@ public class TableF2SectionE {
 
                 Global.LhwSectionPKId+"  Text, "+
                 Global.lhwf2e1+"  Text, "+
+                Global.lhwf2e1a+"  Text, "+
                 Global.lhwf2e2+"  Text, "+
                 Global.lhwf2e3+"  Text, "+
                 Global.lhwf2e4+"  Text, "+
@@ -29,6 +30,7 @@ public class TableF2SectionE {
                 Global.lhwf2e10+"  Text, "+
                 Global.lhwf2e11+"  Text, "+
                 Global.lhwf2e12+"  Text, "+
+                Global.lhwf2e12a+"  Text, "+
                 Global.lhwf2e13+"  Text ,"+
                 Global.GPSLat+"  Text,"+
                 Global.GPSLong+"  Text,"+

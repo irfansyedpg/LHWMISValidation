@@ -162,9 +162,105 @@
             </android.support.v7.widget.CardView>
             <!-- lhwf2d2 ends-->
 
+
+
+
+
+            <!-- lhwf2d2a starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2d2a"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="is Mother Available at home"
+
+                        />
+                    <RadioGroup
+                        android:id="@+id/lhwf2d2a"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2d2a_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2d2a_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2d2a ends-->
+
+
+            <!-- lhwf2d2b starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2d2b"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="Reason"
+
+                        />
+                    <RadioGroup
+                        android:id="@+id/lhwf2d2b"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2d2b_1"
+                            style="@style/RadioButton"
+                            android:text="Delivered Women not available at Home"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2d2b_2"
+                            style="@style/RadioButton"
+                            android:text="Fake Record"/>
+
+
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2d2b ends-->
+
+
             <!-- lhwf2d3 starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -197,7 +293,7 @@
 
             <!-- lhwf2d4 starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -232,7 +328,7 @@
 
             <!-- lhwf2d5 starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -284,7 +380,7 @@
 
             <!-- lhwf2d6 starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -332,7 +428,7 @@
 
             <!-- lhwf2d6a starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -379,7 +475,7 @@
 
             <!-- Quality Indicators starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -411,7 +507,7 @@
 
             <!-- lhwf2d7 starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -465,7 +561,7 @@
           <android.support.v7.widget.CardView style="@style/Q_CardView"
 
 
-                android:visibility='@{lhwf2d72.checked || lhwf2d73.checked || rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{lhwf2d72.checked || lhwf2d73.checked || rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -517,7 +613,7 @@
 
             <!-- lhwf2d9 starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -567,7 +663,7 @@
             <!-- lhwf2d10 starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked || rlhwf2d12.checked ? View.GONE : View.VISIBLE}'
+                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked || rlhwf2d2a2.checked ? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -612,7 +708,7 @@
           <android.support.v7.widget.CardView style="@style/Q_CardView"
 
 
-                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked || rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked || rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -657,7 +753,7 @@
             <!-- lhwf2d12 starts -->
           <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked || rlhwf2d12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{lhwf2d92.checked || lhwf2d93.checked || rlhwf2d2a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >

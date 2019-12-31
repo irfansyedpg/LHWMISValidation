@@ -76,7 +76,14 @@ public class UploadF1F2SectionE extends AsyncTask {
 
                     if (ccc == Global.loop_Increment) {
 
-                        param.put("lhwf1e1", c.getString(c.getColumnIndex("lhwf1e1")));
+                        param.put("lhwf1e1",
+
+                                c.getString(c.getColumnIndex("lhwf1e1"))
+
+
+
+
+                        );
                         param.put("lhwf1e2", c.getString(c.getColumnIndex("lhwf1e2")));
                         param.put("lhwf1e3", c.getString(c.getColumnIndex("lhwf1e3")));
                         param.put("lhwf1e4", c.getString(c.getColumnIndex("lhwf1e4"))
@@ -141,7 +148,12 @@ public class UploadF1F2SectionE extends AsyncTask {
         if (c2 != null && c2.getCount() != 0) {
             if (c2.moveToFirst()) {
 
-                param.put("lhwf2e2", c2.getString(c2.getColumnIndex("lhwf2e2")));
+                param.put("lhwf2e2",
+                        c2.getString(c2.getColumnIndex("lhwf2e2"))
+
+                        +"-"+ c2.getString(c2.getColumnIndex("lhwf2e1a"))
+
+                );
                 param.put("lhwf2e3", c2.getString(c2.getColumnIndex("lhwf2e3")));
                 param.put("lhwf2e4", c2.getString(c2.getColumnIndex("lhwf2e4")));
                 param.put("lhwf2e5", c2.getString(c2.getColumnIndex("lhwf2e5")));
@@ -152,7 +164,13 @@ public class UploadF1F2SectionE extends AsyncTask {
                 param.put("lhwf2e9", c2.getString(c2.getColumnIndex("lhwf2e9")));
                 param.put("lhwf2e10", c2.getString(c2.getColumnIndex("lhwf2e10")));
                 param.put("lhwf2e11", c2.getString(c2.getColumnIndex("lhwf2e11")));
-                param.put("lhwf2e12", c2.getString(c2.getColumnIndex("lhwf2e12")));
+                param.put("lhwf2e12",
+                        c2.getString(c2.getColumnIndex("lhwf2e12")) +"-"+
+
+                        c2.getString(c2.getColumnIndex("lhwf2e12a"))
+
+
+                );
 
                 param.put("lhwf2e13",
                                 c2.getString(c2.getColumnIndex("lhwf2e13"))+"-"+
