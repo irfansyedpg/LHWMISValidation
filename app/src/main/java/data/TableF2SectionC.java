@@ -14,11 +14,15 @@ public class TableF2SectionC {
 
                 Global.lhwf2c1+"  Text, "+
                 Global.lhwf2c2+"  Text, "+
+                Global.lhwf2c2a+"  Text, "+
+                Global.lhwf2c2b+"  Text, "+
                 Global.lhwf2c3+"  Text, "+
                 Global.lhwf2c4+"  Text, "+
                 Global.lhwf2c4a+"  Text, "+
+                Global.lhwf2c4b+"  Text, "+
                 Global.lhwf2c5+"  Text, "+
                 Global.lhwf2c6+"  Text, "+
+                Global.lhwf2c6a+"  Text, "+
                 Global.lhwf2c7+"  Text, "+
                 Global.lhwf2c8+"  Text, "+
                 Global.lhwf2c8a+"  Text, "+

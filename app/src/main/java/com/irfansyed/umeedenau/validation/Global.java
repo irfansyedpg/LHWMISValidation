@@ -540,11 +540,15 @@ public class Global {
 
     public static String lhwf2c1="lhwf2c1";
     public static String lhwf2c2="lhwf2c2";
+    public static String lhwf2c2a="lhwf2c2a";
+    public static String lhwf2c2b="lhwf2c2b";
     public static String lhwf2c3="lhwf2c3";
     public static String lhwf2c4="lhwf2c4";
     public static String lhwf2c4a="lhwf2c4a";
+    public static String lhwf2c4b="lhwf2c4b";
     public static String lhwf2c5="lhwf2c5";
     public static String lhwf2c6="lhwf2c6";
+    public static String lhwf2c6a="lhwf2c6a";
     public static String lhwf2c7="lhwf2c7";
     public static String lhwf2c8="lhwf2c8";
     public static String lhwf2c8a="lhwf2c8a";
