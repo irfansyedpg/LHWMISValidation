@@ -251,7 +251,7 @@
     <string name="lhwf2f7"> LHW provided Zinc DT/syrup for diarrhea </string>
     <string name="lhwf2f8"> LHW referred child to the HF </string>
     <string name="lhwf2f9"> Is the child immunized?
-(immunization is complete as per his/her age) // check the EPI card
+(immunization is complete as per EPI schedule)
  </string>
     <string name="lhwf2f10"> Any under-five death due to diarrhea in last three months? </string>
     <string name="lhwf2f11"> LHW educated mother about hand washing and sanitation. </string>

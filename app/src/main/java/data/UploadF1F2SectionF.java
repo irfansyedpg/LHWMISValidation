@@ -139,12 +139,22 @@ public class UploadF1F2SectionF extends AsyncTask {
             if (c2.moveToFirst()) {
 
 
-                param.put("lhwf2f3", c2.getString(c2.getColumnIndex("lhwf2f3")));
+                param.put("lhwf2f3",
+                        c2.getString(c2.getColumnIndex("lhwf2f3"))
+                        +"-"+c2.getString(c2.getColumnIndex("lhwf2f3a"))
+
+
+                );
                 param.put("lhwf2f4", c2.getString(c2.getColumnIndex("lhwf2f4")));
                 param.put("lhwf2f5", c2.getString(c2.getColumnIndex("lhwf2f5")));
                 param.put("lhwf2f6", c2.getString(c2.getColumnIndex("lhwf2f6")));
                 param.put("lhwf2f7", c2.getString(c2.getColumnIndex("lhwf2f7")));
-                param.put("lhwf2f8", c2.getString(c2.getColumnIndex("lhwf2f8")));
+                param.put("lhwf2f8",
+                        c2.getString(c2.getColumnIndex("lhwf2f8"))
+                        +"-"+
+                        c2.getString(c2.getColumnIndex("lhwf2f8a"))
+
+                );
                 param.put("lhwf2f9", c2.getString(c2.getColumnIndex("lhwf2f9")));
                 param.put("lhwf2f10", c2.getString(c2.getColumnIndex("lhwf2f10")));
                 param.put("lhwf2f11", c2.getString(c2.getColumnIndex("lhwf2f11")));

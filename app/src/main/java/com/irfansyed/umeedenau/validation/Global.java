@@ -593,12 +593,14 @@ public class Global {
 
     public static String lhwf2f1="lhwf2f1";
     public static String lhwf2f3="lhwf2f3";
+    public static String lhwf2f3a="lhwf2f3a";
     public static String lhwf2f4="lhwf2f4";
     public static String lhwf2f5="lhwf2f5";
     public static String lhwf2f5a="lhwf2f5a";
     public static String lhwf2f6 ="lhwf2f6 ";
     public static String lhwf2f7="lhwf2f7";
     public static String lhwf2f8="lhwf2f8";
+    public static String lhwf2f8a="lhwf2f8a";
     public static String lhwf2f9="lhwf2f9";
     public static String lhwf2f10="lhwf2f10";
     public static String lhwf2f11="lhwf2f11";
@@ -607,16 +609,19 @@ public class Global {
 
     public static String lhwf2g1="lhwf2g1";
     public static String lhwf2g3="lhwf2g3";
+    public static String lhwf2g3a="lhwf2g3a";
     public static String lhwf2g4="lhwf2g4";
     public static String lhwf2g4A="lhwf2g4A";
     public static String lhwf2g5="lhwf2g5";
     public static String lhwf2g5a="lhwf2g5a";
     public static String lhwf2g6="lhwf2g6";
     public static String lhwf2g7="lhwf2g7";
+    public static String lhwf2g7a="lhwf2g7a";
     public static String lhwf2g8="lhwf2g8";
     public static String lhwf2g9="lhwf2g9";
     public static String lhwf2g10="lhwf2g10";
     public static String lhwf2g11="lhwf2g11";
+    public static String lhwf2g11a="lhwf2g11a";
 
     public static String lhwf2h1="lhwf2h1";
     public static String lhwf2h2="lhwf2h2";

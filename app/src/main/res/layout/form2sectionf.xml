@@ -169,6 +169,56 @@
             <!-- lhwf2f3 ends-->
 
 
+
+            <!-- lhwf2f3a starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+                android:visibility='@{rlhwf2f11.checked? View.GONE : View.VISIBLE}'
+
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2f3a"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="Reason"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/lhwf2f3a"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2f3a_1"
+                            style="@style/RadioButton"
+                            android:text="Household Not Found"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2f3a_2"
+                            style="@style/RadioButton"
+                            android:text="Fake Record"/>
+
+
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2f1 ends-->
+
+
             <!-- lhwf2f4 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
@@ -441,6 +491,59 @@
             </android.support.v7.widget.CardView>
             <!-- lhwf2f8 ends-->
 
+
+
+
+            <!-- lhwf2f8a starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+
+                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
+
+
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2f8a"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="Do you have EPI Card for (name of new born)? can you please show it to me"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/lhwf2f8a"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2f8a_1"
+                            style="@style/RadioButton"
+                            android:text="Card available but not shown"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2f8a_2"
+                            style="@style/RadioButton"
+                            android:text="Card not available "/>
+                        <RadioButton
+                            android:id="@+id/lhwf2f8a_3"
+                            style="@style/RadioButton"
+                            android:text="Card available and shown "/>
+
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2f8a ends-->
+
+
             <!-- lhwf2f9 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
@@ -489,7 +592,7 @@
             <!-- lhwf2f10 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{ rlhwf2f8a1.checked || rlhwf2f8a2.checked || rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
                 
                 >

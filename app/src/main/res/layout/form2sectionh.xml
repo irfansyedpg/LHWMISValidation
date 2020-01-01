@@ -359,6 +359,15 @@
                             style="@style/RadioButton"
                             android:text="Other"/>
 
+                        <EditText
+                            android:visibility='@{lhwf2h74.checked ? View.VISIBLE : View.GONE}'
+
+
+                            style="@style/EditText_Name"
+                            android:id="@+id/lhwf2h7_5"
+                            android:maxLength="50"
+                            android:hint="@string/lhwf2h3"/>
+
 
                     </RadioGroup>
 
