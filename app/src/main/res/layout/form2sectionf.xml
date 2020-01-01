@@ -128,8 +128,7 @@
             <!-- lhwf2f3 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{rlhwf2f12.checked? View.GONE : View.VISIBLE}'
-
+                  android:visibility='@{rlhwf2f12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -174,7 +173,6 @@
             <android.support.v7.widget.CardView style="@style/Q_CardView"
 
                 android:visibility='@{rlhwf2f11.checked? View.GONE : View.VISIBLE}'
-
 
 
                 >
@@ -222,7 +220,7 @@
             <!-- lhwf2f4 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{rlhwf2f12.checked? View.GONE : View.VISIBLE}'
+                  android:visibility='@{rlhwf2f12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -256,9 +254,7 @@
 
             <!-- lhwf2f5 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
-
-                android:visibility='@{rlhwf2f12.checked? View.GONE : View.VISIBLE}'
-
+                  android:visibility='@{rlhwf2f12.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -304,8 +300,8 @@
 
             <!-- lhwf2f5a starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
+                  android:visibility='@{rlhwf2f12.checked? View.GONE : View.VISIBLE}'
 
-                android:visibility='@{rlhwf2f12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -352,7 +348,7 @@
             <!-- lhwf2f6 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
+                  android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
                 
                 >
@@ -401,10 +397,10 @@
             <!-- lhwf2f7 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
-                
+                  android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
-                >
+
+                  >
 
 
 
@@ -448,10 +444,9 @@
             <!-- lhwf2f8 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
+                  android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
-                
-                >
+                  >
 
 
 
@@ -496,7 +491,6 @@
 
             <!-- lhwf2f8a starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
-
                 android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
 
@@ -547,10 +541,9 @@
             <!-- lhwf2f9 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
+                  android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked || lhwf2f8a1.checked  || lhwf2f8a2.checked? View.GONE : View.VISIBLE}'
 
-                
-                >
+                  >
 
 
 
@@ -592,10 +585,9 @@
             <!-- lhwf2f10 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{ rlhwf2f8a1.checked || rlhwf2f8a2.checked || rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
+                  android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
-                
-                >
+                  >
 
 
 
@@ -640,8 +632,6 @@
             <!-- Quality Indicators starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
-
 
                 >
 
@@ -672,10 +662,9 @@
             <!-- lhwf2f11 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
-                
+                  android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
-                >
+                  >
 
 
 
@@ -716,11 +705,10 @@
 
             <!-- lhwf2f12 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
+                  android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
-                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
-                
-                >
+                  >
 
 
 
@@ -762,11 +750,9 @@
 
             <!-- lhwf2f13 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
+                  android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
 
-                android:visibility='@{rlhwf2f12.checked || lhwf2f5a2.checked? View.GONE : View.VISIBLE}'
-                
-
-                >
+                  >
 
 
 
