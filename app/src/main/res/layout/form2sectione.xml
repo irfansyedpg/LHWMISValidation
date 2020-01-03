@@ -739,7 +739,7 @@
             <!-- lhwf2e11 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                android:visibility='@{lhwf2e92.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{lhwf2e92.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -779,13 +779,57 @@
             </android.support.v7.widget.CardView>
             <!-- lhwf2e11 ends-->
 
-
-            <!-- lhwf2e12 starts -->
-              <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2e12.checked? View.GONE : View.VISIBLE}'
+            <!-- lhwf2e12a starts -->
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{lhwf2e92.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
+
+
+
+                <LinearLayout
+                    android:id="@+id/Lv_lhwf2e12a"
+                    style="@style/Q_Linerlayout_v"
+
+                    >
+
+                    <TextView
+
+                        style="@style/TextView"
+                        android:text="Was there any danger sign identified by LHW"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/lhwf2e12a"
+                        style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/lhwf2e12a_1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_yes"/>
+
+                        <RadioButton
+                            android:id="@+id/lhwf2e12a_2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_no"/>
+
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- lhwf2e12a ends-->
+
+
+            <!-- lhwf2e12 starts -->
+              <android.support.v7.widget.CardView style="@style/Q_CardView"
+                  android:visibility='@{lhwf2e92.checked || lhwf2e12a2.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
+
+
+                  >
 
 
 
@@ -829,56 +873,9 @@
             <!-- lhwf2e12 ends-->
 
 
-
-            <!-- lhwf2e12a starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2e12.checked? View.GONE : View.VISIBLE}'
-
-
-                >
-
-
-
-                <LinearLayout
-                    android:id="@+id/Lv_lhwf2e12a"
-                    style="@style/Q_Linerlayout_v"
-
-                    >
-
-                    <TextView
-
-                        style="@style/TextView"
-                        android:text="Was there any danger sign identified by LHW"
-
-                        />
-
-                    <RadioGroup
-                        android:id="@+id/lhwf2e12a"
-                        style="@style/RadioGroup">
-
-                        <RadioButton
-                            android:id="@+id/lhwf2e12a_1"
-                            style="@style/RadioButton"
-                            android:text="@string/rb_yes"/>
-
-                        <RadioButton
-                            android:id="@+id/lhwf2e12a_2"
-                            style="@style/RadioButton"
-                            android:text="@string/rb_no"/>
-
-
-
-                    </RadioGroup>
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-            <!-- lhwf2e12a ends-->
-
-
-
             <!-- lhwf2e13 starts -->
-              <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2e12.checked || lhwf2e12a2.checked? View.GONE : View.VISIBLE}'
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
+                android:visibility='@{lhwf2e92.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -918,6 +915,11 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!-- lhwf2e13 ends-->
+
+
+
+
+
 
 
         </LinearLayout>

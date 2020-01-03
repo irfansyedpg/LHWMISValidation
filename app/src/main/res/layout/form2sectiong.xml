@@ -489,7 +489,7 @@
 
             <!-- lhwf2g8 starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView"
-                android:visibility='@{rlhwf2g12.checked || lhwf2g5a2.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{rlhwf2g12.checked || lhwf2g7a2.checked || lhwf2g7a1.checked || lhwf2g5a2.checked? View.GONE : View.VISIBLE}'
 
 
                 >
@@ -662,6 +662,7 @@
                 android:visibility='@{rlhwf2g12.checked || lhwf2g5a2.checked? View.GONE : View.VISIBLE}'
 
 
+
                 >
 
 
@@ -669,6 +670,7 @@
                 <LinearLayout
                     android:id="@+id/Lv_lhwf2g11"
                     style="@style/Q_Linerlayout_v"
+                    android:visibility="gone"
 
                     >
 
