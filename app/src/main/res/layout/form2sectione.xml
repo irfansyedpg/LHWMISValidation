@@ -739,7 +739,7 @@
             <!-- lhwf2e11 starts -->
               <android.support.v7.widget.CardView style="@style/Q_CardView"
 
-                  android:visibility='@{lhwf2e92.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
+                android:visibility='@{lhwf2e92.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
 
                 >
 
@@ -780,8 +780,7 @@
             <!-- lhwf2e11 ends-->
 
             <!-- lhwf2e12a starts -->
-            <android.support.v7.widget.CardView
-                style="@style/Q_CardView"
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
                 android:visibility='@{lhwf2e92.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
 
 
@@ -826,12 +825,11 @@
 
 
             <!-- lhwf2e12 starts -->
-            <android.support.v7.widget.CardView
-                style="@style/Q_CardView"
-                android:visibility='@{lhwf2e92.checked || lhwf2e12a2.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
+              <android.support.v7.widget.CardView style="@style/Q_CardView"
+                  android:visibility='@{lhwf2e92.checked || lhwf2e12a2.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
 
 
-                >
+                  >
 
 
 
@@ -861,12 +859,11 @@
                             android:id="@+id/lhwf2e12_2"
                             style="@style/RadioButton"
                             android:text="@string/rb_no"/>
-
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/lhwf2e12_3"
                             style="@style/RadioButton"
-                            android:text="@string/rb_na"
-                            android:visibility="gone" />
+                            android:text="@string/rb_na"/>
 
 
                     </RadioGroup>
@@ -877,8 +874,7 @@
 
 
             <!-- lhwf2e13 starts -->
-            <android.support.v7.widget.CardView
-                style="@style/Q_CardView"
+            <android.support.v7.widget.CardView style="@style/Q_CardView"
                 android:visibility='@{lhwf2e92.checked || lhwf2e93.checked || rlhwf2e12.checked? View.GONE : View.VISIBLE}'
 
 
@@ -919,6 +915,11 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!-- lhwf2e13 ends-->
+
+
+
+
+
 
 
         </LinearLayout>

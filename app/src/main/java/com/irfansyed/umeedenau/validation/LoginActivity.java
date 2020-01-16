@@ -10,10 +10,14 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,9 +52,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
         setContentView(R.layout.activity_login);
 
 
+        CheckBox showpassowrd=(CheckBox)findViewById(R.id.showpassowrd);
 
 
-               MyPreferences pref=new MyPreferences(this);
+
+
+
+
+
+        MyPreferences pref=new MyPreferences(this);
                AppVersion= Double.parseDouble(pref.getAppVersion());
 
         final EditText textUsername = (EditText) findViewById(R.id.login_username);
@@ -60,6 +70,21 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
         final MyPreferences preferences = new MyPreferences(this);
 
         Button UpdateButton = (Button) findViewById(R.id.Updateapp);
+
+
+        showpassowrd.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked)
+                {
+                    textPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }
+                else
+                {
+                    textPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+            }
+        });
 
 
         textlogout.setOnTouchListener(this);
