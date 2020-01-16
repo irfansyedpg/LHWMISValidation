@@ -45,9 +45,9 @@
 
             <EditText
                 android:id="@+id/login_username"
-                style="@style/EditText_varchar"
+                style="@style/EditText_varchar2"
                 android:hint="Username"
-                android:inputType="text|textEmailAddress"
+
                 android:textColorHint="@color/hitnscolor"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/hitnscolor"
@@ -61,7 +61,7 @@
 
             <EditText
                 android:id="@+id/login_password"
-                style="@style/EditText_varchar"
+                style="@style/EditText_varchar2"
                 android:hint="Password"
                 android:inputType="textPassword"
 

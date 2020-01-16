@@ -17,6 +17,7 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -63,7 +64,7 @@ public class UploadF1F2SectionC extends AsyncTask {
 
 
         LocalDataManager Lm = new LocalDataManager(mContext);
-        Cursor c = Lm.database.rawQuery(query, null);
+        Cursor c = LocalDataManager.database.rawQuery(query, null);
 
 
         int a=c.getCount();
@@ -79,7 +80,7 @@ public class UploadF1F2SectionC extends AsyncTask {
 
                         param.put("lhwf1c1", c.getString(c.getColumnIndex("lhwf1c1")));
                         param.put("lhwf1c2", c.getString(c.getColumnIndex("lhwf1c2")));
-                        param.put("lhwf1c3", c.getString(c.getColumnIndex("lhwf1c3")) +"-" +c.getString(c.getColumnIndex("lhwf1c3Aa")) + "-" +c.getString(c.getColumnIndex("lhwf1c3Ab"))   );
+                        param.put("lhwf1c3", c.getString(c.getColumnIndex("lhwf1c3")) + "-" + c.getString(c.getColumnIndex("lhwf1c3Aa")));
                         param.put("lhwf1c4", c.getString(c.getColumnIndex("lhwf1c4")) +"-"+c.getString(c.getColumnIndex("lhwf1c4A")) );
                         param.put("lhwf1c5", c.getString(c.getColumnIndex("lhwf1c5")));
                         param.put("lhwf1c6", c.getString(c.getColumnIndex("lhwf1c6")));
@@ -120,7 +121,7 @@ public class UploadF1F2SectionC extends AsyncTask {
 
 
         LocalDataManager Lm2 = new LocalDataManager(mContext);
-        Cursor c2 = Lm2.database.rawQuery(query2, null);
+        Cursor c2 = LocalDataManager.database.rawQuery(query2, null);
 
 
         if (c2 != null && c2.getCount() != 0) {
@@ -230,7 +231,7 @@ public class UploadF1F2SectionC extends AsyncTask {
             connection.setConnectTimeout(1000);
 
             OutputStream os = connection.getOutputStream();
-            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os, StandardCharsets.UTF_8));
 
 
             bw.write(PostRequestData.getData(param));
